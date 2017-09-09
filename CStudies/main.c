@@ -12,10 +12,11 @@ void Saida();
 int Entrada();
 void Condicionais();
 void LoopFor();
+void LoopWhile();
 
 int main()
 {
-    LoopFor();
+    LoopWhile();
 }
 
 void Saida(){
@@ -57,5 +58,20 @@ void LoopFor(){
         printf("\nMétodo 'Condicionais' foi chamado %d vezes.\n\n", i + 1);
         
         Condicionais();
+    }
+}
+
+void LoopWhile()
+{
+    int i = 0;
+    
+    printf("Esse método chama o método 'Entrada' três vezes.\n\n");
+    
+    while(i < 3){
+        printf("\nMétodo 'Entrada' foi chamado %d vezes.\n\n", i + 1);
+        
+        Entrada();
+        
+        i++;
     }
 }
