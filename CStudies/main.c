@@ -8,9 +8,25 @@
 
 #include <stdio.h>
 
+void Saida();
+void Entrada();
+
 int main()
 {
-    printf( "I am alive!  Beware.\n" );
-    getchar();
-    return 0;
+    Entrada();
 }
+
+void Saida(){
+    printf( "Olá mundo!\n" );
+    getchar();
+}
+
+void Entrada(){
+    int numero;
+    
+    printf( "Insira um número: " );
+    scanf( "%d", &numero );
+    printf( "Você inseriu o número %d\n", numero );
+    getchar();
+}
+
