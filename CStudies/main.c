@@ -13,10 +13,12 @@ int Entrada();
 void Condicionais();
 void LoopFor();
 void LoopWhile();
+void LoopDoWhile();
+void DiferencaEntreLoopWhileAndDoWhile();
 
 int main()
 {
-    LoopWhile();
+    DiferencaEntreLoopWhileAndDoWhile();
 }
 
 void Saida(){
@@ -74,4 +76,36 @@ void LoopWhile()
         
         i++;
     }
+}
+
+void LoopDoWhile()
+{
+    int i = 0;
+    
+    printf("Esse método chama o método 'Entrada' três vezes.\n\n");
+    
+    do{
+        printf("\nMétodo 'Entrada' foi chamado %d vezes.\n\n", i + 1);
+        
+        Entrada();
+        
+        i++;
+    }while(i < 3);
+}
+
+void DiferencaEntreLoopWhileAndDoWhile(){
+    int numero = 0;
+    
+    int i = 0;
+    while(i < numero){
+        printf("Método while não vai ser executado.\n");
+        
+        i++;
+    }
+    
+    do{
+        printf("Método do while vai ser executado.\n");
+        
+        i++;
+    }while(i < numero);
 }
