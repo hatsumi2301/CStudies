@@ -11,10 +11,11 @@
 void Saida();
 int Entrada();
 void Condicionais();
+void LoopFor();
 
 int main()
 {
-    Condicionais();
+    LoopFor();
 }
 
 void Saida(){
@@ -46,5 +47,15 @@ void Condicionais(){
     }
     else {
         printf("Executa esse comando se a condição dos ifs forem falsas.\n");
+    }
+}
+
+void LoopFor(){
+    printf("Esse método chama o método 'Condicionais' três vezes.\n\n");
+    
+    for (int i = 0; i < 3; i++){
+        printf("\nMétodo 'Condicionais' foi chamado %d vezes.\n\n", i + 1);
+        
+        Condicionais();
     }
 }
