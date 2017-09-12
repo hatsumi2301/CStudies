@@ -9,7 +9,7 @@
 #include <stdio.h>
 
 void Saida();
-int Entrada();
+int  Entrada();
 void Condicionais();
 void LoopFor();
 void LoopWhile();
