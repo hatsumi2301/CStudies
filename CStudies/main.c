@@ -22,10 +22,14 @@ void DiferencaEntreLoopWhileAndDoWhile();
 void TiposDeVariaveis();
 void ModificadoresDeVariaveis();
 void ObterNome();
+void VerificarCaractereNaString();
+int VerificarCaractereNaString2(char *s, char c);
 
 int main()
 {
-    ObterNome();
+    int i = VerificarCaractereNaString2("teste", 'e');
+    
+    printf("%d", &i);
 }
 
 void Saida(){
@@ -157,15 +161,41 @@ void ObterNome(){
     if(t == 1){
         char s[80];
         
-        printf("Entre com o nome: \n");
-        scanf(s);
-        printf("Nome digitado: %s.\n", s);
+        printf("Entre com o nome: ");
+        scanf("%s", &s[80]);
+        printf("Nome digitado: %s.\n", &s[80]);
     }
 }
 
 void VerificarCaractereNaString(){
-    char palavra[100];
+    char palavra;
     char caractere;
+    char *texto = "A palavra não contém a letra.\n";
     
+    printf("Informe uma palavra: ");
+    scanf("%s", &palavra);
     
+    printf("\nInforme uma letra: ");
+    scanf(" %c", &caractere);
+    
+    while(palavra)
+    {
+        if(palavra == caractere){
+            texto = "\nA palavra contém a letra.\n";
+        }
+        else{
+            palavra++;
+        }
+    }
+    
+    printf("%s", texto);
+}
+
+int VerificarCaractereNaString2(char *s, char c)
+{
+    while(*s)
+        if(*s == c) return 1;
+        else s++;
+    
+    return 0;
 }
