@@ -8,6 +8,11 @@
 
 #include <stdio.h>
 
+int x, y; //Variáveis globais
+void FuncaoQueUtilizaAsVariaveisGlobais();
+void FuncaoQueUtilizaAsVariaveisGlobais2();
+void FuncaoQueUtilizaAsVariaveisGlobais3();
+
 void Saida(); //Exemplo de como imprimir um valor
 int Entrada(); //Exemplo de como obter um valor de entrada pelo teclado
 
@@ -22,7 +27,8 @@ void TiposDeVariaveis(); //Imprime um exemplo dos tipos de variáveis
 void ModificadoresDeVariaveis(); //Imprime a lista dos tipos e modificadores de variáveis
 void VariavelDoTipoConst(const char *palavra); //Imprime '-' no lugar dos espaços no texto passado como parâmetro
 void VariavelDoTipoVolatile(); //Imprime um texto explicando o que é uma variável do tipo volatile
-void EspecificadorExtern();
+void EspecificadorExtern(); //Imprime um texto explicando o que é extern
+void EspecificadorStatic();
 
 void ObterNome();
 
@@ -98,6 +104,6 @@ int VerificarCaractereNaString2(char *s, char c)
     return 0;
 }
 
-void EspecificadorExtern(){
-    printf("Ocorreria um erro se fossem declaradas duas variáveis globais com o mesmo nome em arquivos diferentes de um mesmo projeto.\nA solução seria declarar todas as variáveis globais em um arquivo e usar declarações externo nos outros");
+void FuncaoQueUtilizaAsVariaveisGlobais(){
+    x = 123;
 }

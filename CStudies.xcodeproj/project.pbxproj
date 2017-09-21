@@ -10,6 +10,7 @@
 		7B15DBC61F5F8A6F003F515E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B15DBC51F5F8A6F003F515E /* main.c */; };
 		7B6FAABE1F73558C00694531 /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAABD1F73558C00694531 /* Variaveis.c */; };
 		7B6FAAC01F7355D700694531 /* CondicionaisLoop.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */; };
+		7B6FAAC41F73595D00694531 /* Arquivo2.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAAC31F73595D00694531 /* Arquivo2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		7B15DBC51F5F8A6F003F515E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		7B6FAABD1F73558C00694531 /* Variaveis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Variaveis.c; sourceTree = "<group>"; };
 		7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CondicionaisLoop.c; sourceTree = "<group>"; };
+		7B6FAAC31F73595D00694531 /* Arquivo2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Arquivo2.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				7B6FAABD1F73558C00694531 /* Variaveis.c */,
 				7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */,
 				7B15DBC51F5F8A6F003F515E /* main.c */,
+				7B6FAAC31F73595D00694531 /* Arquivo2.c */,
 			);
 			path = CStudies;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6FAAC41F73595D00694531 /* Arquivo2.c in Sources */,
 				7B6FAAC01F7355D700694531 /* CondicionaisLoop.c in Sources */,
 				7B6FAABE1F73558C00694531 /* Variaveis.c in Sources */,
 				7B15DBC61F5F8A6F003F515E /* main.c in Sources */,

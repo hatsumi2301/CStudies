@@ -54,3 +54,12 @@ void VariavelDoTipoVolatile(){
     printf("O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa.\n");
     printf("Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema.\n");
 }
+
+void EspecificadorExtern(){
+    printf("Ocorreria um erro se fossem declaradas duas variáveis globais com o mesmo nome em arquivos diferentes de um mesmo projeto.\nA solução seria declarar todas as variáveis globais em um arquivo e usar declarações externo nos outros.\n");
+    printf("Vide as classes main (as variáveis globais) e Arquivo2 para exemplos de Extern.\n");
+}
+
+void EspecificadorStatic(){
+    printf("São variáveis permanentes. Não são reconhecidas fora de sua função ou arquivo, mas mantém seus valores entre chamadas.\n");
+}
