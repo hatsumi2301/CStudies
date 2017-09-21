@@ -98,7 +98,6 @@ int VerificarCaractereNaString2(char *s, char c)
     return 0;
 }
 
-
 void EspecificadorExtern(){
     printf("Ocorreria um erro se fossem declaradas duas variáveis globais com o mesmo nome em arquivos diferentes de um mesmo projeto.\nA solução seria declarar todas as variáveis globais em um arquivo e usar declarações externo nos outros");
 }

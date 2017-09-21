@@ -8,7 +8,6 @@
 
 #include <stdio.h>
 
-
 void TiposDeVariaveis(){
     char caractere = 'a';
     int inteiro = 1;
