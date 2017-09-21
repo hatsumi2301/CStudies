@@ -8,28 +8,29 @@
 
 #include <stdio.h>
 
-void Saida();
-int   Entrada();
+void Saida(); //Exemplo de como imprimir um valor
+int Entrada(); //Exemplo de como obter um valor de entrada pelo teclado
 
+void Condicionais(); //Exemplo de condicionais
 
-void Condicionais();
-void LoopFor();
+void LoopFor(); //Exemplo de loop for
+void LoopWhile(); //Exemplo de loop while
+void LoopDoWhile(); //Exemplo de loop do while
+void DiferencaEntreLoopWhileAndDoWhile(); //Exemplifica a diferente entre o loop do tipo while e o do do while
 
+void TiposDeVariaveis(); //Imprime um exemplo dos tipos de variáveis
+void ModificadoresDeVariaveis(); //Imprime a lista dos tipos e modificadores de variáveis
+void VariavelDoTipoConst(const char *palavra); //Imprime '-' no lugar dos espaços no texto passado como parâmetro
+void VariavelDoTipoVolatile(); //Imprime um texto explicando o que é uma variável do tipo volatile
 
-void LoopWhile();
-void LoopDoWhile();
-void DiferencaEntreLoopWhileAndDoWhile();
-void TiposDeVariaveis();
-void ModificadoresDeVariaveis();
 void ObterNome();
-void VerificarCaractereNaString();
-int VerificarCaractereNaString2(char *s, char c);
+
+void VerificarCaractereNaString(); //Não está funcionando
+int VerificarCaractereNaString2(char *s, char c); //Verifica se a string contém um determinado caractere
 
 int main()
 {
-    VerificarCaractereNaString();
-    
-    //printf("%d", i);
+    VariavelDoTipoVolatile();
 }
 
 void Saida(){
@@ -188,7 +189,6 @@ void VerificarCaractereNaString(){
         }
     }
     
-    
     printf("%s", texto);
 }
 
@@ -199,4 +199,20 @@ int VerificarCaractereNaString2(char *s, char c)
         else s++;
     
     return 0;
+}
+
+void VariavelDoTipoConst(const char *palavra)
+{
+    while(*palavra){
+        if(*palavra == ' ') printf("%c", '-');
+        else printf("%c", *palavra);
+        palavra++;
+    }
+    printf("\nO uso do const no parâmetro de entrada do método, faz com que o código da função não seja capaz de modificar o objeto apontado pelo parâmetro.\n");
+    printf("\nApenas um evento externo pode modificar uma variável do tipo const.\n");
+}
+
+void VariavelDoTipoVolatile(){
+    printf("O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa.\n");
+    printf("Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema.\n");
 }
