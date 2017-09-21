@@ -27,8 +27,8 @@
 /* Begin PBXFileReference section */
 		7B15DBC21F5F8A6F003F515E /* CStudies */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CStudies; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B15DBC51F5F8A6F003F515E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		7B6FAABD1F73558C00694531 /* Variaveis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Variaveis.c; path = CStudies/Variaveis.c; sourceTree = "<group>"; };
-		7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CondicionaisLoop.c; path = CStudies/CondicionaisLoop.c; sourceTree = "<group>"; };
+		7B6FAABD1F73558C00694531 /* Variaveis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Variaveis.c; sourceTree = "<group>"; };
+		7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CondicionaisLoop.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +45,6 @@
 		7B15DBB91F5F8A6F003F515E = {
 			isa = PBXGroup;
 			children = (
-				7B6FAABD1F73558C00694531 /* Variaveis.c */,
-				7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */,
 				7B15DBC41F5F8A6F003F515E /* CStudies */,
 				7B15DBC31F5F8A6F003F515E /* Products */,
 			);
@@ -63,6 +61,8 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7B6FAABD1F73558C00694531 /* Variaveis.c */,
+				7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */,
 				7B15DBC51F5F8A6F003F515E /* main.c */,
 			);
 			path = CStudies;
