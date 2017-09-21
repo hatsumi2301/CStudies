@@ -27,9 +27,9 @@ int VerificarCaractereNaString2(char *s, char c);
 
 int main()
 {
-    int i = VerificarCaractereNaString2("teste", 'e');
+    VerificarCaractereNaString();
     
-    printf("%d", &i);
+    //printf("%d", i);
 }
 
 void Saida(){
@@ -187,6 +187,7 @@ void VerificarCaractereNaString(){
             palavra++;
         }
     }
+    
     
     printf("%s", texto);
 }
