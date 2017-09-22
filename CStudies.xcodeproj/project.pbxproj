@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B15DBC61F5F8A6F003F515E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B15DBC51F5F8A6F003F515E /* main.c */; };
+		7B4361D21F75D67300096CCB /* VariavelEstatica.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B4361D11F75D67300096CCB /* VariavelEstatica.c */; };
 		7B6FAABE1F73558C00694531 /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAABD1F73558C00694531 /* Variaveis.c */; };
 		7B6FAAC01F7355D700694531 /* CondicionaisLoop.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */; };
 		7B6FAAC41F73595D00694531 /* Arquivo2.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAAC31F73595D00694531 /* Arquivo2.c */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		7B15DBC21F5F8A6F003F515E /* CStudies */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CStudies; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B15DBC51F5F8A6F003F515E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7B4361D11F75D67300096CCB /* VariavelEstatica.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VariavelEstatica.c; sourceTree = "<group>"; };
 		7B6FAABD1F73558C00694531 /* Variaveis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Variaveis.c; sourceTree = "<group>"; };
 		7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CondicionaisLoop.c; sourceTree = "<group>"; };
 		7B6FAAC31F73595D00694531 /* Arquivo2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Arquivo2.c; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				7B6FAABD1F73558C00694531 /* Variaveis.c */,
+				7B4361D11F75D67300096CCB /* VariavelEstatica.c */,
 				7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */,
 				7B15DBC51F5F8A6F003F515E /* main.c */,
 				7B6FAAC31F73595D00694531 /* Arquivo2.c */,
@@ -132,6 +135,7 @@
 				7B6FAAC01F7355D700694531 /* CondicionaisLoop.c in Sources */,
 				7B6FAABE1F73558C00694531 /* Variaveis.c in Sources */,
 				7B15DBC61F5F8A6F003F515E /* main.c in Sources */,
+				7B4361D21F75D67300096CCB /* VariavelEstatica.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

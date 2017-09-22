@@ -63,3 +63,5 @@ void EspecificadorExtern(){
 void EspecificadorStatic(){
     printf("São variáveis permanentes. Não são reconhecidas fora de sua função ou arquivo, mas mantém seus valores entre chamadas.\n");
 }
+
+

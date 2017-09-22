@@ -35,9 +35,17 @@ void ObterNome();
 void VerificarCaractereNaString(); //Não está funcionando
 int VerificarCaractereNaString2(char *s, char c); //Verifica se a string contém um determinado caractere
 
+void VariavelEstaticaGlobal(); //Imprime texto
+void IniciarSerie(int semente); //Inicializa a variável estática global da classe VariavelEstatica
+int Serie(void); //Soma um valor à variável estática global
+
 int main()
 {
-    VariavelDoTipoVolatile();
+    int numero;
+    
+    IniciarSerie(10);
+    numero = Serie();
+    printf("%d", numero);
 }
 
 void Saida(){
