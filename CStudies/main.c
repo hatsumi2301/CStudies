@@ -45,8 +45,12 @@ void Constantes(void); //Imprime uma tabela com as constantes \
 
 void Modulo(void); //Exemplo de modulo
 
+void IncrementoDecremento(void); //Exemplo de incrementos e decrementos
+void PrintXor(void); //Exemplo de xor
+void OperadoresBitBit(void); //Imprime tabela de operadores bit a bit
+
 int main(){
-    Modulo();
+    OperadoresBitBit();
 }
 
 void Saida(){
