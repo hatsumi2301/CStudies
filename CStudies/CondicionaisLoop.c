@@ -45,8 +45,7 @@ void LoopFor(){
     }
 }
 
-void LoopWhile()
-{
+void LoopWhile(){
     int i = 0;
     
     printf("Esse método chama o método 'Entrada' três vezes.\n\n");
@@ -60,8 +59,7 @@ void LoopWhile()
     }
 }
 
-void LoopDoWhile()
-{
+void LoopDoWhile(){
     int i = 0;
     
     printf("Esse método chama o método 'Entrada' três vezes.\n\n");

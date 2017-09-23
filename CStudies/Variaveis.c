@@ -39,8 +39,7 @@ void ModificadoresDeVariaveis(){
     printf("long dougle         80      dez dígitos de precisão\n");
 }
 
-void VariavelDoTipoConst(const char *palavra)
-{
+void VariavelDoTipoConst(const char *palavra){
     while(*palavra){
         if(*palavra == ' ') printf("%c", '-');
         else printf("%c", *palavra);
@@ -64,4 +63,28 @@ void EspecificadorStatic(){
     printf("São variáveis permanentes. Não são reconhecidas fora de sua função ou arquivo, mas mantém seus valores entre chamadas.\n");
 }
 
+int EspecificadorRegister(register int m, register int e){
+    printf("O acesso ao objeto é o mais rápido possível. Os objetos são colocados nos registradores da CPU.\n");
+    printf("São usadas onde são feitas muitas referências a uma mesma variável.\n");
+    
+    register int temp;
+    
+    temp = 1;
+    
+    for(; e; e--) temp = temp * m;
+    
+    return temp;
+}
+
+void AtribuicoesMultiplas(){
+    int x;
+    int y;
+    int k;
+    
+    x = y = k = 10;
+    
+    printf("x: %d.\n", x);
+    printf("y: %d.\n", y);
+    printf("z: %d.\n", k);
+}
 

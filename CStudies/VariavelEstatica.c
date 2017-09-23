@@ -13,8 +13,7 @@ static int variavelEstaticaGlobal;
 void IniciarSerie(int semente);
 int Serie(void);
 
-void IniciarSerie(int semente)
-{
+void IniciarSerie(int semente){
     variavelEstaticaGlobal = semente;
 }
 
