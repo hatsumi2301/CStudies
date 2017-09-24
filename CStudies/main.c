@@ -8,13 +8,12 @@
 
 #include <stdio.h>
 #include "Saida.h"
+#include "Entrada.h"
 
 int x, y; //Variáveis globais
 void FuncaoQueUtilizaAsVariaveisGlobais(void);
 void FuncaoQueUtilizaAsVariaveisGlobais2(void);
 void FuncaoQueUtilizaAsVariaveisGlobais3(void);
-
-int Entrada(void); //Exemplo de como obter um valor de entrada pelo teclado
 
 void Condicionais(void); //Exemplo de condicionais
 
@@ -50,18 +49,34 @@ void PrintXor(void); //Exemplo de xor
 void OperadoresBitBit(void); //Imprime tabela de operadores bit a bit
 
 int main(){
-    Saida();
+    while (1==1) {
+        int opcao = Opcoes();
+        
+        printf("\n");
+        
+        switch (opcao) {
+            case 1:
+                Saida();
+                break;
+            case 2:
+                EntradaNumero();
+                break;
+            default:
+                printf("Opção inexistente.");
+                break;
+        }
+    }
 }
 
-int Entrada(){
-    int numero;
+int Opcoes(){
+    printf("\n______________________________________\nInforme uma opção: \n");
+    printf("1. Printf\n2. Scanf\n\n");
     
-    printf( "Insira um número: " );
-    scanf( "%d", &numero );
-    printf( "Você inseriu o número %d.\n", numero );
-    getchar();
+    int opcao;
     
-    return numero;
+    scanf("%d", &opcao);
+    
+    return opcao;
 }
 
 void ObterNome(){

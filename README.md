@@ -2,11 +2,11 @@
 
 Estou usando como guia de estudos o livro "C completo e total". Terceira edição. Herbert Schildt.
 
-##Printf
+## Printf
 O método
 
 >Saida
 
-é um exemplo de printf que imprime o texto "Olá mundo!"
+imprime o texto "Olá mundo!"
 
 

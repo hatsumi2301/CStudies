@@ -10,7 +10,7 @@
 
 void Saida(){
     //Exemplo de como imprimir um valor
-    printf( "Olá mundo!\n" );
+    printf("Olá mundo!\n");
     
     //Para o sistema ficar aguardando a inserção de um caractere. Isso impede que o programa abra, seja executado e feche a janela sem que o usuário possa ver o resultado do mesmo.
     getchar();
