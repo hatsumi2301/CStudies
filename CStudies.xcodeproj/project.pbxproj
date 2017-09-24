@@ -43,8 +43,8 @@
 		7BE933A61F77479D008A7CBF /* Entrada.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entrada.h; sourceTree = "<group>"; };
 		7BE933B11F7758AE008A7CBF /* Variaveis.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Variaveis.c; sourceTree = "<group>"; };
 		7BE933B21F7758AE008A7CBF /* Variaveis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Variaveis.h; sourceTree = "<group>"; };
-		7BE933BA1F7760C9008A7CBF /* Loops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Loops.h; path = CStudies/Loops.h; sourceTree = SOURCE_ROOT; };
-		7BE933BB1F7760CA008A7CBF /* Loops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Loops.c; path = CStudies/Loops.c; sourceTree = SOURCE_ROOT; };
+		7BE933BA1F7760C9008A7CBF /* Loops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Loops.h; path = CStudies/Capitulo03/Loops.h; sourceTree = SOURCE_ROOT; };
+		7BE933BB1F7760CA008A7CBF /* Loops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Loops.c; path = CStudies/Capitulo03/Loops.c; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
