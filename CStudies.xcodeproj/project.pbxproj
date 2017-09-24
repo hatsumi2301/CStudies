@@ -76,20 +76,28 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
-				7BE933A21F774112008A7CBF /* Saida.c */,
-				7BE933A31F774112008A7CBF /* Saida.h */,
+				7BE933AF1F775588008A7CBF /* Capitulo01 */,
 				7B6FAABD1F73558C00694531 /* Variaveis.c */,
 				7B4361D11F75D67300096CCB /* VariavelEstatica.c */,
 				7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */,
 				7B15DBC51F5F8A6F003F515E /* main.c */,
 				7BE933AC1F774F0A008A7CBF /* Loop.c */,
 				7BE933AD1F774F0A008A7CBF /* Loop.h */,
-				7BE933A51F77479D008A7CBF /* Entrada.c */,
-				7BE933A61F77479D008A7CBF /* Entrada.h */,
 				7B4361D31F75E22100096CCB /* Operadores.c */,
 				7B6FAAC31F73595D00694531 /* Arquivo2.c */,
 			);
 			path = CStudies;
+			sourceTree = "<group>";
+		};
+		7BE933AF1F775588008A7CBF /* Capitulo01 */ = {
+			isa = PBXGroup;
+			children = (
+				7BE933A31F774112008A7CBF /* Saida.h */,
+				7BE933A21F774112008A7CBF /* Saida.c */,
+				7BE933A51F77479D008A7CBF /* Entrada.c */,
+				7BE933A61F77479D008A7CBF /* Entrada.h */,
+			);
+			path = Capitulo01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
