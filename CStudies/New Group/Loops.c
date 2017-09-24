@@ -1,12 +1,13 @@
 //
-//  Loop.c
+//  Loops.c
 //  CStudies
 //
-//  Created by Hatsumi Hashi on 23/09/17.
+//  Created by Hatsumi Hashi on 24/09/17.
 //  Copyright © 2017 Hatsumi Hashi. All rights reserved.
 //
 
-#include "Loop.h"
+#include "Loops.h"
+
 
 void VerificarCaractereNaString(){
     char palavra;

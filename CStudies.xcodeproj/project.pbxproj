@@ -10,12 +10,12 @@
 		7B15DBC61F5F8A6F003F515E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B15DBC51F5F8A6F003F515E /* main.c */; };
 		7B4361D21F75D67300096CCB /* VariavelEstatica.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B4361D11F75D67300096CCB /* VariavelEstatica.c */; };
 		7B4361D41F75E22100096CCB /* Operadores.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B4361D31F75E22100096CCB /* Operadores.c */; };
-		7B6FAABE1F73558C00694531 /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAABD1F73558C00694531 /* Variaveis.c */; };
 		7B6FAAC01F7355D700694531 /* CondicionaisLoop.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */; };
 		7B6FAAC41F73595D00694531 /* Arquivo2.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAAC31F73595D00694531 /* Arquivo2.c */; };
 		7BE933A41F774112008A7CBF /* Saida.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A21F774112008A7CBF /* Saida.c */; };
 		7BE933A71F77479D008A7CBF /* Entrada.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A51F77479D008A7CBF /* Entrada.c */; };
-		7BE933AE1F774F0A008A7CBF /* Loop.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933AC1F774F0A008A7CBF /* Loop.c */; };
+		7BE933B31F7758AE008A7CBF /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933B11F7758AE008A7CBF /* Variaveis.c */; };
+		7BE933B61F775A56008A7CBF /* Loops.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933B41F775A56008A7CBF /* Loops.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,15 +35,16 @@
 		7B15DBC51F5F8A6F003F515E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		7B4361D11F75D67300096CCB /* VariavelEstatica.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VariavelEstatica.c; sourceTree = "<group>"; };
 		7B4361D31F75E22100096CCB /* Operadores.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Operadores.c; sourceTree = "<group>"; };
-		7B6FAABD1F73558C00694531 /* Variaveis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Variaveis.c; sourceTree = "<group>"; };
 		7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CondicionaisLoop.c; sourceTree = "<group>"; };
 		7B6FAAC31F73595D00694531 /* Arquivo2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Arquivo2.c; sourceTree = "<group>"; };
 		7BE933A21F774112008A7CBF /* Saida.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Saida.c; sourceTree = "<group>"; };
 		7BE933A31F774112008A7CBF /* Saida.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Saida.h; sourceTree = "<group>"; };
 		7BE933A51F77479D008A7CBF /* Entrada.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Entrada.c; sourceTree = "<group>"; };
 		7BE933A61F77479D008A7CBF /* Entrada.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entrada.h; sourceTree = "<group>"; };
-		7BE933AC1F774F0A008A7CBF /* Loop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Loop.c; sourceTree = "<group>"; };
-		7BE933AD1F774F0A008A7CBF /* Loop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loop.h; sourceTree = "<group>"; };
+		7BE933B11F7758AE008A7CBF /* Variaveis.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Variaveis.c; sourceTree = "<group>"; };
+		7BE933B21F7758AE008A7CBF /* Variaveis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Variaveis.h; sourceTree = "<group>"; };
+		7BE933B41F775A56008A7CBF /* Loops.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Loops.c; sourceTree = "<group>"; };
+		7BE933B51F775A56008A7CBF /* Loops.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loops.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +77,12 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7BE933B71F775A6C008A7CBF /* Capitulo03 */,
+				7BE933B01F775871008A7CBF /* Capitulo02 */,
 				7BE933AF1F775588008A7CBF /* Capitulo01 */,
-				7B6FAABD1F73558C00694531 /* Variaveis.c */,
 				7B4361D11F75D67300096CCB /* VariavelEstatica.c */,
 				7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */,
 				7B15DBC51F5F8A6F003F515E /* main.c */,
-				7BE933AC1F774F0A008A7CBF /* Loop.c */,
-				7BE933AD1F774F0A008A7CBF /* Loop.h */,
 				7B4361D31F75E22100096CCB /* Operadores.c */,
 				7B6FAAC31F73595D00694531 /* Arquivo2.c */,
 			);
@@ -98,6 +98,25 @@
 				7BE933A61F77479D008A7CBF /* Entrada.h */,
 			);
 			path = Capitulo01;
+			sourceTree = "<group>";
+		};
+		7BE933B01F775871008A7CBF /* Capitulo02 */ = {
+			isa = PBXGroup;
+			children = (
+				7BE933B11F7758AE008A7CBF /* Variaveis.c */,
+				7BE933B21F7758AE008A7CBF /* Variaveis.h */,
+			);
+			path = Capitulo02;
+			sourceTree = "<group>";
+		};
+		7BE933B71F775A6C008A7CBF /* Capitulo03 */ = {
+			isa = PBXGroup;
+			children = (
+				7BE933B41F775A56008A7CBF /* Loops.c */,
+				7BE933B51F775A56008A7CBF /* Loops.h */,
+			);
+			name = Capitulo03;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,12 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6FAAC41F73595D00694531 /* Arquivo2.c in Sources */,
+				7BE933B61F775A56008A7CBF /* Loops.c in Sources */,
 				7BE933A71F77479D008A7CBF /* Entrada.c in Sources */,
 				7B4361D41F75E22100096CCB /* Operadores.c in Sources */,
 				7B6FAAC01F7355D700694531 /* CondicionaisLoop.c in Sources */,
-				7B6FAABE1F73558C00694531 /* Variaveis.c in Sources */,
-				7BE933AE1F774F0A008A7CBF /* Loop.c in Sources */,
 				7B15DBC61F5F8A6F003F515E /* main.c in Sources */,
+				7BE933B31F7758AE008A7CBF /* Variaveis.c in Sources */,
 				7BE933A41F774112008A7CBF /* Saida.c in Sources */,
 				7B4361D21F75D67300096CCB /* VariavelEstatica.c in Sources */,
 			);
