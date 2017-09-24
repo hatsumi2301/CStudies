@@ -2,28 +2,21 @@
 
 Estou usando como guia de estudos o livro "C completo e total". Terceira edição. Herbert Schildt.
 
-## Printf
-<<<<<<< HEAD
-O método
+## **Capítulo 01**
 
->Saida
+### Printf
+O printf imprime textos na tela.
 
-imprime o texto "Olá mundo!"
+**Exemplo:**
 
-
-
-## Scanf
-O método
-
-> EntradaNumero
-
-obtém um número digitado pelo teclado
+O método ```Saida()``` imprime o texto "Olá mundo!".
 
 
-O método
->EntradaTexto
-obtém um texto digitado pelo teclado
+### Scanf
+O scanf obtém dados digitados pelo teclado.
 
-=======
-O método ```Saida()``` imprime o texto "Olá mundo!"
->>>>>>> 2a53e424d026a16352ce8aa9754ed6243c81667b
+**Exemplos:**
+
+O método ```EntradaNumero()``` obtém um número digitado pelo teclado.
+
+O método ```EntradaTexto()``` obtém um texto digitado pelo teclado.
