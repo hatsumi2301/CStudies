@@ -34,6 +34,12 @@ Variável é um espaço na memória para guardar um determinado dado.
 ### Loops
 Loops são repetições de um determinado trecho do código que obedece uma determinada condição.
 
+*for*
+
+*while*
+
+*do while*
+
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | ```VerificarCaractereNaString()```| Obtém uma palavra e um caractere como dados de entrada, informados pelo usuário e verifica se a palavra contém o caractere informado | **Esse método não está funcionado.** |
@@ -46,8 +52,11 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 ## **Capítulo 04**
 ### Condicionais
 Verifica se uma determinada condição é verdadeira ou falsa para executar o código dentro do contexto da mesma.
+
 *if*
+
 *else*
+
 *else if*
 
 | Método  | O que faz | Observações |
