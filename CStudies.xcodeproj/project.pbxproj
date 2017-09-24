@@ -13,6 +13,7 @@
 		7B6FAABE1F73558C00694531 /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAABD1F73558C00694531 /* Variaveis.c */; };
 		7B6FAAC01F7355D700694531 /* CondicionaisLoop.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */; };
 		7B6FAAC41F73595D00694531 /* Arquivo2.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FAAC31F73595D00694531 /* Arquivo2.c */; };
+		7BE933A41F774112008A7CBF /* Saida.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A21F774112008A7CBF /* Saida.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		7B6FAABD1F73558C00694531 /* Variaveis.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Variaveis.c; sourceTree = "<group>"; };
 		7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CondicionaisLoop.c; sourceTree = "<group>"; };
 		7B6FAAC31F73595D00694531 /* Arquivo2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Arquivo2.c; sourceTree = "<group>"; };
+		7BE933A21F774112008A7CBF /* Saida.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Saida.c; sourceTree = "<group>"; };
+		7BE933A31F774112008A7CBF /* Saida.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Saida.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7BE933A21F774112008A7CBF /* Saida.c */,
+				7BE933A31F774112008A7CBF /* Saida.h */,
 				7B6FAABD1F73558C00694531 /* Variaveis.c */,
 				7B4361D11F75D67300096CCB /* VariavelEstatica.c */,
 				7B6FAABF1F7355D700694531 /* CondicionaisLoop.c */,
@@ -139,6 +144,7 @@
 				7B6FAAC01F7355D700694531 /* CondicionaisLoop.c in Sources */,
 				7B6FAABE1F73558C00694531 /* Variaveis.c in Sources */,
 				7B15DBC61F5F8A6F003F515E /* main.c in Sources */,
+				7BE933A41F774112008A7CBF /* Saida.c in Sources */,
 				7B4361D21F75D67300096CCB /* VariavelEstatica.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

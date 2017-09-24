@@ -7,13 +7,13 @@
 //
 
 #include <stdio.h>
+#include "Saida.h"
 
 int x, y; //Variáveis globais
 void FuncaoQueUtilizaAsVariaveisGlobais(void);
 void FuncaoQueUtilizaAsVariaveisGlobais2(void);
 void FuncaoQueUtilizaAsVariaveisGlobais3(void);
 
-void Saida(void); //Exemplo de como imprimir um valor
 int Entrada(void); //Exemplo de como obter um valor de entrada pelo teclado
 
 void Condicionais(void); //Exemplo de condicionais
@@ -50,12 +50,7 @@ void PrintXor(void); //Exemplo de xor
 void OperadoresBitBit(void); //Imprime tabela de operadores bit a bit
 
 int main(){
-    OperadoresBitBit();
-}
-
-void Saida(){
-    printf( "Olá mundo!\n" );
-    getchar();
+    Saida();
 }
 
 int Entrada(){
