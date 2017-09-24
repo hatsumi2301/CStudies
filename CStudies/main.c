@@ -145,3 +145,22 @@ void AtribuicoesMultiplas(){
     printf("y: %d.\n", y);
     printf("z: %d.\n", k);
 }
+
+void ModificadoresDeVariaveis(){
+    printf("Tipo                bits    Faixa mínima\n");
+    printf("char                8       -127 a 127\n");
+    printf("unsigned char       8       0 a 255\n");
+    printf("signed char         8       -127 a 127\n");
+    printf("int                 16      -32.767 a 32.767\n");
+    printf("unsigned int        16      0 a 65.535\n");
+    printf("signed int          16      0 a 65.535\n");
+    printf("short int           16      0 a 65.535\n");
+    printf("unsigned short int  16      0 a 65.535\n");
+    printf("signed short int    16      0 a 65.535\n");
+    printf("long int            32      -2.147.483.647 a 2.147.483.637\n");
+    printf("signed long int     32      -2.147.483.647 a 2.147.483.637\n");
+    printf("unsigned long int   32      0 a 4.294.967.295\n");
+    printf("float               32      seis dígitos de precisão\n");
+    printf("double              64      dez dígitos de precisão\n");
+    printf("long dougle         80      dez dígitos de precisão\n");
+}
