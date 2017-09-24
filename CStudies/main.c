@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include "Saida.h"
 #include "Entrada.h"
+#include "Loop.h"
 
 int x, y; //Variáveis globais
 void FuncaoQueUtilizaAsVariaveisGlobais(void);
@@ -37,9 +38,6 @@ void AtribuicoesMultiplas(void); //Exemplo de múltiplas atribuições
 
 void ObterNome(void);
 
-void VerificarCaractereNaString(void); //Não está funcionando
-int VerificarCaractereNaString2(char *s, char c); //Verifica se a string contém um determinado caractere
-
 void Constantes(void); //Imprime uma tabela com as constantes \
 
 void Modulo(void); //Exemplo de modulo
@@ -51,15 +49,38 @@ void OperadoresBitBit(void); //Imprime tabela de operadores bit a bit
 int main(){
     while (1==1) {
         int opcao = Opcoes();
-        
-        printf("\n");
-        
+        int opcao2;
+    
         switch (opcao) {
             case 1:
                 Saida();
                 break;
             case 2:
-                EntradaNumero();
+                printf("\nInforme uma opção: \n");
+                printf("1. Número\n2. Texto\n\n");
+                scanf("%d", &opcao2);
+                printf("\n");
+                
+                if(opcao2 == 1) EntradaNumero();
+                else if(opcao2 == 2) EntradaTexto();
+                else printf("Opção inexistente.");
+                
+                break;
+            case 3:
+                int existe;
+                printf("\nInforme uma opção: \n");
+                printf("1. Verificar se o caractere existe na palavra informando a palavra e o caractere \n2. Verificar que o caractere 'x' não existe na palavra 'fécula'\n3. Verificar que o caractere 'a' existe na palavra 'ave'\n\n");
+                scanf("%d", &opcao2);
+                printf("\n");
+                
+                if(opcao2 == 1) VerificarCaractereNaString();
+                else if(opcao2 == 2){
+                    existe = VerificarCaractereNaString2("fécula", "x");
+                }
+                else if(opcao2 == 3){
+                    existe = VerificarCaractereNaString2("x", "ave");
+                }
+                else printf("Opção inexistente.");
                 break;
             default:
                 printf("Opção inexistente.");
@@ -70,60 +91,14 @@ int main(){
 
 int Opcoes(){
     printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Printf\n2. Scanf\n\n");
+    printf("1. Printf\n2. Scanf\n3. Loop\n\n");
     
     int opcao;
     
     scanf("%d", &opcao);
+    printf("\n");
     
     return opcao;
-}
-
-void ObterNome(){
-    int t;
-    
-    printf("Digite 1.\n");
-    scanf("%d", &t);
-    
-    if(t == 1){
-        char s[80];
-        
-        printf("Entre com o nome: ");
-        scanf("%s", &s[80]);
-        printf("Nome digitado: %s.\n", &s[80]);
-    }
-}
-
-void VerificarCaractereNaString(){
-    char palavra;
-    char caractere;
-    char *texto = "A palavra não contém a letra.\n";
-    
-    printf("Informe uma palavra: ");
-    scanf("%s", &palavra);
-    
-    printf("\nInforme uma letra: ");
-    scanf(" %c", &caractere);
-    
-    while(palavra)
-    {
-        if(palavra == caractere){
-            texto = "\nA palavra contém a letra.\n";
-        }
-        else{
-            palavra++;
-        }
-    }
-    
-    printf("%s", texto);
-}
-
-int VerificarCaractereNaString2(char *s, char c){
-    while(*s)
-        if(*s == c) return 1;
-        else s++;
-    
-    return 0;
 }
 
 void FuncaoQueUtilizaAsVariaveisGlobais(){

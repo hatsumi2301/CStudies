@@ -23,3 +23,17 @@ int EntradaNumero(){
     return numero;
 }
 
+void EntradaTexto(){
+    int t;
+    
+    printf("Digite 1.\n");
+    scanf("%d", &t);
+    
+    if(t == 1){
+        char s[80];
+        
+        printf("Entre com o nome: ");
+        scanf("%s", &s[80]);
+        printf("Nome digitado: %s.\n", &s[80]);
+    }
+}

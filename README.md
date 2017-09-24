@@ -10,3 +10,16 @@ O método
 imprime o texto "Olá mundo!"
 
 
+
+## Scanf
+O método
+
+> EntradaNumero
+
+obtém um número digitado pelo teclado
+
+
+O método
+>EntradaTexto
+obtém um texto digitado pelo teclado
+
