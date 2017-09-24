@@ -39,7 +39,7 @@ int main(){
                 break;
             case 4:
                 printf("\nInforme uma opção: \n");
-                printf("1. Verificar se o caractere existe na palavra informando a palavra e o caractere \n2. Verificar que o caractere 'x' não existe na palavra 'fécula'\n3. Verificar que o caractere 'a' existe na palavra 'ave'\n\n");
+                printf("1. Verificar se o caractere existe na palavra informando a palavra e o caractere \n2. Verificar que o caractere 'x' não existe na palavra 'fécula'\n3. Verificar que o caractere 'a' existe na palavra 'ave'\n4. Loop for\n5. Loop while\n6. Loop do while\n7. Diferença entre o loop while e do while\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                 
@@ -54,7 +54,14 @@ int main(){
                     if(existe == 0) printf("A palavra não contém a letra.\n");
                     else printf("A palavra contém a letra.\n");
                 }
+                else if(opcao2 == 4) LoopFor();
+                else if(opcao2 == 5) LoopWhile();
+                else if(opcao2 == 6) LoopDoWhile();
+                else if(opcao2 == 7) DiferencaEntreLoopWhileAndDoWhile();
                 else printf("Opção inexistente.");
+                break;
+            case 5:
+                Condicionais();
                 break;
             default:
                 printf("Opção inexistente.");
@@ -65,7 +72,7 @@ int main(){
 
 int Opcoes(){
     printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n\n");
+    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n\n");
     
     int opcao;
     
