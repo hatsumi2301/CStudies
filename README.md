@@ -4,40 +4,41 @@ Estou usando como guia de estudos o livro "C completo e total". Terceira ediçã
 
 ## **Capítulo 01**
 ### Printf
+
 O printf imprime textos na tela.
 
 **Exemplo:**
 
-O método ```Saida()``` imprime o texto "Olá mundo!".
-
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| ```Saida()```| Imprime o texto "Olá mundo!" | - | 
 
 ### Scanf
+
 O scanf obtém dados digitados pelo teclado.
 
-**Exemplos:**
-
-O método ```EntradaNumero()``` obtém um número digitado pelo teclado.
-
-O método ```EntradaTexto()``` obtém um texto digitado pelo teclado.
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| ```EntradaNumero()```| Obtém um número digitado pelo teclado | - |
+| ```EntradaTexto()```| Obtém um texto digitado pelo teclado | - |
 
 ## **Capítulo 02**
 ### Variáveis
 Variável é um espaço na memória para guardar um determinado dado.
 
-**Exemplos:**
-
-O método ```TiposDeVariaveis()``` os tipos de variáveis em C.
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| ```TiposDeVariaveis()```| Tipos de variáveis em C | - |
 
 ## **Capítulo 03**
 ### Loops
 Loops são repetições de um determinado trecho do código que obedece uma determinada condição.
 
-**Exemplos:**
-O método ```VerificarCaractereNaString()``` obtém uma palavra e um caractere como dados de entrada, informados pelo usuário e verifica se a palavra contém o caractere informado. **Esse método não está funcionado.**
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| ```VerificarCaractereNaString()```| Obtém uma palavra e um caractere como dados de entrada, informados pelo usuário e verifica se a palavra contém o caractere informado | **Esse método não está funcionado.** |
+| ```VerificarCaractereNaString2(char *s, char c)```| Verifica se a palavra conté o caractere. Os dados devem ser passados como parâmetros | *Exemplo* ```VerificarCaractereNaString2("teste", "e")``` verifica se a palavra "teste" contém a letra "e" |
 
-O método ```VerificarCaractereNaString2(char *s, char c)``` verifica se a palavra conté o caractere. Os dados devem ser passados como parâmetros.
-*Exemplo*
-```VerificarCaractereNaString2("teste", "e")``` verifica se a palavra "teste" contém a letra "e".
 
 void ModificadoresDeVariaveis(){
     printf("Tipo                bits    Faixa mínima\n");
