@@ -17,13 +17,13 @@ void VariavelDoTipoConst(const char *frase){
 }
 
 void VariavelDoTipoVolatile(){
-    //http://www.geeksforgeeks.org/understanding-volatile-qualifier-in-c/
-    const int local = 10;
+    //Exemplo do site: http://www.geeksforgeeks.org/understanding-volatile-qualifier-in-c/
+    const volatile int local = 10;
     int *ptr = (int*) &local;
     
-    printf("Valor inicial: %d \n", local);
+    printf("Valor inicial da variável local: %d \n", local);
     
     *ptr = 100;
     
-    printf("Valor modificado: %d \n", local);
+    printf("Valor modificado da variável local: %d \n", local);
 }
