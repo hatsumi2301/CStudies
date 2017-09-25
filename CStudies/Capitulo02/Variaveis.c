@@ -19,3 +19,15 @@ void TiposDeVariaveis(){
     printf("Ponto flutuante é um float: %f.\n", pontoFlutuante);
     printf("Ponto flutuante de dupla precisão é um double: %f.\n", pontoFlutuanteDuplaPrecisao);
 }
+
+void NomeDaVariavel(){
+    int x = 1;
+    
+    printf("Nome da variável é x e o valor de x é %d.", x);
+}
+
+void NomeDaVariavelRepetido(){
+    int x = 2;
+    
+    printf("Nome da variável é x e o valor de x é %d.", x);
+}

@@ -9,26 +9,34 @@
 #include "Loops.h"
 #include "Saida.h"
 #include "Entrada.h"
+#include <string.h>
+
+#define MAX_STRING_LEN 80
+
+void Saida(void);
+void EntradaNumero(void);
 
 void VerificarCaractereNaString(){
-    char palavra;
+    char *ponteiroPalavra;
+    char palavra[MAX_STRING_LEN];
     char caractere;
-    char *texto = "A palavra não contém a letra.\n";
+    char texto[] = "A palavra não contém a letra.\n";
     
     printf("Informe uma palavra: ");
-    scanf("%s", &palavra);
+    scanf("%s",palavra);
+    
+    ponteiroPalavra = &palavra[0];
     
     printf("\nInforme uma letra: ");
     scanf(" %c", &caractere);
     
-    while(palavra)
+    while(*ponteiroPalavra)
     {
-        if(palavra == caractere){
-            texto = "\nA palavra contém a letra.\n";
+        if(*ponteiroPalavra == caractere){
+            strcpy(texto, "\nA palavra contém a letra.\n");
+            break;
         }
-        else{
-            palavra++;
-        }
+        else ponteiroPalavra++;
     }
     
     printf("%s", texto);

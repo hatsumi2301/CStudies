@@ -13,6 +13,22 @@
 
 int x, y; //Variáveis globais
 
+int Opcoes(void);
+void Saida(void);
+void EntradaNumero(void);
+void EntradaTexto(void);
+void TiposDeVariaveis(void);
+void NomeDaVariavel(void);
+void NomeDaVariavelRepetido(void);
+void NomeDaVariavelRepetidoEmOutraClasse(void);
+void VerificarCaractereNaString(void);
+int VerificarCaractereNaString2(char *s, char c);
+void LoopFor(void);
+void LoopWhile(void);
+void LoopDoWhile(void);
+void DiferencaEntreLoopWhileAndDoWhile(void);
+void Condicionais(void);
+
 int main(){
     while (1==1) {
         int opcao = Opcoes();
@@ -35,7 +51,18 @@ int main(){
                 
                 break;
             case 3:
-                TiposDeVariaveis();
+                printf("\nInforme uma opção: \n");
+                printf("1. Tipos de variáveis\n2. Variáveis podem ter o mesmo nome, se estiverem em contextos diferentes");
+                scanf("%d", &opcao2);
+                printf("\n");
+                
+                if(opcao2 == 1) TiposDeVariaveis();
+                else if(opcao2 == 2){
+                    NomeDaVariavel();
+                    NomeDaVariavelRepetido();
+                    NomeDaVariavelRepetidoEmOutraClasse();
+                }
+                
                 break;
             case 4:
                 printf("\nInforme uma opção: \n");
@@ -45,12 +72,12 @@ int main(){
                 
                 if(opcao2 == 1) VerificarCaractereNaString();
                 else if(opcao2 == 2){
-                    existe = VerificarCaractereNaString2("fécula", "x");
+                    existe = VerificarCaractereNaString2("fécula", 'x');
                     if(existe == 0) printf("A palavra não contém a letra.\n");
                     else printf("A palavra contém a letra.\n");
                 }
                 else if(opcao2 == 3){
-                    existe = VerificarCaractereNaString2("x", "ave");
+                    existe = VerificarCaractereNaString2("ave", 'x');
                     if(existe == 0) printf("A palavra não contém a letra.\n");
                     else printf("A palavra contém a letra.\n");
                 }
@@ -85,24 +112,6 @@ int Opcoes(){
 void FuncaoQueUtilizaAsVariaveisGlobais(){
     x = 123;
 }
-
-void Constantes(){
-    printf("Código  Significado\n");
-    printf("\\n     Retrocesso (BS)\n");
-    printf("\\f     Alimentação de formulário (FF)\n");
-    printf("\\n     Nova linha (LF)\n");
-    printf("\\r     Retorno de carro (CR)\n");
-    printf("\\t     Tabulação horizontal (HT)\n");
-    printf("\\\"     Aspas duplas\n");
-    printf("\\\'     Aspas simples\n");
-    printf("\\0     Nulo\n");
-    printf("\\\\     Barra invertida\n");
-    printf("\\v     Tabulação vertical\n");
-    printf("\\a     Alerta (beep)\n");
-    printf("\\N     Constante octal (onde N é uma constante octal)\n");
-    printf("\\xN    Constante hexadecimal (onde N é uma constante hexadecimal)\n");
-}
-
 
 void VariavelDoTipoConst(const char *palavra){
     while(*palavra){
@@ -153,21 +162,4 @@ void AtribuicoesMultiplas(){
     printf("z: %d.\n", k);
 }
 
-void ModificadoresDeVariaveis(){
-    printf("Tipo                bits    Faixa mínima\n");
-    printf("char                8       -127 a 127\n");
-    printf("unsigned char       8       0 a 255\n");
-    printf("signed char         8       -127 a 127\n");
-    printf("int                 16      -32.767 a 32.767\n");
-    printf("unsigned int        16      0 a 65.535\n");
-    printf("signed int          16      0 a 65.535\n");
-    printf("short int           16      0 a 65.535\n");
-    printf("unsigned short int  16      0 a 65.535\n");
-    printf("signed short int    16      0 a 65.535\n");
-    printf("long int            32      -2.147.483.647 a 2.147.483.637\n");
-    printf("signed long int     32      -2.147.483.647 a 2.147.483.637\n");
-    printf("unsigned long int   32      0 a 4.294.967.295\n");
-    printf("float               32      seis dígitos de precisão\n");
-    printf("double              64      dez dígitos de precisão\n");
-    printf("long dougle         80      dez dígitos de precisão\n");
-}
+

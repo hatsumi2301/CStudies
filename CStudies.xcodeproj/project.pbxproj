@@ -16,6 +16,7 @@
 		7BE933B31F7758AE008A7CBF /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933B11F7758AE008A7CBF /* Variaveis.c */; };
 		7BE933BC1F7760CA008A7CBF /* Loops.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933BB1F7760CA008A7CBF /* Loops.c */; };
 		7BE933C21F776F84008A7CBF /* Condicionais.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933C01F776F84008A7CBF /* Condicionais.c */; };
+		7BE933C51F7896E6008A7CBF /* Variaveis2.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933C31F7896E6008A7CBF /* Variaveis2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		7BE933BB1F7760CA008A7CBF /* Loops.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Loops.c; path = CStudies/Capitulo03/Loops.c; sourceTree = SOURCE_ROOT; };
 		7BE933C01F776F84008A7CBF /* Condicionais.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Condicionais.c; sourceTree = "<group>"; };
 		7BE933C11F776F84008A7CBF /* Condicionais.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Condicionais.h; sourceTree = "<group>"; };
+		7BE933C31F7896E6008A7CBF /* Variaveis2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Variaveis2.c; sourceTree = "<group>"; };
+		7BE933C41F7896E6008A7CBF /* Variaveis2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Variaveis2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 			children = (
 				7BE933B11F7758AE008A7CBF /* Variaveis.c */,
 				7BE933B21F7758AE008A7CBF /* Variaveis.h */,
+				7BE933C31F7896E6008A7CBF /* Variaveis2.c */,
+				7BE933C41F7896E6008A7CBF /* Variaveis2.h */,
 			);
 			path = Capitulo02;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				7BE933BC1F7760CA008A7CBF /* Loops.c in Sources */,
 				7B6FAAC41F73595D00694531 /* Arquivo2.c in Sources */,
 				7BE933C21F776F84008A7CBF /* Condicionais.c in Sources */,
+				7BE933C51F7896E6008A7CBF /* Variaveis2.c in Sources */,
 				7BE933A71F77479D008A7CBF /* Entrada.c in Sources */,
 				7B4361D41F75E22100096CCB /* Operadores.c in Sources */,
 				7B15DBC61F5F8A6F003F515E /* main.c in Sources */,
