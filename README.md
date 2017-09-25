@@ -11,6 +11,7 @@ O printf imprime textos na tela.
 Para utilizar a função ```printf```, é necessário importar a biblioteca ```#include <stdio.h>```.
 
 #### Utilização
+
 Caso deseje imprimir valores de variáveis, é necessário utilizar especificadores de conversão.
 | Valor | Exemplo |
 | ----- | ---------------- |
@@ -52,7 +53,9 @@ O scanf obtém dados digitados pelo teclado.
 Para utilizar a função ```scanf```, é necessário importar a biblioteca ```#include <stdio.h>```.
 
 #### Utilização
+
 Caso deseje colocar valores em variáveis, é necessário utilizar especificadores de conversão.
+
 | Valor | Exemplo |
 | ----- | ---------------- |
 | char | ```scan("%c", &<char>)``` |
@@ -70,6 +73,7 @@ Caso deseje colocar valores em variáveis, é necessário utilizar especificador
 <h2 style="color: lightpink">Capítulo 02</h2>
 
 ### Variáveis
+
 Variável é um espaço na memória para guardar um determinado dado.
 
 As variáveis locais devem ser declaradas no início do bloco em que elas são definidas.
@@ -85,6 +89,7 @@ As variáveis locais devem ser declaradas no início do bloco em que elas são d
 *short*
 
 ### Tipos de variáveis com seus modificadores
+
 | Tipo | bits | Faixa mínima |
 | ---- | ---- | ------------ |
 | char | 8 | -127 a 127 |
@@ -108,13 +113,14 @@ As variáveis locais devem ser declaradas no início do bloco em que elas são d
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | ```TiposDeVariaveis()``` | Tipos de variáveis em C | - |
-| ```NomeDaVariavel()``` | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()`` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada. |
-| ```NomeDaVariavelRepetido()``` | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()`` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada. |
-| ```NomeDaVariavelRepetidoEmOutraClasse()``` | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()`` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada.  |
+| ```NomeDaVariavel()``` | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()``` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada. |
+| ```NomeDaVariavelRepetido()``` | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()``` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada. |
+| ```NomeDaVariavelRepetidoEmOutraClasse()``` | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()``` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada.  |
 
 <h2 style="color: lightpink">Capítulo 03</h2>
 
 ### Loops
+
 Loops são repetições de um determinado trecho do código que obedece uma determinada condição.
 
 **Tipos de loops:**
@@ -139,9 +145,11 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 <h2 style="color: lightpink">Capítulo 04</h2>
 
 ### Condicionais
+
 Verifica se uma determinada condição é verdadeira ou falsa para executar o código dentro do contexto da mesma.
 
 **Tipos de condicionais**
+
 *if*
 
 *else*
@@ -156,4 +164,35 @@ Verifica se uma determinada condição é verdadeira ou falsa para executar o c�
 
 <h2 style="color: lightpink">Capítulo 05</h2>
 
-## Variáveis globais
+### Variáveis globais
+
+Variáveis globais são reconhecidas pelo programa inteiro e podem ser utilizadas em qualquer parte do código. 
+Elas também guardam seus valores durante toda a execução do programa. 
+
+### Utilização
+
+Basta declarar a variável fora de qualquer função.
+
+### Exemplos de variáveis globais
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| ```FuncaoQueUtilizaAsVariaveisGlobais()``` | Utiliza a variável x global que foi declarada na mesma classe que o método | - |
+| ```FuncaoQueUtilizaAsVariaveisGlobais2()``` | Utiliza as variáveis x e y globais que foram declaradas em outra classe | - |
+| ```FuncaoQueUtilizaAsVariaveisGlobais3()``` | Utiliza a variável y global que foi declarada em outra classe | - |
+
+## Capítulo 06
+
+### Modificadores de tipo de acesso
+
+| Modificador | Descrição |
+| --- | --- |
+| const | O uso do const no parâmetro de entrada do método, faz com que o código da função não seja capaz de modificar o objeto apontado pelo parâmetro. Apenas um evento externo pode modificar uma variável do tipo const. |
+| volatile | O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa. Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema. |
+
+### Exemplos de modificadores de tipo de acesso
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| ```VariavelDoTipoConst(const char *frase)```| Troca os espaços da frase por "-" | - |
+| ```VariavelDoTipoVolatile()``` | Esse método altera o valor da const por meio de um ponteiro | - |

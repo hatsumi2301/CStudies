@@ -11,8 +11,6 @@
 #include "Entrada.h"
 #include "Loops.h"
 
-int x, y; //Variáveis globais
-
 int Opcoes(void);
 void Saida(void);
 void EntradaNumero(void);
@@ -28,6 +26,10 @@ void LoopWhile(void);
 void LoopDoWhile(void);
 void DiferencaEntreLoopWhileAndDoWhile(void);
 void Condicionais(void);
+void FuncaoQueUtilizaAsVariaveisGlobais(void);
+void FuncaoQueUtilizaAsVariaveisGlobais2(void);
+void FuncaoQueUtilizaAsVariaveisGlobais3(void);
+void VariavelDoTipoConst(const char *frase);
 
 int main(){
     while (1==1) {
@@ -90,6 +92,14 @@ int main(){
             case 5:
                 Condicionais();
                 break;
+            case 6:
+                FuncaoQueUtilizaAsVariaveisGlobais();
+                FuncaoQueUtilizaAsVariaveisGlobais2();
+                FuncaoQueUtilizaAsVariaveisGlobais3();
+                break;
+            case 7:
+                VariavelDoTipoConst("Isso é um teste");
+                break;
             default:
                 printf("Opção inexistente.");
                 break;
@@ -99,7 +109,7 @@ int main(){
 
 int Opcoes(){
     printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n\n");
+    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n");
     
     int opcao;
     
@@ -107,25 +117,6 @@ int Opcoes(){
     printf("\n");
     
     return opcao;
-}
-
-void FuncaoQueUtilizaAsVariaveisGlobais(){
-    x = 123;
-}
-
-void VariavelDoTipoConst(const char *palavra){
-    while(*palavra){
-        if(*palavra == ' ') printf("%c", '-');
-        else printf("%c", *palavra);
-        palavra++;
-    }
-    printf("\nO uso do const no parâmetro de entrada do método, faz com que o código da função não seja capaz de modificar o objeto apontado pelo parâmetro.\n");
-    printf("\nApenas um evento externo pode modificar uma variável do tipo const.\n");
-}
-
-void VariavelDoTipoVolatile(){
-    printf("O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa.\n");
-    printf("Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema.\n");
 }
 
 void EspecificadorExtern(){
