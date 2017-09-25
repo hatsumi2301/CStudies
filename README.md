@@ -13,6 +13,7 @@ Para utilizar a função ```printf```, é necessário importar a biblioteca ```#
 #### Utilização
 
 Caso deseje imprimir valores de variáveis, é necessário utilizar especificadores de conversão.
+
 | Valor | Exemplo |
 | ----- | ---------------- |
 | texto | ```printf("<texto>")``` |
