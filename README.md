@@ -2,7 +2,7 @@
 
 Estou usando como guia de estudos o livro "C completo e total". Terceira edição. Herbert Schildt.
 
-[<h2 style="color: lightpink">Capítulo 01</h2>](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo01)
+[## Capítulo 01](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo01)
 
 ### Printf
 
@@ -45,7 +45,7 @@ Caso deseje imprimir determinadas informações, utilizar os códigos abaixo:
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| ```Saida()```| Imprime o texto "Olá mundo!" | - | 
+| [```void Saida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Saida.c) | Imprime o texto "Olá mundo!" | - | 
 
 ### Scanf
 
@@ -68,10 +68,10 @@ Caso deseje colocar valores em variáveis, é necessário utilizar especificador
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| ```EntradaNumero()```| Obtém um número digitado pelo teclado | - |
-| ```EntradaTexto()```| Obtém um texto digitado pelo teclado | - |
+| ```void EntradaNumero(void)```| Obtém um número digitado pelo teclado | - |
+| ```void EntradaTexto(void)```| Obtém um texto digitado pelo teclado | - |
 
-<h2 style="color: lightpink">Capítulo 02</h2>
+## Capítulo 02
 
 ### Variáveis
 
