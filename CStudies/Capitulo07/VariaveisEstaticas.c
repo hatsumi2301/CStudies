@@ -1,12 +1,12 @@
 //
-//  VariavelEstatica.c
+//  VariaveisEstaticas.c
 //  CStudies
 //
-//  Created by Hatsumi Hashi on 22/09/17.
+//  Created by Hatsumi Hashi on 25/09/17.
 //  Copyright © 2017 Hatsumi Hashi. All rights reserved.
 //
 
-#include <stdio.h>
+#include "VariaveisEstaticas.h"
 
 static int variavelEstaticaGlobal;
 
@@ -17,11 +17,15 @@ void IniciarSerie(int semente){
     variavelEstaticaGlobal = semente;
 }
 
-void VariavelEstaticaGlobal(){
-    printf("Uma variável global estática é apenas reconhecida no arquivo no qual a mesma foi declarada.\n");
-}
-
-int Serie(void){
+int Serie(){
     variavelEstaticaGlobal = variavelEstaticaGlobal + 23;
     return variavelEstaticaGlobal;
+}
+
+int VariavelEstatica(){
+    static int numero = 10;
+    
+    numero = numero + 1;
+    
+    return numero;
 }

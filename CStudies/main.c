@@ -30,12 +30,18 @@ void FuncaoQueUtilizaAsVariaveisGlobais(void);
 void FuncaoQueUtilizaAsVariaveisGlobais2(void);
 void FuncaoQueUtilizaAsVariaveisGlobais3(void);
 void VariavelDoTipoConst(const char *frase);
+void VariavelDoTipoVolatile(void);
+void IniciarSerie(int semente);
+int Serie(void);
+int VariavelEstatica(void);
+int EspecificadorRegister(register int m, register int e)
 
 int main(){
     while (1==1) {
         int opcao = Opcoes();
         int opcao2;
         int existe;
+        int valorDeRetorno;
     
         switch (opcao) {
             case 1:
@@ -98,7 +104,39 @@ int main(){
                 FuncaoQueUtilizaAsVariaveisGlobais3();
                 break;
             case 7:
+                printf("Variável do tipo const.\n");
                 VariavelDoTipoConst("Isso é um teste");
+                printf("\n\nVariável do tipo volatile.\n");
+                VariavelDoTipoVolatile();
+                break;
+            case 8:
+                printf("\nInforme uma opção: \n");
+                printf("1. Variável estática\n2. Variável estática global\n\n");
+                scanf("%d", &opcao2);
+                printf("\n");
+                
+                if(opcao2 == 1){
+                    printf("A variável estática vai ser inicializada somente uma vez, na primeira chamada do método. Ela será inicializada com o valor 10, será somado 1 ao seu valor e será retornado o valor 11.\nNas próximas chamadas do método, o valor da variável será o resultado do valor da soma da execução anterior.\n");
+                    for(int i = 0; i < 10; i++){
+                        valorDeRetorno = VariavelEstatica();
+                        printf("%d\n", valorDeRetorno);
+                    }
+                }
+                else if(opcao2 == 2){
+                    printf("Informe um valor inteiro: ");
+                    scanf("%d", &valorDeRetorno);
+                    
+                    IniciarSerie(valorDeRetorno);
+                    valorDeRetorno = Serie();
+                    
+                    printf("Valor informado + 23 = %d.\n", valorDeRetorno);
+                }
+                else printf("Opção inexistente.");
+                break;
+            case 9:
+                valorDeRetorno = EspecificadorRegister(10, 10);
+                
+                printf("%d\n", valorDeRetorno);
                 break;
             default:
                 printf("Opção inexistente.");
@@ -109,36 +147,14 @@ int main(){
 
 int Opcoes(){
     printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n");
+    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n");
     
     int opcao;
     
-    scanf("%d", &opcao);
+    scanf(" %d", &opcao);
     printf("\n");
     
     return opcao;
-}
-
-void EspecificadorExtern(){
-    printf("Ocorreria um erro se fossem declaradas duas variáveis globais com o mesmo nome em arquivos diferentes de um mesmo projeto.\nA solução seria declarar todas as variáveis globais em um arquivo e usar declarações externo nos outros.\n");
-    printf("Vide as classes main (as variáveis globais) e Arquivo2 para exemplos de Extern.\n");
-}
-
-void EspecificadorStatic(){
-    printf("São variáveis permanentes. Não são reconhecidas fora de sua função ou arquivo, mas mantém seus valores entre chamadas.\n");
-}
-
-int EspecificadorRegister(register int m, register int e){
-    printf("O acesso ao objeto é o mais rápido possível. Os objetos são colocados nos registradores da CPU.\n");
-    printf("São usadas onde são feitas muitas referências a uma mesma variável.\n");
-    
-    register int temp;
-    
-    temp = 1;
-    
-    for(; e; e--) temp = temp * m;
-    
-    return temp;
 }
 
 void AtribuicoesMultiplas(){
