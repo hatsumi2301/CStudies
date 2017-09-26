@@ -34,7 +34,7 @@ void VariavelDoTipoVolatile(void);
 void IniciarSerie(int semente);
 int Serie(void);
 int VariavelEstatica(void);
-int EspecificadorRegister(register int m, register int e)
+int EspecificadorRegister(register int m, register int e);
 
 int main(){
     while (1==1) {

@@ -8,10 +8,10 @@
 
 #include "VariaveisGlobais.h"
 
-int x, y;
+int x, y; //Declaração das variáveis globais
 
 void FuncaoQueUtilizaAsVariaveisGlobais(){
-    x = 100;
+    x = 100; //É possível utilizar a variável x sem declarar ela no escopo do método, pois ela foi declarada na classe como variável global
     
     printf("\"x\" e \"y\" são variáveis globais que foram declaradas na classe \"VariaveisGlobais\"\n");
 }

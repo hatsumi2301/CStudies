@@ -8,7 +8,7 @@
 
 #include "VariaveisGlobais2.h"
 
-extern int x,y;
+extern int x, y; //Sinaliza que x e y são variáveis globais
 
 void FuncaoQueUtilizaAsVariaveisGlobais2(){
     x = y / 10;

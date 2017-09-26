@@ -83,13 +83,12 @@ Os nomes das variáveis devem ser únicos em cada contexto.
 
 ### Modificando os tipos básicos
 
-*signed*
-
-*unsigned*
-
-*long*
-
-*short*
+| Modificador | Descrição |
+| --- | --- |
+| *signed* | Valores positivos e negativos |
+| *unsigned* | Apenas valores positivos |
+| *long* | Faixa de valor maior |
+| *short* | Faixa de valor menor |
 
 ### Tipos de variáveis com seus modificadores
 
@@ -128,11 +127,11 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 
 **Tipos de loops:**
 
-*for*
-
-*while*
-
-*do while*
+| Loop | Explicação | Pseudocódigo |
+| --- | --- | --- |
+| *for* | | Enquanto (valor inicial até a condição_final passo n) faça <br>Inicio<br>     Instruções<br> Fim | 
+| *while* | | |
+| *do while* | | |
 
 #### Exemplos de loops
 
@@ -188,16 +187,24 @@ Basta declarar a variável fora de qualquer função.
 
 ### Modificadores de tipo de acesso
 
-| Modificador | Descrição |
-| --- | --- |
-| const | O uso do const no parâmetro de entrada do método, faz com que o código da função não seja capaz de modificar o objeto apontado pelo parâmetro. Apenas um evento externo pode modificar uma variável do tipo const. |
-| volatile | O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa. Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema. |
+#### const
 
-#### Exemplos de modificadores de tipo de acesso
+O uso do const no parâmetro de entrada do método, faz com que o código da função não seja capaz de modificar o objeto apontado pelo parâmetro. Apenas um evento externo pode modificar uma variável do tipo const.
+
+##### Exemplos de const
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void VariavelDoTipoConst(const char *frase)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Troca os espaços da frase por "-" | - |
+
+### volatile
+
+O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa. Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema.
+
+#### Exemplos de volatile
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
 | [```void VariavelDoTipoVolatile()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Esse método altera o valor da const por meio de um ponteiro | - |
 
 ## [Capítulo 07](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo07)
