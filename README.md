@@ -1,8 +1,8 @@
-<h1 style="color: pink">Estudos da linguagem C</h1>
+# Estudos da linguagem C
 
 Estou usando como guia de estudos o livro "C completo e total". Terceira edição. Herbert Schildt.
 
-[## Capítulo 01](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo01)
+## [Capítulo 01](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo01)
 
 ### Printf
 
@@ -64,14 +64,14 @@ Caso deseje colocar valores em variáveis, é necessário utilizar especificador
 | float | ```scan("%f", &<float>)``` |
 | double | ```scan("%f", &<double>)``` |
 
-### Exemplos de scanf
+#### Exemplos de scanf
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void EntradaNumero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Entrada.c) | Obtém um número digitado pelo teclado | - |
 | [```void EntradaTexto(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Entrada.c) | Obtém um texto digitado pelo teclado | - |
 
-[## Capítulo 02](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo02)
+## [Capítulo 02](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo02)
 
 ### Variáveis
 
@@ -111,7 +111,7 @@ Os nomes das variáveis devem ser únicos em cada contexto.
 | double | 64 | dez dígitos de precisão |
 | long dougle | 80 | dez dígitos de precisão |
 
-### Exemplos de variáveis
+#### Exemplos de variáveis
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -120,7 +120,7 @@ Os nomes das variáveis devem ser únicos em cada contexto.
 | [```void NomeDaVariavelRepetido(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo02/Variaveis.c) | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()``` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada. |
 | [```void NomeDaVariavelRepetidoEmOutraClasse(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo02/Variaveis2.c) | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()``` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada.  |
 
-[## Capítulo 03](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo03)
+## [Capítulo 03](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo03)
 
 ### Loops
 
@@ -134,7 +134,7 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 
 *do while*
 
-### Exemplos de loops
+#### Exemplos de loops
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -145,7 +145,7 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 | [```void LoopDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo "do while" | - |
 | [```void DiferencaEntreLoopWhileAndDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Exemplo da diferença entre os loops "while" e "do while" | - |
 
-<h2 style="color: lightpink">Capítulo 04</h2>
+## [Capítulo 04](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo04)
 
 ### Condicionais
 
@@ -159,32 +159,32 @@ Verifica se uma determinada condição é verdadeira ou falsa para executar o c�
 
 *else if*
 
-### Exemplos de condicionais
+#### Exemplos de condicionais
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| ```Condicionais()```| Condicionais *if*, *else if* e *else* | Informar o número 1 para executar o comando do *if*, informar o número 2 para executar o comando do *else if* e informar qualquer outro número para executar o comando do *else* |
+| [```void Condicionais(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo04/Condicionais.c) | Condicionais *if*, *else if* e *else* | Informar o número 1 para executar o comando do *if*, informar o número 2 para executar o comando do *else if* e informar qualquer outro número para executar o comando do *else* |
 
-<h2 style="color: lightpink">Capítulo 05</h2>
+## [Capítulo 05](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo05)
 
 ### Variáveis globais
 
 Variáveis globais são reconhecidas pelo programa inteiro e podem ser utilizadas em qualquer parte do código. 
 Elas também guardam seus valores durante toda a execução do programa. 
 
-### Utilização
+#### Utilização
 
 Basta declarar a variável fora de qualquer função.
 
-### Exemplos de variáveis globais
+#### Exemplos de variáveis globais
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| ```FuncaoQueUtilizaAsVariaveisGlobais()``` | Utiliza a variável x global que foi declarada na mesma classe que o método | - |
-| ```FuncaoQueUtilizaAsVariaveisGlobais2()``` | Utiliza as variáveis x e y globais que foram declaradas em outra classe | - |
-| ```FuncaoQueUtilizaAsVariaveisGlobais3()``` | Utiliza a variável y global que foi declarada em outra classe | - |
+| [```void FuncaoQueUtilizaAsVariaveisGlobais(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais.c) | Utiliza a variável x global que foi declarada na mesma classe que o método | - |
+| [```void FuncaoQueUtilizaAsVariaveisGlobais2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza as variáveis x e y globais que foram declaradas em outra classe | - |
+| [```void FuncaoQueUtilizaAsVariaveisGlobais3(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza a variável y global que foi declarada em outra classe | - |
 
-## Capítulo 06
+## [Capítulo 06](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo06)
 
 ### Modificadores de tipo de acesso
 
@@ -193,30 +193,30 @@ Basta declarar a variável fora de qualquer função.
 | const | O uso do const no parâmetro de entrada do método, faz com que o código da função não seja capaz de modificar o objeto apontado pelo parâmetro. Apenas um evento externo pode modificar uma variável do tipo const. |
 | volatile | O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa. Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema. |
 
-### Exemplos de modificadores de tipo de acesso
+#### Exemplos de modificadores de tipo de acesso
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| ```VariavelDoTipoConst(const char *frase)```| Troca os espaços da frase por "-" | - |
-| ```VariavelDoTipoVolatile()``` | Esse método altera o valor da const por meio de um ponteiro | - |
+| [```void VariavelDoTipoConst(const char *frase)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Troca os espaços da frase por "-" | - |
+| [```void VariavelDoTipoVolatile()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Esse método altera o valor da const por meio de um ponteiro | - |
 
-## Capítulo 07
+## [Capítulo 07](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo07)
 
 ### Especificadores de tipo de classe de armazenamento
 
- **extern**
+ #### extern
  
  C permite que módulos do programa sejam compilados separadamente e por conta disso é necessário que haja uma maneira de informar a todos os arquivos sobre as variáveis globais solicitadas pelo programa. Ao declarar a variável global em um determinado arquivo e utilizar ela em outro, será necessário usar o extern, para indicar que aquela é uma variável global. 
 
-### Exemplos de extern
+##### Exemplos de extern
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| ```FuncaoQueUtilizaAsVariaveisGlobais()``` | Utiliza a variável x global que foi declarada na mesma classe que o método | Esse método está na classe do Capítulo 05 |
-| ```FuncaoQueUtilizaAsVariaveisGlobais2()``` | Utiliza as variáveis x e y globais que foram declaradas em outra classe | Esse método está na classe do Capítulo 05 |
-| ```FuncaoQueUtilizaAsVariaveisGlobais3()``` | Utiliza a variável y global que foi declarada em outra classe | Esse método está na classe do Capítulo 05 |
+| [```void FuncaoQueUtilizaAsVariaveisGlobais(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais.c) | Utiliza a variável x global que foi declarada na mesma classe que o método | Esse método está na classe do Capítulo 05 |
+| [```void FuncaoQueUtilizaAsVariaveisGlobais2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza as variáveis x e y globais que foram declaradas em outra classe | Esse método está na classe do Capítulo 05 |
+| [```void FuncaoQueUtilizaAsVariaveisGlobais3(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza a variável y global que foi declarada em outra classe | Esse método está na classe do Capítulo 05 |
 
-**static**
+#### static
 
 Ao declarar uma variável como static, o compilador cria um armazenamento permanente para ela quase da mesma forma que cria um armazenamento para uma variável global. 
 
@@ -227,15 +227,15 @@ Poderiam ser utilizadas variáveis globais no lugar de variáveis estáticas, no
 Elas não são reconhecidas fora de sua função ou arquivo, mas mantém seus valores entre chamadas.
 Uma variável global estática é apenas reconhecida no arquivo no qual a mesma foi declarada.
 
-### Exemplos de static
+##### Exemplos de static
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| ```IniciarSerie(int semente)``` | Inicializa a variável estática global | - |
-| ```Serie()```| Utiliza a variável estática global para somar um valor à ela | - |
-| ```VariavelEstatica()```| O número vai ser inicializado com o valor 10 somente na primeira execução, pois a variável estática continua existindo após a função ser finalizada. A variável não é destruída e na segunda chamada dessa função, a variável já vai ter seu valor inicializado. | - |
+| [```void IniciarSerie(int semente)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | Inicializa a variável estática global | - |
+| [```int Serie(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | Utiliza a variável estática global para somar um valor à ela | - |
+| [```int VariavelEstatica(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | O número vai ser inicializado com o valor 10 somente na primeira execução, pois a variável estática continua existindo após a função ser finalizada. A variável não é destruída e na segunda chamada dessa função, a variável já vai ter seu valor inicializado. | - |
 
-**register**
+#### register
 
 Os objetos são colocados nos registradores da CPU. Portanto, o acesso ao objeto é o mais rápido possível. 
 
@@ -245,10 +245,10 @@ Só é possível aplicar o especificador register a variáveis locais e parâmet
 
 As variáveis register podem ser armazenadas em um registrador da CPU e podem não ter endereços.
 
-### Exemplos de register
+##### Exemplos de register
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| ```EspecificadorRegister(register int m, register int e)``` | Exemplo em um loop de um especificador register | - |
+| [```int EspecificadorRegister(register int m, register int e)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/Register.c) | Exemplo em um loop de um especificador register | - |
 
 
