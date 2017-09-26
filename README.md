@@ -79,6 +79,8 @@ Variável é um espaço na memória para guardar um determinado dado.
 
 As variáveis locais devem ser declaradas no início do bloco em que elas são definidas.
 
+Os nomes das variáveis devem ser únicos em cada contexto.
+
 ### Modificando os tipos básicos
 
 *signed*
@@ -197,3 +199,56 @@ Basta declarar a variável fora de qualquer função.
 | ------------- |:-------------:| -----:|
 | ```VariavelDoTipoConst(const char *frase)```| Troca os espaços da frase por "-" | - |
 | ```VariavelDoTipoVolatile()``` | Esse método altera o valor da const por meio de um ponteiro | - |
+
+## Capítulo 07
+
+### Especificadores de tipo de classe de armazenamento
+
+ **extern**
+ 
+ C permite que módulos do programa sejam compilados separadamente e por conta disso é necessário que haja uma maneira de informar a todos os arquivos sobre as variáveis globais solicitadas pelo programa. Ao declarar a variável global em um determinado arquivo e utilizar ela em outro, será necessário usar o extern, para indicar que aquela é uma variável global. 
+
+### Exemplos de extern
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| ```FuncaoQueUtilizaAsVariaveisGlobais()``` | Utiliza a variável x global que foi declarada na mesma classe que o método | Esse método está na classe do Capítulo 05 |
+| ```FuncaoQueUtilizaAsVariaveisGlobais2()``` | Utiliza as variáveis x e y globais que foram declaradas em outra classe | Esse método está na classe do Capítulo 05 |
+| ```FuncaoQueUtilizaAsVariaveisGlobais3()``` | Utiliza a variável y global que foi declarada em outra classe | Esse método está na classe do Capítulo 05 |
+
+**static**
+
+Ao declarar uma variável como static, o compilador cria um armazenamento permanente para ela quase da mesma forma que cria um armazenamento para uma variável global. 
+
+Com variáveis estáticas é possível preservar um valor entre as chamadas das funções. 
+
+Poderiam ser utilizadas variáveis globais no lugar de variáveis estáticas, no entanto, haveriam outras preocupações. Toda vez que a função é usada, seria necessário lembrar-se de declarar a variável global (como extern) e garantir que ela não conflite com nenhuma outra variável global já declarada. 
+
+Elas não são reconhecidas fora de sua função ou arquivo, mas mantém seus valores entre chamadas.
+Uma variável global estática é apenas reconhecida no arquivo no qual a mesma foi declarada.
+
+### Exemplos de static
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| ```IniciarSerie(int semente)``` | Inicializa a variável estática global | - |
+| ```Serie()```| Utiliza a variável estática global para somar um valor à ela | - |
+| ```VariavelEstatica()```| O número vai ser inicializado com o valor 10 somente na primeira execução, pois a variável estática continua existindo após a função ser finalizada. A variável não é destruída e na segunda chamada dessa função, a variável já vai ter seu valor inicializado. | - |
+
+**register**
+
+Os objetos são colocados nos registradores da CPU. Portanto, o acesso ao objeto é o mais rápido possível. 
+
+São usadas onde são feitas muitas referências a uma mesma variável.
+
+Só é possível aplicar o especificador register a variáveis locais e parâmetros formais (os parâmetros da função na sua declaração são chamados parâmetros formais. Na chamada da função os parâmetros são chamados parâmetros atuais/reais) de uma função.
+
+As variáveis register podem ser armazenadas em um registrador da CPU e podem não ter endereços.
+
+### Exemplos de register
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| ```EspecificadorRegister(register int m, register int e)``` | Exemplo em um loop de um especificador register | - |
+
+
