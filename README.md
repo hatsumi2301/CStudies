@@ -127,11 +127,13 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 
 **Tipos de loops:**
 
-| Loop | Explicação | Pseudocódigo |
-| --- | --- | --- |
-| *for* | | Enquanto (valor inicial até a condição_final passo n) faça <br>Inicio<br>     Instruções<br> Fim | 
-| *while* | | |
-| *do while* | | |
+| Loop | Pseudocódigo | Explicação | Utilização |
+| --- | --- | --- | --- |
+| *for* | Enquanto (valor_inicial até a condição_final passo n) faça<br>Inicio<br>__Instruções<br>Fim | *valor_inicial* é uma instrução de atribuição do valor inicial do laço para a variável de controle<br>*condição_final* é a condição que controla o laço<br>*passo* é o incremento do laço | for(valor_inicial; condição_final; valor_incremento){ <br> __instruções; <br> } |
+| *while* | Iniciar a variável de controle<br>Enquanto (condição) faça<br>Início<br>__Instruções;<br> __Atualizar a variável de controle;<br> Fim;| *condição* é a condição que controla o laço | while(condição){ <br> __Instruções; <br> } |
+| *do while* | Iniciar a variável de controle<br>Início<br>__Instruções;<br> __Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim; | *condição* é a condição que controla o laço | do{ <br> __Instruções; <br> }while(condição) |
+
+É possível fazer laços decrementando valores.
 
 #### Exemplos de loops
 
