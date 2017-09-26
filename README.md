@@ -2,7 +2,7 @@
 
 Estou usando como guia de estudos o livro "C completo e total". Terceira edição. Herbert Schildt.
 
-<h2 style="color: lightpink">Capítulo 01</h2>
+<h2 style="color: lightpink">Capítulo 01</h2>(https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo01)
 
 ### Printf
 
