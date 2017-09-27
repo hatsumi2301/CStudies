@@ -101,7 +101,6 @@
 				7BE933B01F775871008A7CBF /* Capitulo02 */,
 				7BE933AF1F775588008A7CBF /* Capitulo01 */,
 				7B15DBC51F5F8A6F003F515E /* main.c */,
-				7B4361D31F75E22100096CCB /* Operadores.c */,
 			);
 			path = CStudies;
 			sourceTree = "<group>";
@@ -180,6 +179,7 @@
 		7BE933D51F79E66A008A7CBF /* Capitulo08 */ = {
 			isa = PBXGroup;
 			children = (
+				7B4361D31F75E22100096CCB /* Operadores.c */,
 			);
 			path = Capitulo08;
 			sourceTree = "<group>";

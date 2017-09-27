@@ -23,7 +23,7 @@ Caso deseje imprimir valores de variáveis, é necessário utilizar especificado
 | double | ```printf("%f", <double>)``` |
 | pointer | ```printf("%p", <pointer>)``` |
 
-Caso deseje imprimir determinadas informações, utilizar os códigos abaixo:
+Constantes de caracteres de barra invertida:
 
 | Código | Significado |
 | ------ | ---------------------------------- |
@@ -129,11 +129,9 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 
 | Loop | Pseudocódigo | Explicação | Utilização |
 | --- | --- | --- | --- |
-| *for* | Enquanto (valor_inicial até a condição_final passo n) faça<br>Inicio<br>__Instruções<br>Fim | *valor_inicial* é uma instrução de atribuição do valor inicial do laço para a variável de controle<br>*condição_final* é a condição que controla o laço<br>*passo* é o incremento do laço | for(valor_inicial; condição_final; valor_incremento){ <br> __instruções; <br> } |
+| *for* | Enquanto (valor_inicial até a condição_final passo n) faça<br>Inicio<br>__Instruções<br>Fim | *valor_inicial* é uma instrução de atribuição do valor inicial do laço para a variável de controle<br>*condição_final* é a condição que controla o laço<br>*passo* é o incremento ou decremento do laço | for(valor_inicial; condição_final; valor_incremento_ou_decremento){ <br> __Instruções; <br> } |
 | *while* | Iniciar a variável de controle<br>Enquanto (condição) faça<br>Início<br>__Instruções;<br> __Atualizar a variável de controle;<br> Fim;| *condição* é a condição que controla o laço | while(condição){ <br> __Instruções; <br> } |
-| *do while* | Iniciar a variável de controle<br>Início<br>__Instruções;<br> __Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim; | *condição* é a condição que controla o laço | do{ <br> __Instruções; <br> }while(condição) |
-
-É possível fazer laços decrementando valores.
+| *do ... while* | Iniciar a variável de controle<br>Início<br>__Instruções;<br> __Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim; | *condição* é a condição que controla o laço | do{ <br> __Instruções; <br> }while(condição) |
 
 #### Exemplos de loops
 
@@ -260,4 +258,65 @@ As variáveis register podem ser armazenadas em um registrador da CPU e podem n�
 | ------------- |:-------------:| -----:|
 | [```int EspecificadorRegister(register int m, register int e)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/Register.c) | Exemplo em um loop de um especificador register | - |
 
+## [Capítulo 08]()
 
+### Operadores
+
+*Atribuição* 
+```nome_da_variavel = expressão````
+
+#### Conversão de tipos em atribuições
+
+Situação em que variáveis de um tipo são misturadas com variáveis de outro tipo. 
+*Regra de conversão*: valor do lado direito é convertido no tipo do lado esquerdo.
+
+| Tipo do destino | Tipo da expressão | Possível informação perdida |
+| --- | --- | --- |
+| signed char | char | Se valor > 127, o destino é negativo |
+| char | short int | Os 8 bits mais significativos |
+| char | int | Os 8 bits mais significativos |
+| char | long int | Os 24 bits mais significativos |
+| int | long int | Os 16 bits mais significativos |
+| int | float | A parte fracionária e possivelmente mais |
+| float | double | Precisão, o resultado é arredondado |
+| double | long double | Precisão, o resultado é arredondado |
+
+##### Exemplos de tipos em atribuições
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void ConversaoTiposDeValores(void)```]() | Conversão de tipos de valores | - |
+
+#### Atribuições múltiplas
+
+C permite que você atribua o mesmo valor a muitas variáveis usando atribuições múltiplas em um único comando.
+
+##### Exemplos de atribuições múltiplas
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void AtribuicoesMultiplas(void)```]() | Atribuições múltiplas | - |
+
+#### Operadores aritméticos
+
+| Operador | Ação | Observação |
+| --- | --- | --- |
+| - | Subtração, também menos unário | - |
+| + | Adição | - |
+| * | Multiplicação | - |
+| / | Divisão | - |
+| % | Módulo da divisão (resto) | Não pode ser usado nos tipos em ponto flutuante |
+| -- | Decremento | Subtrai 1 ao seu operando<br>```x = x + 1```é a mesma coisa que ```++x``` ou ```x++``` |
+| ++ | Incremento | Soma 1 ao seu operando<br>```x = x - 1```é a mesma coisa que ```--x``` ou ```x--```|
+
+##### Exemplos de operadores aritméticos
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void Subtracao(void)```]() | Subtrai 1 de 2 | - |
+| [```void Adicao(void)```]() | Soma 2 e 1 | - |
+| [```void Multiplicacao(void)```]() | Multiplica 2 e 1 | - |
+| [```void Divisao(void)```]() | Divide 4 por 2 | - |
+| [```void Modulo(void)```]() | Calcula o módulo de 5 por 2 e o módulo de 1 por 2 | - |
+| [```void Incremento(void)```]() | Exemplo de incremento | - |
+| [```void Decremento(void)```]() | Exemplo de decremento | - |

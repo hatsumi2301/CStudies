@@ -11,6 +11,8 @@
 #include "Entrada.h"
 #include "Loops.h"
 
+int xor(int a, int b);
+
 int Opcoes(void);
 void Saida(void);
 void EntradaNumero(void);
@@ -35,6 +37,15 @@ void IniciarSerie(int semente);
 int Serie(void);
 int VariavelEstatica(void);
 int EspecificadorRegister(register int m, register int e);
+void ConversaoTiposDeValores(void);
+void AtribuicoesMultiplas(void);
+void Subtracao(void);
+void Adicao(void);
+void Multiplicacao(void);
+void Divisao(void);
+void Modulo(void);
+void Incremento(void);
+void Decremento(void);
 
 int main(){
     while (1==1) {
@@ -138,6 +149,28 @@ int main(){
                 
                 printf("%d\n", valorDeRetorno);
                 break;
+            case 10:
+                ConversaoTiposDeValores();
+                break;
+            case 11:
+                AtribuicoesMultiplas();
+                break;
+            case 12:
+                printf("\nInforme uma opção: \n");
+                printf("1. Subtração\n2. Adição\n3. Multiplicação\n4. Divisão\n5. Módulo\n6. Incremento\n7. Decremento\n\n");
+                scanf("%d", &opcao2);
+                printf("\n");
+                
+                if(opcao2 == 1) Subtracao();
+                else if(opcao2 == 2) Adicao();
+                else if(opcao2 == 3) Multiplicacao();
+                else if(opcao2 == 4) Divisao();
+                else if(opcao2 == 5) Modulo();
+                else if(opcao2 == 6) Incremento();
+                else if(opcao2 == 7) Decremento();
+                else printf("Opção inexistente.");
+                
+                break;
             default:
                 printf("Opção inexistente.");
                 break;
@@ -147,7 +180,7 @@ int main(){
 
 int Opcoes(){
     printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n");
+    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n10. Conversão de tipos de valores\n11. Atribuições múltiplas\n12. Operadores aritméticos\n");
     
     int opcao;
     
@@ -157,16 +190,24 @@ int Opcoes(){
     return opcao;
 }
 
-void AtribuicoesMultiplas(){
-    int x;
-    int y;
-    int k;
-    
-    x = y = k = 10;
-    
-    printf("x: %d.\n", x);
-    printf("y: %d.\n", y);
-    printf("z: %d.\n", k);
+
+void PrintXor(){
+    printf("%d, %d, %d\n", 1, 0, xor(1, 0));
+    printf("%d, %d, %d\n", 1, 1, xor(1, 1));
+    printf("%d, %d, %d\n", 0, 1, xor(0, 1));
+    printf("%d, %d, %d\n", 0, 0, xor(0, 0));
 }
 
+int xor(int a, int b){
+    return (a || b) && !(a && b);
+}
 
+void OperadoresBitBit(){
+    printf("Operador    Ação\n");
+    printf("&           AND \n");
+    printf("|           OR\n");
+    printf("ˆ           OR exclusivo (XOR)\n");
+    printf("~           Complemento de um\n");
+    printf(">>          Deslocamento à esquerda\n");
+    printf("<<          Deslocamento à direitw\n");
+}
