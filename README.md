@@ -258,12 +258,12 @@ As variáveis register podem ser armazenadas em um registrador da CPU e podem n�
 | ------------- |:-------------:| -----:|
 | [```int EspecificadorRegister(register int m, register int e)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/Register.c) | Exemplo em um loop de um especificador register | - |
 
-## [Capítulo 08]()
+## [Capítulo 08](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo08)
 
 ### Operadores
 
 *Atribuição* 
-```nome_da_variavel = expressão````
+```nome_da_variavel = expressão```
 
 #### Conversão de tipos em atribuições
 
@@ -285,7 +285,7 @@ Situação em que variáveis de um tipo são misturadas com variáveis de outro 
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void ConversaoTiposDeValores(void)```]() | Conversão de tipos de valores | - |
+| [```void ConversaoTiposDeValores(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Conversão de tipos de valores | - |
 
 #### Atribuições múltiplas
 
@@ -295,7 +295,7 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void AtribuicoesMultiplas(void)```]() | Atribuições múltiplas | - |
+| [```void AtribuicoesMultiplas(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Atribuições múltiplas | - |
 
 #### Operadores aritméticos
 
@@ -313,10 +313,10 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void Subtracao(void)```]() | Subtrai 1 de 2 | - |
-| [```void Adicao(void)```]() | Soma 2 e 1 | - |
+| [```void Subtracao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Subtrai 1 de 2 | - |
+| [```void Adicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Soma 2 e 1 | - |
 | [```void Multiplicacao(void)```]() | Multiplica 2 e 1 | - |
-| [```void Divisao(void)```]() | Divide 4 por 2 | - |
-| [```void Modulo(void)```]() | Calcula o módulo de 5 por 2 e o módulo de 1 por 2 | - |
-| [```void Incremento(void)```]() | Exemplo de incremento | - |
-| [```void Decremento(void)```]() | Exemplo de decremento | - |
+| [```void Divisao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Divide 4 por 2 | - |
+| [```void Modulo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Calcula o módulo de 5 por 2 e o módulo de 1 por 2 | - |
+| [```void Incremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Exemplo de incremento | - |
+| [```void Decremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Exemplo de decremento | - |
