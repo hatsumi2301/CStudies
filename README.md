@@ -2,15 +2,15 @@
 
 Estou usando como guia de estudos o livro "C completo e total". Terceira edição. Herbert Schildt.
 
-## [Capítulo 01](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo01)
+# [Capítulo 01](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo01)
 
-### Printf
+## Printf
 
 O printf imprime textos na tela.
 
 Para utilizar a função ```printf```, é necessário importar a biblioteca ```#include <stdio.h>```.
 
-#### Utilização
+### Utilização
 
 Caso deseje imprimir valores de variáveis, é necessário utilizar especificadores de conversão.
 
@@ -41,19 +41,19 @@ Constantes de caracteres de barra invertida:
 | \N | Constante octal (onde N é uma constante octal) |
 | \xN | Constante hexadecimal (onde N é uma constante hexadecimal) |
 
-#### Exemplos de printf
+### Exemplos de printf
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void Saida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Saida.c) | Imprime o texto "Olá mundo!" | - | 
 
-### Scanf
+## Scanf
 
 O scanf obtém dados digitados pelo teclado.
 
 Para utilizar a função ```scanf```, é necessário importar a biblioteca ```#include <stdio.h>```.
 
-#### Utilização
+### Utilização
 
 Caso deseje colocar valores em variáveis, é necessário utilizar especificadores de conversão.
 
@@ -71,9 +71,9 @@ Caso deseje colocar valores em variáveis, é necessário utilizar especificador
 | [```void EntradaNumero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Entrada.c) | Obtém um número digitado pelo teclado | - |
 | [```void EntradaTexto(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Entrada.c) | Obtém um texto digitado pelo teclado | - |
 
-## [Capítulo 02](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo02)
+# [Capítulo 02](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo02)
 
-### Variáveis
+## Variáveis
 
 Variável é um espaço na memória para guardar um determinado dado.
 
@@ -81,7 +81,7 @@ As variáveis locais devem ser declaradas no início do bloco em que elas são d
 
 Os nomes das variáveis devem ser únicos em cada contexto.
 
-### Modificando os tipos básicos
+## Modificando os tipos básicos
 
 | Modificador | Descrição |
 | --- | --- |
@@ -90,7 +90,7 @@ Os nomes das variáveis devem ser únicos em cada contexto.
 | *long* | Faixa de valor maior |
 | *short* | Faixa de valor menor |
 
-### Tipos de variáveis com seus modificadores
+## Tipos de variáveis com seus modificadores
 
 | Tipo | bits | Faixa mínima |
 | ---- | ---- | ------------ |
@@ -110,7 +110,7 @@ Os nomes das variáveis devem ser únicos em cada contexto.
 | double | 64 | dez dígitos de precisão |
 | long dougle | 80 | dez dígitos de precisão |
 
-#### Exemplos de variáveis
+### Exemplos de variáveis
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -119,9 +119,9 @@ Os nomes das variáveis devem ser únicos em cada contexto.
 | [```void NomeDaVariavelRepetido(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo02/Variaveis.c) | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()``` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada. |
 | [```void NomeDaVariavelRepetidoEmOutraClasse(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo02/Variaveis2.c) | Esse método possui uma variável com o nome x | Os métodos ```NomeDaVariavel()```, ```NomeDaVariavelRepetido()``` e ```NomeDaVariavelRepetidoEmOutraClasse()``` possuem uma variável com nomes iguais. Os dois primeiros métodos estão na mesma classe e o último em uma classe separada.  |
 
-## [Capítulo 03](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo03)
+# [Capítulo 03](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo03)
 
-### Loops
+## Loops
 
 Loops são repetições de um determinado trecho do código que obedece uma determinada condição.
 
@@ -133,7 +133,7 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 | *while* | Iniciar a variável de controle<br>Enquanto (condição) faça<br>Início<br>__Instruções;<br> __Atualizar a variável de controle;<br> Fim;| *condição* é a condição que controla o laço | while(condição){ <br> __Instruções; <br> } |
 | *do ... while* | Iniciar a variável de controle<br>Início<br>__Instruções;<br> __Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim; | *condição* é a condição que controla o laço | do{ <br> __Instruções; <br> }while(condição) |
 
-#### Exemplos de loops
+### Exemplos de loops
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -144,9 +144,9 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 | [```void LoopDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo "do while" | - |
 | [```void DiferencaEntreLoopWhileAndDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Exemplo da diferença entre os loops "while" e "do while" | - |
 
-## [Capítulo 04](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo04)
+# [Capítulo 04](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo04)
 
-### Condicionais
+## Condicionais
 
 Verifica se uma determinada condição é verdadeira ou falsa para executar o código dentro do contexto da mesma.
 
@@ -158,24 +158,24 @@ Verifica se uma determinada condição é verdadeira ou falsa para executar o c�
 
 *else if*
 
-#### Exemplos de condicionais
+### Exemplos de condicionais
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void Condicionais(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo04/Condicionais.c) | Condicionais *if*, *else if* e *else* | Informar o número 1 para executar o comando do *if*, informar o número 2 para executar o comando do *else if* e informar qualquer outro número para executar o comando do *else* |
 
-## [Capítulo 05](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo05)
+# [Capítulo 05](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo05)
 
-### Variáveis globais
+## Variáveis globais
 
 Variáveis globais são reconhecidas pelo programa inteiro e podem ser utilizadas em qualquer parte do código. 
 Elas também guardam seus valores durante toda a execução do programa. 
 
-#### Utilização
+### Utilização
 
 Basta declarar a variável fora de qualquer função.
 
-#### Exemplos de variáveis globais
+### Exemplos de variáveis globais
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -183,39 +183,39 @@ Basta declarar a variável fora de qualquer função.
 | [```void FuncaoQueUtilizaAsVariaveisGlobais2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza as variáveis x e y globais que foram declaradas em outra classe | - |
 | [```void FuncaoQueUtilizaAsVariaveisGlobais3(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza a variável y global que foi declarada em outra classe | - |
 
-## [Capítulo 06](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo06)
+# [Capítulo 06](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo06)
 
-### Modificadores de tipo de acesso
+## Modificadores de tipo de acesso
 
-#### const
+### const
 
 O uso do const no parâmetro de entrada do método, faz com que o código da função não seja capaz de modificar o objeto apontado pelo parâmetro. Apenas um evento externo pode modificar uma variável do tipo const.
 
-##### Exemplos de const
+#### Exemplos de const
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void VariavelDoTipoConst(const char *frase)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Troca os espaços da frase por "-" | - |
 
-### volatile
+## volatile
 
 O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa. Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema.
 
-#### Exemplos de volatile
+### Exemplos de volatile
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void VariavelDoTipoVolatile()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Esse método altera o valor da const por meio de um ponteiro | - |
 
-## [Capítulo 07](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo07)
+# [Capítulo 07](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo07)
 
-### Especificadores de tipo de classe de armazenamento
+## Especificadores de tipo de classe de armazenamento
 
- #### extern
+ ### extern
  
  C permite que módulos do programa sejam compilados separadamente e por conta disso é necessário que haja uma maneira de informar a todos os arquivos sobre as variáveis globais solicitadas pelo programa. Ao declarar a variável global em um determinado arquivo e utilizar ela em outro, será necessário usar o extern, para indicar que aquela é uma variável global. 
 
-##### Exemplos de extern
+#### Exemplos de extern
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -223,7 +223,7 @@ O modificador volatile é usado para informar ao compilador que o valor de uma v
 | [```void FuncaoQueUtilizaAsVariaveisGlobais2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza as variáveis x e y globais que foram declaradas em outra classe | Esse método está na classe do Capítulo 05 |
 | [```void FuncaoQueUtilizaAsVariaveisGlobais3(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza a variável y global que foi declarada em outra classe | Esse método está na classe do Capítulo 05 |
 
-#### static
+### static
 
 Ao declarar uma variável como static, o compilador cria um armazenamento permanente para ela quase da mesma forma que cria um armazenamento para uma variável global. 
 
@@ -234,7 +234,7 @@ Poderiam ser utilizadas variáveis globais no lugar de variáveis estáticas, no
 Elas não são reconhecidas fora de sua função ou arquivo, mas mantém seus valores entre chamadas.
 Uma variável global estática é apenas reconhecida no arquivo no qual a mesma foi declarada.
 
-##### Exemplos de static
+#### Exemplos de static
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -242,7 +242,7 @@ Uma variável global estática é apenas reconhecida no arquivo no qual a mesma 
 | [```int Serie(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | Utiliza a variável estática global para somar um valor à ela | - |
 | [```int VariavelEstatica(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | O número vai ser inicializado com o valor 10 somente na primeira execução, pois a variável estática continua existindo após a função ser finalizada. A variável não é destruída e na segunda chamada dessa função, a variável já vai ter seu valor inicializado. | - |
 
-#### register
+### register
 
 Os objetos são colocados nos registradores da CPU. Portanto, o acesso ao objeto é o mais rápido possível. 
 
@@ -252,22 +252,24 @@ Só é possível aplicar o especificador register a variáveis locais e parâmet
 
 As variáveis register podem ser armazenadas em um registrador da CPU e podem não ter endereços.
 
-##### Exemplos de register
+#### Exemplos de register
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```int EspecificadorRegister(register int m, register int e)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/Register.c) | Exemplo em um loop de um especificador register | - |
 
-## [Capítulo 08](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo08)
+# [Capítulo 08](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo08)
 
-### Operadores
+## Operadores
 
 *Atribuição* 
+
 ```nome_da_variavel = expressão```
 
-#### Conversão de tipos em atribuições
+### Conversão de tipos em atribuições
 
 Situação em que variáveis de um tipo são misturadas com variáveis de outro tipo. 
+
 *Regra de conversão*: valor do lado direito é convertido no tipo do lado esquerdo.
 
 | Tipo do destino | Tipo da expressão | Possível informação perdida |
@@ -281,26 +283,26 @@ Situação em que variáveis de um tipo são misturadas com variáveis de outro 
 | float | double | Precisão, o resultado é arredondado |
 | double | long double | Precisão, o resultado é arredondado |
 
-##### Exemplos de tipos em atribuições
+#### Exemplos de tipos em atribuições
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void ConversaoTiposDeValores(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Conversão de tipos de valores | - |
 
-#### Atribuições múltiplas
+### Atribuições múltiplas
 
 C permite que você atribua o mesmo valor a muitas variáveis usando atribuições múltiplas em um único comando.
 
-##### Exemplos de atribuições múltiplas
+#### Exemplos de atribuições múltiplas
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void AtribuicoesMultiplas(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Atribuições múltiplas | - |
 
-#### Operadores aritméticos
+### Operadores aritméticos
 
 | Operador | Ação | Observação |
-| --- | --- | --- |
+| --- | --- | ---: |
 | - | Subtração, também menos unário | - |
 | + | Adição | - |
 | * | Multiplicação | - |
@@ -309,7 +311,7 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 | -- | Decremento | Subtrai 1 ao seu operando<br>```x = x + 1```é a mesma coisa que ```++x``` ou ```x++``` |
 | ++ | Incremento | Soma 1 ao seu operando<br>```x = x - 1```é a mesma coisa que ```--x``` ou ```x--```|
 
-##### Exemplos de operadores aritméticos
+#### Exemplos de operadores aritméticos
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
