@@ -64,7 +64,7 @@ Caso deseje colocar valores em variáveis, é necessário utilizar especificador
 | float | ```scan("%f", &<float>)``` |
 | double | ```scan("%f", &<double>)``` |
 
-#### Exemplos de scanf
+### Exemplos de scanf
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -197,11 +197,11 @@ O uso do const no parâmetro de entrada do método, faz com que o código da fun
 | ------------- |:-------------:| -----:|
 | [```void VariavelDoTipoConst(const char *frase)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Troca os espaços da frase por "-" | - |
 
-## volatile
+### volatile
 
 O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa. Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema.
 
-### Exemplos de volatile
+#### Exemplos de volatile
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -322,3 +322,37 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 | [```void Modulo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Calcula o módulo de 5 por 2 e o módulo de 1 por 2 | - |
 | [```void Incremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Exemplo de incremento | - |
 | [```void Decremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Exemplo de decremento | - |
+
+# [Capítulo 09](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo09)
+
+## Operadores relacionais e lógicos
+
+*Operador relacional* refere-se às relações que os valores podem ter uns com os outros.
+
+| Operador | Ação |
+| --- | --- |
+| > | Maior que |
+| >= | Maior que ou igual |
+| < | Menor que |
+| <= | Menor que ou igual |
+| == | Igual |
+| != | Diferente |
+
+*Operador lógico* refere-se às maneiras como essas relações podem ser conectadas.
+
+| Operador | Ação |
+| --- | --- |
+| && | AND |
+| <p>&#124</p> | OR |
+| ! | NOT |
+
+Operadores lógicos e relacionais podem ser verdadeiros ou falsos.
+Falso é igual a 0 e verdadeiro é qualquer valor diferente de 0.
+
+| p | q | p AND q | p OR q | !p |
+| --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 0|
+
