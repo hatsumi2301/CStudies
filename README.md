@@ -341,7 +341,7 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 **Precedência relativa**
 
 !
->   >=  <   <=
+\>   >=  <   <=
 ==  !=
 &&
 ||
