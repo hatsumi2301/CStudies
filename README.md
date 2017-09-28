@@ -374,11 +374,11 @@ Falso é igual a 0 e verdadeiro é qualquer valor diferente de 0.
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void MaiorQue(void)```]() | Exemplos de maior que | - |
-| [```void MaiorQueOuIgual(void)```]() | Exemplos de maior que ou igual | - |
-| [```void MenorQue(void)```]() | Exemplos de menor que | - |
-| [```void MenorQueOuIgual(void)```]() | Exemplos de menor que ou igual | - |
-| [```void Igual(void)```]() | Exemplos de igual | - |
-| [```void Diferente(void)```]() | Exemplos de diferente | - |
-| [```int xor(int a, int b)```]() | Método de ou excluviso | - |
-| [```void PrintXo(void)```]() | Imprime o resultado de alguns valores utilizando o ou exclusivo | - |
+| [```void MaiorQue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de maior que | - |
+| [```void MaiorQueOuIgual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de maior que ou igual | - |
+| [```void MenorQue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de menor que | - |
+| [```void MenorQueOuIgual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de menor que ou igual | - |
+| [```void Igual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de igual | - |
+| [```void Diferente(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de diferente | - |
+| [```int xor(int a, int b)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Método de ou excluviso | - |
+| [```void PrintXo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Imprime o resultado de alguns valores utilizando o ou exclusivo | - |
