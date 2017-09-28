@@ -338,13 +338,23 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 | == | Igual |
 | != | Diferente |
 
+**Precedência relativa**
+
+!
+>   >=  <   <=
+==  !=
+&&
+||
+
 *Operador lógico* refere-se às maneiras como essas relações podem ser conectadas.
 
 | Operador | Ação |
 | --- | --- |
 | && | AND |
-| <code>&#124</code> | OR |
+| <code>&#124;</code> | OR |
 | ! | NOT |
+
+Embora C não tenha um operador lógico OR exclusivo, é possível criar uma função que execute essa tarefa usando os outros operadores lógicos. 
 
 Operadores lógicos e relacionais podem ser verdadeiros ou falsos.
 Falso é igual a 0 e verdadeiro é qualquer valor diferente de 0.
@@ -356,3 +366,15 @@ Falso é igual a 0 e verdadeiro é qualquer valor diferente de 0.
 | 1 | 1 | 1 | 1 | 0 |
 | 1 | 0 | 0 | 1 | 0|
 
+### Exemplos de operadores relacionais e lógicos
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void MaiorQue(void)```]() | Exemplos de maior que | - |
+| [```void MaiorQueOuIgual(void)```]() | Exemplos de maior que ou igual | - |
+| [```void MenorQue(void)```]() | Exemplos de menor que | - |
+| [```void MenorQueOuIgual(void)```]() | Exemplos de menor que ou igual | - |
+| [```void Igual(void)```]() | Exemplos de igual | - |
+| [```void Diferente(void)```]() | Exemplos de diferente | - |
+| [```int xor(int a, int b)```]() | Método de ou excluviso | - |
+| [```void PrintXo(void)```]() | Imprime o resultado de alguns valores utilizando o ou exclusivo | - |

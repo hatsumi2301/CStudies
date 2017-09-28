@@ -11,8 +11,6 @@
 #include "Entrada.h"
 #include "Loops.h"
 
-int xor(int a, int b);
-
 int Opcoes(void);
 void Saida(void);
 void EntradaNumero(void);
@@ -46,6 +44,13 @@ void Divisao(void);
 void Modulo(void);
 void Incremento(void);
 void Decremento(void);
+void PrintXor(void);
+void MaiorQue(void);
+void MaiorQueOuIgual(void);
+void MenorQue(void);
+void MenorQueOuIgual(void);
+void Igual(void);
+void Diferente(void);
 
 int main(){
     while (1==1) {
@@ -171,6 +176,17 @@ int main(){
                 else printf("Opção inexistente.");
                 
                 break;
+            case 13:
+                PrintXor();
+                break;
+            case 14:
+                MaiorQue();
+                MaiorQueOuIgual();
+                MenorQue();
+                MenorQueOuIgual();
+                Igual();
+                Diferente();
+                break;
             default:
                 printf("Opção inexistente.");
                 break;
@@ -180,7 +196,7 @@ int main(){
 
 int Opcoes(){
     printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n10. Conversão de tipos de valores\n11. Atribuições múltiplas\n12. Operadores aritméticos\n");
+    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n10. Conversão de tipos de valores\n11. Atribuições múltiplas\n12. Operadores aritméticos\n13. Operadores lógicos\n14. Operadores relacionais\n");
     
     int opcao;
     
@@ -188,18 +204,6 @@ int Opcoes(){
     printf("\n");
     
     return opcao;
-}
-
-
-void PrintXor(){
-    printf("%d, %d, %d\n", 1, 0, xor(1, 0));
-    printf("%d, %d, %d\n", 1, 1, xor(1, 1));
-    printf("%d, %d, %d\n", 0, 1, xor(0, 1));
-    printf("%d, %d, %d\n", 0, 0, xor(0, 0));
-}
-
-int xor(int a, int b){
-    return (a || b) && !(a && b);
 }
 
 void OperadoresBitBit(){

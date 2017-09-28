@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7B15DBC61F5F8A6F003F515E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B15DBC51F5F8A6F003F515E /* main.c */; };
-		7B4361D41F75E22100096CCB /* Operadores.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B4361D31F75E22100096CCB /* Operadores.c */; };
+		7B7947151F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947131F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c */; };
+		7B7947181F7C8DAD006B7FE3 /* Operadores.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947161F7C8DAD006B7FE3 /* Operadores.c */; };
 		7BE933A41F774112008A7CBF /* Saida.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A21F774112008A7CBF /* Saida.c */; };
 		7BE933A71F77479D008A7CBF /* Entrada.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A51F77479D008A7CBF /* Entrada.c */; };
 		7BE933B31F7758AE008A7CBF /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933B11F7758AE008A7CBF /* Variaveis.c */; };
@@ -37,7 +38,10 @@
 /* Begin PBXFileReference section */
 		7B15DBC21F5F8A6F003F515E /* CStudies */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CStudies; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B15DBC51F5F8A6F003F515E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		7B4361D31F75E22100096CCB /* Operadores.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Operadores.c; sourceTree = "<group>"; };
+		7B7947131F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OperadoresLogicosRelacionais.c; sourceTree = "<group>"; };
+		7B7947141F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperadoresLogicosRelacionais.h; sourceTree = "<group>"; };
+		7B7947161F7C8DAD006B7FE3 /* Operadores.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Operadores.c; sourceTree = "<group>"; };
+		7B7947171F7C8DAD006B7FE3 /* Operadores.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operadores.h; sourceTree = "<group>"; };
 		7BE933A21F774112008A7CBF /* Saida.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Saida.c; sourceTree = "<group>"; };
 		7BE933A31F774112008A7CBF /* Saida.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Saida.h; sourceTree = "<group>"; };
 		7BE933A51F77479D008A7CBF /* Entrada.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Entrada.c; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7B7947121F7C8D63006B7FE3 /* Capitulo09 */,
 				7BE933D51F79E66A008A7CBF /* Capitulo08 */,
 				7BE933D11F79DF4A008A7CBF /* Capitulo07 */,
 				7BE933CD1F789F6E008A7CBF /* Capitulo06 */,
@@ -103,6 +108,15 @@
 				7B15DBC51F5F8A6F003F515E /* main.c */,
 			);
 			path = CStudies;
+			sourceTree = "<group>";
+		};
+		7B7947121F7C8D63006B7FE3 /* Capitulo09 */ = {
+			isa = PBXGroup;
+			children = (
+				7B7947131F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c */,
+				7B7947141F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.h */,
+			);
+			path = Capitulo09;
 			sourceTree = "<group>";
 		};
 		7BE933AF1F775588008A7CBF /* Capitulo01 */ = {
@@ -179,7 +193,8 @@
 		7BE933D51F79E66A008A7CBF /* Capitulo08 */ = {
 			isa = PBXGroup;
 			children = (
-				7B4361D31F75E22100096CCB /* Operadores.c */,
+				7B7947161F7C8DAD006B7FE3 /* Operadores.c */,
+				7B7947171F7C8DAD006B7FE3 /* Operadores.h */,
 			);
 			path = Capitulo08;
 			sourceTree = "<group>";
@@ -242,14 +257,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BE933C91F7899BD008A7CBF /* VariaveisGlobais.c in Sources */,
+				7B7947181F7C8DAD006B7FE3 /* Operadores.c in Sources */,
 				7BE933CC1F7899CD008A7CBF /* VariaveisGlobais2.c in Sources */,
 				7BE933BC1F7760CA008A7CBF /* Loops.c in Sources */,
 				7BE933C21F776F84008A7CBF /* Condicionais.c in Sources */,
 				7BE933C51F7896E6008A7CBF /* Variaveis2.c in Sources */,
 				7BE933D81F79E6CE008A7CBF /* Register.c in Sources */,
 				7BE933D41F79DF65008A7CBF /* VariaveisEstaticas.c in Sources */,
+				7B7947151F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c in Sources */,
 				7BE933A71F77479D008A7CBF /* Entrada.c in Sources */,
-				7B4361D41F75E22100096CCB /* Operadores.c in Sources */,
 				7B15DBC61F5F8A6F003F515E /* main.c in Sources */,
 				7BE933B31F7758AE008A7CBF /* Variaveis.c in Sources */,
 				7BE933A41F774112008A7CBF /* Saida.c in Sources */,

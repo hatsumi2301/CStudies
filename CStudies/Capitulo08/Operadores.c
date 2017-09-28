@@ -2,11 +2,11 @@
 //  Operadores.c
 //  CStudies
 //
-//  Created by Hatsumi Hashi on 22/09/17.
+//  Created by Hatsumi Hashi on 27/09/17.
 //  Copyright © 2017 Hatsumi Hashi. All rights reserved.
 //
 
-#include <stdio.h>
+#include "Operadores.h"
 
 void ConversaoTiposDeValores(){
     int x = 300;
