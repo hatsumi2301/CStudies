@@ -343,7 +343,7 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 | Operador | Ação |
 | --- | --- |
 | && | AND |
-| <p>&#124</p> | OR |
+| <code>&#124</code> | OR |
 | ! | NOT |
 
 Operadores lógicos e relacionais podem ser verdadeiros ou falsos.
