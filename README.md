@@ -341,9 +341,13 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 **Precedência relativa**
 
 !
+
 \>   >=  <   <=
+
 ==  !=
+
 &&
+
 ||
 
 *Operador lógico* refere-se às maneiras como essas relações podem ser conectadas.
