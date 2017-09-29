@@ -99,6 +99,7 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7B79471E1F7DDC1D006B7FE3 /* Capitulo11 */,
 				7B79471A1F7DCF6D006B7FE3 /* Capitulo10 */,
 				7B7947121F7C8D63006B7FE3 /* Capitulo09 */,
 				7BE933D51F79E66A008A7CBF /* Capitulo08 */,
@@ -130,6 +131,13 @@
 				7B79471C1F7DCF86006B7FE3 /* OperadoresBitABit.h */,
 			);
 			path = Capitulo10;
+			sourceTree = "<group>";
+		};
+		7B79471E1F7DDC1D006B7FE3 /* Capitulo11 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Capitulo11;
 			sourceTree = "<group>";
 		};
 		7BE933AF1F775588008A7CBF /* Capitulo01 */ = {

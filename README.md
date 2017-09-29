@@ -391,6 +391,8 @@ Testar, atribuir ou deslocar os bits efetivos em um byte ou uma palavra, que cor
 
 Operações bit não podem ser usadas em **float**, **double**, **long double**, **void** ou outros tipos mais complexos. 
 
+Operações bit a bit encontram aplicações mais frequentemente em "drivers"de dispositivos - como em programas de modems, rotinas de arquivos em disco e rotinas de impressoras - porque as operações bit a bit mascaram certos bits, como o bit de paridade (confirma se o restante dos bits em um byte não se modificaram, é normalmente o bit mais significativo em cada byte). 
+
 | Operador | Ação |
 | --- | --- |
 | & | AND |
@@ -423,3 +425,12 @@ Operações bit não podem ser usadas em **float**, **double**, **long double**,
 | x = x >> 1 | 01100000 | 224 |
 | x = x >> 1 | 00011000 | 112 | 
 
+### Exemplos de operadores bit a bit
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void And(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador AND | - |
+| [```void Or(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador OR | - |
+| [```void Xor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador XOR | - |
+| [```void ComplementoDeUm(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador complemento de um | - |
+| [```void Deslocamentos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador deslocamento à direita e à esquerda | - |
