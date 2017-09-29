@@ -382,3 +382,44 @@ Falso é igual a 0 e verdadeiro é qualquer valor diferente de 0.
 | [```void Diferente(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de diferente | - |
 | [```int xor(int a, int b)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Método de ou excluviso | - |
 | [```void PrintXo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Imprime o resultado de alguns valores utilizando o ou exclusivo | - |
+
+# [Capítulo 10](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo10)
+
+## Operador bit a bit
+
+Testar, atribuir ou deslocar os bits efetivos em um byte ou uma palavra, que correspondem aos tipos de dados **char** e **int** e variantes do padrão. 
+
+Operações bit não podem ser usadas em **float**, **double**, **long double**, **void** ou outros tipos mais complexos. 
+
+| Operador | Ação |
+| --- | --- |
+| & | AND |
+| <code>&#124;</code> | OR |
+| ^ | OR exclusivo (XOR) |
+| ~ | Complemento de um |
+| >> | Deslocamento à esquerda |
+| << | Deslocamento à direita |
+
+### Tabelas verdade
+
+| A | B | A & B | A <code>&#124;</code> B | A ^ B | ~A |
+| --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 1 | 1 |
+| 1 | 0 | 0 | 1 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 0 |
+
+### Deslocamentos
+
+*A direita* divide por 2
+*A esquerda* multiplica por 2
+
+| unsigned char x | cada execução da sentença | valor de x |
+| --- | --- | --- |
+| x = 7 | 00000111 | 7 |
+| x = x << 1 | 00001110 | 14 |
+| x = x << 3 | 01110000 | 112 |
+| x = x << 2 | 11000000 | 448 |
+| x = x >> 1 | 01100000 | 224 |
+| x = x >> 1 | 00011000 | 112 | 
+

@@ -51,6 +51,11 @@ void MenorQue(void);
 void MenorQueOuIgual(void);
 void Igual(void);
 void Diferente(void);
+void And(void);
+void Or(void);
+void Xor(void);
+void ComplementoDeUm(void);
+void Deslocamentos(void);
 
 int main(){
     while (1==1) {
@@ -187,6 +192,12 @@ int main(){
                 Igual();
                 Diferente();
                 break;
+            case 15:
+                And();
+                Or();
+                Xor();
+                ComplementoDeUm();
+                Deslocamentos();
             default:
                 printf("Opção inexistente.");
                 break;
@@ -196,7 +207,7 @@ int main(){
 
 int Opcoes(){
     printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n10. Conversão de tipos de valores\n11. Atribuições múltiplas\n12. Operadores aritméticos\n13. Operadores lógicos\n14. Operadores relacionais\n");
+    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n10. Conversão de tipos de valores\n11. Atribuições múltiplas\n12. Operadores aritméticos\n13. Operadores lógicos\n14. Operadores relacionais\n15. Operadores bit a bit\n");
     
     int opcao;
     
@@ -204,14 +215,4 @@ int Opcoes(){
     printf("\n");
     
     return opcao;
-}
-
-void OperadoresBitBit(){
-    printf("Operador    Ação\n");
-    printf("&           AND \n");
-    printf("|           OR\n");
-    printf("ˆ           OR exclusivo (XOR)\n");
-    printf("~           Complemento de um\n");
-    printf(">>          Deslocamento à esquerda\n");
-    printf("<<          Deslocamento à direitw\n");
 }
