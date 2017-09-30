@@ -50,3 +50,7 @@ void Deslocamentos(){
     x = x >> 1;
     printf("x = x >> 1 = %d\n", x);
 }
+
+char Codificar(char ch){
+    return(~ch);
+}

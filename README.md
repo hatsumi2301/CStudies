@@ -391,7 +391,9 @@ Testar, atribuir ou deslocar os bits efetivos em um byte ou uma palavra, que cor
 
 Operações bit não podem ser usadas em **float**, **double**, **long double**, **void** ou outros tipos mais complexos. 
 
-Operações bit a bit encontram aplicações mais frequentemente em "drivers"de dispositivos - como em programas de modems, rotinas de arquivos em disco e rotinas de impressoras - porque as operações bit a bit mascaram certos bits, como o bit de paridade (confirma se o restante dos bits em um byte não se modificaram, é normalmente o bit mais significativo em cada byte). 
+Operações bit a bit encontram aplicações mais frequentemente em "drivers"de dispositivos - como em programas de modems, rotinas de arquivos em disco e rotinas de impressoras - porque as operações bit a bit mascaram certos bits, como o bit de paridade (confirma se o restante dos bits em um byte não se modificaram, é normalmente o bit mais significativo em cada byte).
+
+São frequentemente usados em rotinas de criptografia. 
 
 | Operador | Ação |
 | --- | --- |
@@ -434,3 +436,28 @@ Operações bit a bit encontram aplicações mais frequentemente em "drivers"de 
 | [```void Xor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador XOR | - |
 | [```void ComplementoDeUm(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador complemento de um | - |
 | [```void Deslocamentos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador deslocamento à direita e à esquerda | - |
+
+# [Capítulo 11](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo11)
+
+## Operador ternário
+
+*expressão1 ? expressão2 : expressão3*
+
+Expressão1 é avaliada e se ela for verdadeira, expressão2 é avaliada e se torna o valor da expressão, senão, expressão3 é avaliada e se torna o valor da expressão.
+
+### Utilização
+
+```x = 10;```
+```y = x > 9 ? 100 : 200;```
+
+Esse código é equivalente a:
+
+```x = 10;```
+```ìf(x > 9) y = 100;```
+```else y = 200;```
+
+### Exemplos de operador ternário
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void And(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador AND | - |
