@@ -436,6 +436,7 @@ São frequentemente usados em rotinas de criptografia.
 | [```void Xor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador XOR | - |
 | [```void ComplementoDeUm(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador complemento de um | - |
 | [```void Deslocamentos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador deslocamento à direita e à esquerda | - |
+| [```char Codificar(char)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Recebe um caractere e devolve o complemento de um desse caractere | - |
 
 # [Capítulo 11](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo11)
 
@@ -460,4 +461,29 @@ Esse código é equivalente a:
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void And(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador AND | - |
+| [```void OperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadorTernario.c) | Exemplo de operador ternário | - |
+| [```void ExemploComIfElseOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadorTernario.c) | O mesmo exemplo do método acima, mas com if e else | - |
+
+# [Capítulo 12](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo12)
+
+## Operadores de ponteiros & e *
+
+É um endereço na memória de uma variável. Uma *variável de ponteiro* é uma variável especialmente declarada para guardar um ponteiro para seu tipo especificado. 
+
+*Funções*
+
+Fornecer uma maneira rápida de referenciar elementos de uma matriz.
+
+Funções em C modifiquem seus parâmetros de chamada.
+
+Suportam listas encadeadas e outras estruturas dinâmicas de dados.
+
+**&**
+
+Operador unário que devolve o endeço na memória de seu operando.
+
+```m = &count```
+
+m recebe o valor do endereço na memória da variável. Posição interna da variável no computador. 
+
+**\***
