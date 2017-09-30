@@ -482,8 +482,24 @@ Suportam listas encadeadas e outras estruturas dinâmicas de dados.
 
 Operador unário que devolve o endeço na memória de seu operando.
 
-```m = &count```
+```m = &count;```
 
 m recebe o valor do endereço na memória da variável. Posição interna da variável no computador. 
 
 **\***
+
+Operador unário que devolve o valor da variável localizada no endereço que o segue. 
+
+```q = *m;```
+
+### Utilização
+
+```char *ch;```: ch é um ponteiro
+
+```int x, *y, count;```: y é um ponteiro
+
+### Exemplos de operadores de ponteiros
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void OperadoresPonteiros(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo12/OperadoresPonteiros.c) | Exemplo de operadores de ponteiros | - |

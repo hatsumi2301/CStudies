@@ -59,6 +59,7 @@ void Deslocamentos(void);
 char Codificar(char);
 void OperadorTernario(void);
 void ExemploComIfElseOperadorTernario(void);
+void OperadoresPonteiros(void);
 
 int main(){
     while (1==1) {
@@ -209,6 +210,9 @@ int main(){
                 OperadorTernario();
                 ExemploComIfElseOperadorTernario();
                 break;
+            case 17:
+                OperadoresPonteiros();
+                break;
             default:
                 printf("Opção inexistente.");
                 break;
@@ -218,7 +222,7 @@ int main(){
 
 int Opcoes(){
     printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n10. Conversão de tipos de valores\n11. Atribuições múltiplas\n12. Operadores aritméticos\n13. Operadores lógicos\n14. Operadores relacionais\n15. Operadores bit a bit\n16. Operador ternário\n");
+    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n10. Conversão de tipos de valores\n11. Atribuições múltiplas\n12. Operadores aritméticos\n13. Operadores lógicos\n14. Operadores relacionais\n15. Operadores bit a bit\n16. Operador ternário\n17. Operadores de ponteiros\n");
     
     int opcao;
     

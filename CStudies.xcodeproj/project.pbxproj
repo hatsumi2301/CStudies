@@ -12,6 +12,7 @@
 		7B7947181F7C8DAD006B7FE3 /* Operadores.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947161F7C8DAD006B7FE3 /* Operadores.c */; };
 		7B79471D1F7DCF86006B7FE3 /* OperadoresBitABit.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B79471B1F7DCF86006B7FE3 /* OperadoresBitABit.c */; };
 		7B7947211F7F26D7006B7FE3 /* OperadorTernario.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B79471F1F7F26D7006B7FE3 /* OperadorTernario.c */; };
+		7B7947281F7F2D7D006B7FE3 /* OperadoresPonteiros.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947261F7F2D7D006B7FE3 /* OperadoresPonteiros.c */; };
 		7BE933A41F774112008A7CBF /* Saida.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A21F774112008A7CBF /* Saida.c */; };
 		7BE933A71F77479D008A7CBF /* Entrada.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A51F77479D008A7CBF /* Entrada.c */; };
 		7BE933B31F7758AE008A7CBF /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933B11F7758AE008A7CBF /* Variaveis.c */; };
@@ -48,6 +49,8 @@
 		7B79471C1F7DCF86006B7FE3 /* OperadoresBitABit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperadoresBitABit.h; sourceTree = "<group>"; };
 		7B79471F1F7F26D7006B7FE3 /* OperadorTernario.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OperadorTernario.c; sourceTree = "<group>"; };
 		7B7947201F7F26D7006B7FE3 /* OperadorTernario.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperadorTernario.h; sourceTree = "<group>"; };
+		7B7947261F7F2D7D006B7FE3 /* OperadoresPonteiros.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OperadoresPonteiros.c; sourceTree = "<group>"; };
+		7B7947271F7F2D7D006B7FE3 /* OperadoresPonteiros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperadoresPonteiros.h; sourceTree = "<group>"; };
 		7BE933A21F774112008A7CBF /* Saida.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Saida.c; sourceTree = "<group>"; };
 		7BE933A31F774112008A7CBF /* Saida.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Saida.h; sourceTree = "<group>"; };
 		7BE933A51F77479D008A7CBF /* Entrada.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Entrada.c; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7B7947221F7F2D24006B7FE3 /* Capitulo12 */,
 				7B79471E1F7DDC1D006B7FE3 /* Capitulo11 */,
 				7B79471A1F7DCF6D006B7FE3 /* Capitulo10 */,
 				7B7947121F7C8D63006B7FE3 /* Capitulo09 */,
@@ -143,6 +147,15 @@
 				7B7947201F7F26D7006B7FE3 /* OperadorTernario.h */,
 			);
 			path = Capitulo11;
+			sourceTree = "<group>";
+		};
+		7B7947221F7F2D24006B7FE3 /* Capitulo12 */ = {
+			isa = PBXGroup;
+			children = (
+				7B7947261F7F2D7D006B7FE3 /* OperadoresPonteiros.c */,
+				7B7947271F7F2D7D006B7FE3 /* OperadoresPonteiros.h */,
+			);
+			path = Capitulo12;
 			sourceTree = "<group>";
 		};
 		7BE933AF1F775588008A7CBF /* Capitulo01 */ = {
@@ -284,6 +297,7 @@
 			files = (
 				7BE933C91F7899BD008A7CBF /* VariaveisGlobais.c in Sources */,
 				7B7947181F7C8DAD006B7FE3 /* Operadores.c in Sources */,
+				7B7947281F7F2D7D006B7FE3 /* OperadoresPonteiros.c in Sources */,
 				7B79471D1F7DCF86006B7FE3 /* OperadoresBitABit.c in Sources */,
 				7B7947211F7F26D7006B7FE3 /* OperadorTernario.c in Sources */,
 				7BE933CC1F7899CD008A7CBF /* VariaveisGlobais2.c in Sources */,
