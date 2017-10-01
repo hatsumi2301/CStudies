@@ -8,7 +8,7 @@ Estou usando como guia de estudos o livro "C completo e total". Terceira ediçã
 
 O printf imprime textos na tela.
 
-Para utilizar a função ```printf```, é necessário importar a biblioteca ```#include <stdio.h>```.
+Para utilizar a função ```printf```, é necessário importar a biblioteca ```<stdio.h>``` com  o comando ```#include <stdio.h>```.
 
 ### Utilização
 
@@ -17,7 +17,7 @@ Caso deseje imprimir valores de variáveis, é necessário utilizar especificado
 | Valor | Exemplo |
 | ----- | ---------------- |
 | texto | ```printf("<texto>")``` |
-| char | ```printf("%c", <char>)``` |
+| char | ```printf("%c", '<char>')``` |
 | int | ```printf("%d", <int>)``` |
 | float | ```printf("%f", <float>)``` |
 | double | ```printf("%f", <double>)``` |
@@ -51,7 +51,7 @@ Constantes de caracteres de barra invertida:
 
 O scanf obtém dados digitados pelo teclado.
 
-Para utilizar a função ```scanf```, é necessário importar a biblioteca ```#include <stdio.h>```.
+Para utilizar a função ```scanf```, é necessário importar a biblioteca ```<stdio.h>``` com  o comando ```#include <stdio.h>```.
 
 ### Utilização
 
@@ -99,12 +99,9 @@ Os nomes das variáveis devem ser únicos em cada contexto.
 | signed char | 8 | -127 a 127 |
 | int | 16 | -32.767 a 32.767 |
 | unsigned int | 16 | 0 a 65.535 |
-| signed int | 16 | 0 a 65.535 |
-| short int | 16 | 0 a 65.535 |
+| short int | 16 | -32,767 to 32,767 |
 | unsigned short int | 16 | 0 a 65.535 |
-| signed short int | 16 | 0 a 65.535 |
 | long int | 32 | -2.147.483.647 a 2.147.483.637 |
-| signed long int | 32 | -2.147.483.647 a 2.147.483.637 |
 | unsigned long int | 32 | 0 a 4.294.967.295 |
 | float | 32 | seis dígitos de precisão |
 | double | 64 | dez dígitos de precisão |
@@ -168,8 +165,8 @@ Verifica se uma determinada condição é verdadeira ou falsa para executar o c�
 
 ## Variáveis globais
 
-Variáveis globais são reconhecidas pelo programa inteiro e podem ser utilizadas em qualquer parte do código. 
-Elas também guardam seus valores durante toda a execução do programa. 
+Variáveis globais são reconhecidas pelo contexto global do programa e podem ser utilizadas em qualquer parte do código. 
+Elas também estão acessíveis durante toda a execução do programa. 
 
 ### Utilização
 
@@ -195,7 +192,7 @@ O uso do const no parâmetro de entrada do método, faz com que o código da fun
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void VariavelDoTipoConst(const char *frase)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Troca os espaços da frase por "-" | - |
+| [```void VariavelDoTipoConst(const char *frase)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Troca os espaços da frase por "-" e imprime a frase com a modificação, ou apenas imprime a frase inteira | - |
 
 ### volatile
 
@@ -219,7 +216,6 @@ O modificador volatile é usado para informar ao compilador que o valor de uma v
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void FuncaoQueUtilizaAsVariaveisGlobais(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais.c) | Utiliza a variável x global que foi declarada na mesma classe que o método | Esse método está na classe do Capítulo 05 |
 | [```void FuncaoQueUtilizaAsVariaveisGlobais2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza as variáveis x e y globais que foram declaradas em outra classe | Esse método está na classe do Capítulo 05 |
 | [```void FuncaoQueUtilizaAsVariaveisGlobais3(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza a variável y global que foi declarada em outra classe | Esse método está na classe do Capítulo 05 |
 
@@ -308,8 +304,10 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 | * | Multiplicação | - |
 | / | Divisão | - |
 | % | Módulo da divisão (resto) | Não pode ser usado nos tipos em ponto flutuante |
-| -- | Decremento | Subtrai 1 ao seu operando<br>```x = x + 1```é a mesma coisa que ```++x``` ou ```x++``` |
-| ++ | Incremento | Soma 1 ao seu operando<br>```x = x - 1```é a mesma coisa que ```--x``` ou ```x--```|
+| --x | Decremento | Subtrai 1 ao seu operando<br>```x = x + 1``` imediatamente e aplica na linha atual. |
+| x-- | Decremento | Subtrai 1 ao seu operando<br>```x = x + 1```, mas aplica o resultado após a linha atual. |
+| ++x | Incremento | Soma 1 ao seu operando<br>```x = x - 1``` imediatamente e aplica na linha atual.|
+| x++ | Incremento | Soma 1 ao seu operando<br>```x = x - 1```, mas aplica o resultado após a linha atual.|
 
 #### Exemplos de operadores aritméticos
 
@@ -404,7 +402,7 @@ São frequentemente usados em rotinas de criptografia.
 | >> | Deslocamento à esquerda |
 | << | Deslocamento à direita |
 
-### Tabelas verdade
+### Tabela verdade
 
 | A | B | A & B | A <code>&#124;</code> B | A ^ B | ~A |
 | --- | --- | --- | --- | --- | --- |
@@ -472,31 +470,37 @@ Esse código é equivalente a:
 
 *Funções*
 
-Fornecer uma maneira rápida de referenciar elementos de uma matriz.
+* Fornecer uma maneira rápida de referenciar elementos de uma matriz.
 
-Funções em C modifiquem seus parâmetros de chamada.
+* Permite que funções em C modifiquem seus parâmetros de chamada.
 
-Suportam listas encadeadas e outras estruturas dinâmicas de dados.
+* Suportam listas encadeadas e outras estruturas dinâmicas de dados.
 
 **&**
 
-Operador unário que devolve o endeço na memória de seu operando.
+* Operador unário que devolve o endeço na memória de seu operando.
 
-```m = &count;```
+* Exemplo:
 
-m recebe o valor do endereço na memória da variável. Posição interna da variável no computador. 
+    * ```m = &count;```
+
+    * m recebe o valor do endereço na memória da variável. Posição interna da variável no computador. 
 
 **\***
 
-Operador unário que devolve o valor da variável localizada no endereço que o segue. 
+* Operador unário que devolve o valor da variável localizada no endereço que o segue. 
 
-```q = *m;```
+* ```q = *m;```
 
 ### Utilização
 
-```char *ch;```: ch é um ponteiro
+```char *ch;``` 
 
-```int x, *y, count;```: y é um ponteiro
+ch é um ponteiro
+
+```int x, *y, count;```
+
+y é um ponteiro
 
 ### Exemplos de operadores de ponteiros
 
