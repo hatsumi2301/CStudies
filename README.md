@@ -304,10 +304,10 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 | * | Multiplicação | - |
 | / | Divisão | - |
 | % | Módulo da divisão (resto) | Não pode ser usado nos tipos em ponto flutuante |
-| --x | Decremento | Subtrai 1 ao seu operando<br>```x = x + 1``` imediatamente e aplica na linha atual. |
-| x-- | Decremento | Subtrai 1 ao seu operando<br>```x = x + 1```, mas aplica o resultado após a linha atual. |
-| ++x | Incremento | Soma 1 ao seu operando<br>```x = x - 1``` imediatamente e aplica na linha atual.|
-| x++ | Incremento | Soma 1 ao seu operando<br>```x = x - 1```, mas aplica o resultado após a linha atual.|
+| --x | Decremento | Subtrai 1 ao seu operando<br>```x = x - 1``` imediatamente e aplica na linha atual. |
+| x-- | Decremento | Subtrai 1 ao seu operando<br>```x = x - 1```, mas aplica o resultado após a linha atual. |
+| ++x | Incremento | Soma 1 ao seu operando<br>```x = x + 1``` imediatamente e aplica na linha atual.|
+| x++ | Incremento | Soma 1 ao seu operando<br>```x = x + 1```, mas aplica o resultado após a linha atual.|
 
 #### Exemplos de operadores aritméticos
 
@@ -379,7 +379,7 @@ Falso é igual a 0 e verdadeiro é qualquer valor diferente de 0.
 | [```void Igual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de igual | - |
 | [```void Diferente(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de diferente | - |
 | [```int xor(int a, int b)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Método de ou excluviso | - |
-| [```void PrintXo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Imprime o resultado de alguns valores utilizando o ou exclusivo | - |
+| [```void PrintXor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Imprime o resultado de alguns valores utilizando o ou exclusivo | - |
 
 # [Capítulo 10](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo10)
 

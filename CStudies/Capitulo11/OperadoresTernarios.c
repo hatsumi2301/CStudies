@@ -2,11 +2,12 @@
 //  OperadoresTernarios.c
 //  CStudies
 //
-//  Created by Hatsumi Hashi on 29/09/17.
+//  Created by Hatsumi Hashi on 03/10/17.
 //  Copyright © 2017 Hatsumi Hashi. All rights reserved.
 //
 
 #include "OperadoresTernarios.h"
+#include <stdio.h>
 
 void OperadorTernario(){
     int x, y;

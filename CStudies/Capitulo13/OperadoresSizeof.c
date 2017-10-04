@@ -7,14 +7,16 @@
 //
 
 #include "OperadoresSizeof.h"
+#include <stdio.h>
 
+//Struct empregado
 struct empregado{
     char nome[80];
     int idade;
     float salario;
 } trab;
 
-//struct trabalhador *p = &trab;
+struct empregado *p = &trab;
 
 void OperadorSizeof(){
     float f;
@@ -26,8 +28,8 @@ void OperadorSizeof(){
 void GravarDisco(int rec[6], FILE *fp){
     int len;
     
-    //len = fwrite(rec, sizeof rec, 1, fp);
-    //if(len != 1) printf("Erro de escrita");
+    len = fwrite(rec, sizeof rec, 1, fp);
+    if(len != 1) printf("Erro de escrita");
 }
 
 void OperadoresPontoSeta(){

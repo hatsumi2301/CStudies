@@ -67,23 +67,28 @@ int main(){
         int opcao2;
         int existe;
         int valorDeRetorno;
-    
+        
         switch (opcao) {
             case 1:
-                Saida();
-                break;
-            case 2:
                 printf("\nInforme uma opção: \n");
-                printf("1. Número\n2. Texto\n\n");
+                printf("1. Printf\n2. Scanf\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                 
-                if(opcao2 == 1) EntradaNumero();
-                else if(opcao2 == 2) EntradaTexto();
+                if(opcao2 == 1) Saida();
+                else if(opcao2 == 2) {
+                    printf("\nInforme uma opção: \n");
+                    printf("1. Número\n2. Texto\n\n");
+                    scanf("%d", &opcao2);
+                    printf("\n");
+                    
+                    if(opcao2 == 1) EntradaNumero();
+                    else if(opcao2 == 2) EntradaTexto();
+                    else printf("Opção inexistente.");
+                }
                 else printf("Opção inexistente.");
-                
                 break;
-            case 3:
+            case 2:
                 printf("\nInforme uma opção: \n");
                 printf("1. Tipos de variáveis\n2. Variáveis podem ter o mesmo nome, se estiverem em contextos diferentes");
                 scanf("%d", &opcao2);
@@ -95,9 +100,8 @@ int main(){
                     NomeDaVariavelRepetido();
                     NomeDaVariavelRepetidoEmOutraClasse();
                 }
-                
                 break;
-            case 4:
+            case 3:
                 printf("\nInforme uma opção: \n");
                 printf("1. Verificar se o caractere existe na palavra informando a palavra e o caractere \n2. Verificar que o caractere 'x' não existe na palavra 'fécula'\n3. Verificar que o caractere 'a' existe na palavra 'ave'\n4. Loop for\n5. Loop while\n6. Loop do while\n7. Diferença entre o loop while e do while\n\n");
                 scanf("%d", &opcao2);
@@ -120,23 +124,23 @@ int main(){
                 else if(opcao2 == 7) DiferencaEntreLoopWhileAndDoWhile();
                 else printf("Opção inexistente.");
                 break;
-            case 5:
+            case 4:
                 Condicionais();
                 break;
-            case 6:
+            case 5:
                 FuncaoQueUtilizaAsVariaveisGlobais();
                 FuncaoQueUtilizaAsVariaveisGlobais2();
                 FuncaoQueUtilizaAsVariaveisGlobais3();
                 break;
-            case 7:
+            case 6:
                 printf("Variável do tipo const.\n");
                 VariavelDoTipoConst("Isso é um teste");
                 printf("\n\nVariável do tipo volatile.\n");
                 VariavelDoTipoVolatile();
                 break;
-            case 8:
+            case 7:
                 printf("\nInforme uma opção: \n");
-                printf("1. Variável estática\n2. Variável estática global\n\n");
+                printf("1. Variável estática\n2. Variável estática global\n3. Especificador register\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                 
@@ -156,21 +160,21 @@ int main(){
                     
                     printf("Valor informado + 23 = %d.\n", valorDeRetorno);
                 }
+                else if(opcao2 == 3){
+                    valorDeRetorno = EspecificadorRegister(10, 10);
+                    
+                    printf("%d\n", valorDeRetorno);
+                }
                 else printf("Opção inexistente.");
                 break;
-            case 9:
-                valorDeRetorno = EspecificadorRegister(10, 10);
-                
-                printf("%d\n", valorDeRetorno);
-                break;
-            case 10:
+            case 8:
+                printf("Conversão de tipos de valores\n\n");
                 ConversaoTiposDeValores();
-                break;
-            case 11:
+                
+                printf("Atribuições múltiplas\n\n");
                 AtribuicoesMultiplas();
-                break;
-            case 12:
-                printf("\nInforme uma opção: \n");
+                
+                printf("\n\nInforme uma opção: \n");
                 printf("1. Subtração\n2. Adição\n3. Multiplicação\n4. Divisão\n5. Módulo\n6. Incremento\n7. Decremento\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
@@ -183,20 +187,17 @@ int main(){
                 else if(opcao2 == 6) Incremento();
                 else if(opcao2 == 7) Decremento();
                 else printf("Opção inexistente.");
-                
                 break;
-            case 13:
-                PrintXor();
-                break;
-            case 14:
+            case 9:
                 MaiorQue();
                 MaiorQueOuIgual();
                 MenorQue();
                 MenorQueOuIgual();
                 Igual();
                 Diferente();
+                PrintXor();
                 break;
-            case 15:
+            case 10:
                 And();
                 Or();
                 Xor();
@@ -206,13 +207,12 @@ int main(){
                 char aCodificado = Codificar('a');
                 printf("Caractere \'a\' codificado: %c\n", aCodificado);
                 break;
-            case 16:
+            case 11:
                 OperadorTernario();
                 ExemploComIfElseOperadorTernario();
                 break;
-            case 17:
+            case 12:
                 OperadoresPonteiros();
-                break;
             default:
                 printf("Opção inexistente.");
                 break;
@@ -222,7 +222,7 @@ int main(){
 
 int Opcoes(){
     printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Printf\n2. Scanf\n3. Variáveis\n4. Loops\n5. Condicionais\n6. Variáveis globais\n7. Modificadores de tipo de acesso\n8. Variável estática\n9. Especificador register\n10. Conversão de tipos de valores\n11. Atribuições múltiplas\n12. Operadores aritméticos\n13. Operadores lógicos\n14. Operadores relacionais\n15. Operadores bit a bit\n16. Operador ternário\n17. Operadores de ponteiros\n");
+    printf("1. Capítulo 1\n2. Capítulo 2\n3. Capítulo 3\n4. Capítulo 4\n5. Capítulo 5\n6. Capítulo 6\n7. Capítulo 7\n8. Capítulo 8\n9. Capítulo 9\n10. Capítulo 10\n11. Capítulo 11\n12. Capítulo 12\n");
     
     int opcao;
     
