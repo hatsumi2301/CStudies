@@ -111,7 +111,7 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
-				7B7947331F847B39006B7FE3 /* Capiutlo14 */,
+				7B7947331F847B39006B7FE3 /* Capitulo14 */,
 				7B7947291F80A3D3006B7FE3 /* Capitulo13 */,
 				7B7947221F7F2D24006B7FE3 /* Capitulo12 */,
 				7B79471E1F7DDC1D006B7FE3 /* Capitulo11 */,
@@ -175,13 +175,13 @@
 			path = Capitulo13;
 			sourceTree = "<group>";
 		};
-		7B7947331F847B39006B7FE3 /* Capiutlo14 */ = {
+		7B7947331F847B39006B7FE3 /* Capitulo14 */ = {
 			isa = PBXGroup;
 			children = (
 				7B7947341F847B4C006B7FE3 /* ColchetesParenteses.c */,
 				7B7947351F847B4C006B7FE3 /* ColchetesParenteses.h */,
 			);
-			path = Capiutlo14;
+			path = Capitulo14;
 			sourceTree = "<group>";
 		};
 		7BE933AF1F775588008A7CBF /* Capitulo01 */ = {
