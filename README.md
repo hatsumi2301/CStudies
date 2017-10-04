@@ -546,7 +546,7 @@ Todos os operadores, com exceção do ?, associam da esquerda para a direita.
 
 Operadores unários (*, & e -) e ? associam da direita para a esquerda.
 
-| Precedência | Operador |
+| Precedência | Operador | 
 | --- | --- |
 | Maior | () [] -> |
 | | ! ~ ++ -- - (tipo) * & sizeof |
@@ -568,4 +568,4 @@ Operadores unários (*, & e -) e ? associam da direita para a esquerda.
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void Array()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/Array.c) | Exemplo de um array (operação utilizando colchetes) | - |
+| [```void Array()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de um array (operação utilizando colchetes) | - |
