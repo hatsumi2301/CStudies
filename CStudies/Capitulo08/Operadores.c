@@ -13,13 +13,20 @@ void ConversaoTiposDeValores(){
     char ch;
     float f = 44.55;
     
+    //Converte int para char
     ch = x;
     printf("x = 300\nch = x\nch = %c\n\n", ch);
+    
+    //Converte float para int
     x = f;
     printf("f = 44.55\nx = f\nx = %d\n\n", x);
+    
+    //Converte char para float
     ch = 'a';
     f = ch;
     printf("ch = 'a'\nf = ch\nf = %f\n\n", f);
+    
+    //Converte int para float
     f = x;
     printf("x = 44\nf = x\nf = %f\n\n", f);
 }
@@ -29,6 +36,7 @@ void AtribuicoesMultiplas(){
     int y;
     int k;
     
+    //Atribui o valor 10 para as variáveis x, y e k
     x = y = k = 10;
     
     printf("x = y = k = 10\n");
@@ -80,12 +88,14 @@ void Divisao(){
 void Modulo(){
     int x, y;
     
+    //Resto da divisão de 5 por 2
     x = 5;
     y = 2;
     
     printf("%d/%d = %d\n", x, y, x/y);
     printf("%d%%%d = %d\n", x, y, x%y);
     
+    //Resto da divisão de 1 por 2 não funciona corretamente, pois não é um número inteiro
     x = 1;
     y = 2;
     
@@ -96,14 +106,20 @@ void Incremento(){
     int x;
     int y;
     
+    //Atribui o valor 10 para a variável x
     x = 10;
     printf("x = %d\n", x);
+    //Soma 1 unidade à variável x
+    //Atribui o valor 11 à variável y
     y = ++x;
     printf("y = ++x = %d\n", y);
     printf("x = %d\n\n", x);
     
+    //Atribui o valor 10 para a variável x
     x = 10;
     printf("x = %d\n", x);
+    //Atribui o valor 10 para a variável y
+    //Soma 1 unidade à variável x
     y = x++;
     printf("y = x++ = %d\n", y);
     printf("x = %d\n", x);
@@ -113,14 +129,20 @@ void Decremento(){
     int x;
     int y;
     
+    //Atribui o valor 10 à variável x
     x = 10;
     printf("x = %d\n", x);
+    //Subtrai 1 unidade da variável x
+    //Atribui o valor 9 à variável y
     y = --x;
     printf("y = --x = %d\n", y);
     printf("x = %d\n\n", x);
     
+    //Atribui o valor 10 à variável x
     x = 10;
     printf("x = %d\n", x);
+    //Atribui o valor 10 à variável y
+    //Subtrai 1 unidade da variável x
     y = x--;
     printf("y = x-- = %d\n", y);
     printf("x = %d\n", x);

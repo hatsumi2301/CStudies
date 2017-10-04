@@ -503,3 +503,25 @@ Operador unário que devolve o valor da variável localizada no endereço que o 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void OperadoresPonteiros(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo12/OperadoresPonteiros.c) | Exemplo de operadores de ponteiros | - |
+
+# [Capítulo 13](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo13)
+
+## Operador *sizeof*
+
+Operador em tempo de compilação unário que retorna o tamanho, em bytes, da variável ou especificador de tipo, em parênteses, que ele precede.
+
+### Exemplos de operadores sizeof
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void GravarDisco(int rec[6], FILE *fp)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Escreve 6 inteiros em um arquivo em disco | - |
+
+## Operador ponto e seta
+
+Referenciam elementos individuais de estruturas e uniões. 
+
+Ponto é usado quando se está referenciando a estrutura ou união real. Seta é usado quando um ponteiro para uma estrutura é usado.
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void OperadoresPontoSeta()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Atribui o valor 123.23 ao elemento **wage** da estrutura **emp** | - |

@@ -9,6 +9,7 @@
 #include "Register.h"
 
 int EspecificadorRegister(register int m, register int e){
+    //Variáveis do tipo register são mais rápidas
     register int temp;
     
     temp = 1;

@@ -11,10 +11,10 @@
 int xor(int a, int b);
 
 void PrintXor(){
-    printf("%d, %d, %d\n", 1, 0, xor(1, 0));
-    printf("%d, %d, %d\n", 1, 1, xor(1, 1));
-    printf("%d, %d, %d\n", 0, 1, xor(0, 1));
-    printf("%d, %d, %d\n", 0, 0, xor(0, 0));
+    printf("%d, %d, %d\n", 1, 0, xor(1, 0)); //Verdadeiro
+    printf("%d, %d, %d\n", 1, 1, xor(1, 1)); //Falso
+    printf("%d, %d, %d\n", 0, 1, xor(0, 1)); //Verdadeiro
+    printf("%d, %d, %d\n", 0, 0, xor(0, 0)); //Falso
 }
 
 void MaiorQue(){
@@ -52,5 +52,6 @@ void Diferente(){
 }
 
 int xor(int a, int b){
+    //A ou B em que A e B não sejam iguais
     return (a || b) && !(a && b);
 }
