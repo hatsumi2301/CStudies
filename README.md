@@ -546,6 +546,7 @@ Todos os operadores, com exceção do ?, associam da esquerda para a direita.
 
 Operadores unários (*, & e -) e ? associam da direita para a esquerda.
 
+| Precedência | Operador |
 | --- | --- |
 | Maior | () [] -> |
 | | ! ~ ++ -- - (tipo) * & sizeof |
