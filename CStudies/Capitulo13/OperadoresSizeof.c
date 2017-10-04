@@ -16,28 +16,26 @@ struct empregado{
     float salario;
 } trab;
 
+//Ponteiro p do tipo empregado recebe o endereço de memória de trab
 struct empregado *p = &trab;
 
 void OperadorSizeof(){
     float f;
     
+    //Imprime o tamanho de uma variável float
     printf("size of float: %lu\n", sizeof f);
+    //Imprime o tamanho de uma variável int
     printf("size of int: %lu\n", sizeof (int));
 }
 
-void GravarDisco(int rec[6], FILE *fp){
-    int len;
-    
-    len = fwrite(rec, sizeof rec, 1, fp);
-    if(len != 1) printf("Erro de escrita");
-}
-
 void OperadoresPontoSeta(){
+    //Atribui o valor 123.23 ao salário de uma variável trab
     trab.salario = 123.23;
     
     printf("Salário do trabalhador é de: %f\n", trab.salario);
     
-    //p->salario = 123.45;
+    //Atribui o valor 123.45 ao salário de um ponteiro p
+    p->salario = 123.45;
     
     printf("Salário do trabalhador é de: %f\n", trab.salario);
 }

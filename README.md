@@ -526,6 +526,44 @@ Referenciam elementos individuais de estruturas e uniões.
 
 Ponto é usado quando se está referenciando a estrutura ou união real. Seta é usado quando um ponteiro para uma estrutura é usado.
 
+### Exemplos de operadores ponto e seta
+
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void OperadoresPontoSeta()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Atribui o valor 123.23 ao elemento **wage** da estrutura **emp** | - |
+
+# [Capítulo 14](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo14)
+
+## Parênteses e colchetes como operadores
+
+Parênteses são operadores que aumentam a precedência das operações dentro deles.
+
+Colchetes realizam a indexação de matrizes.
+
+### Precedências
+
+Todos os operadores, com exceção do ?, associam da esquerda para a direita.
+
+Operadores unários (*, & e -) e ? associam da direita para a esquerda.
+
+| Maior | () [] -> |
+| | ! ~ ++ -- - (tipo) * & sizeof |
+| | * / % |
+| | + - |
+| | << >> |
+| | < <= > >= |
+| | == != |
+| | & | 
+| | ^ |
+| | ! |
+| | && | 
+| | <code>&#124; &#124;</code> |
+| | ? |
+| | = += -= *= /= |
+| Menor | , |
+
+### Exemplos de parênteses e colchetes
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void Array()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/Array.c) | Exemplo de um array (operação utilizando colchetes) | - |

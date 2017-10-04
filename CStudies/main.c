@@ -60,6 +60,10 @@ char Codificar(char);
 void OperadorTernario(void);
 void ExemploComIfElseOperadorTernario(void);
 void OperadoresPonteiros(void);
+void OperadorSizeof(void);
+void OperadoresPontoSeta(void);
+void Array(void);
+void Parenteses(void);
 
 int main(){
     while (1==1) {
@@ -213,6 +217,15 @@ int main(){
                 break;
             case 12:
                 OperadoresPonteiros();
+                break;
+            case 13:
+                OperadorSizeof();
+                OperadoresPontoSeta();
+                break;
+            case 14:
+                Array();
+                Parenteses();
+                break;
             default:
                 printf("Opção inexistente.");
                 break;
@@ -221,8 +234,7 @@ int main(){
 }
 
 int Opcoes(){
-    printf("\n______________________________________\nInforme uma opção: \n");
-    printf("1. Capítulo 1\n2. Capítulo 2\n3. Capítulo 3\n4. Capítulo 4\n5. Capítulo 5\n6. Capítulo 6\n7. Capítulo 7\n8. Capítulo 8\n9. Capítulo 9\n10. Capítulo 10\n11. Capítulo 11\n12. Capítulo 12\n");
+    printf("\n______________________________________\nInforme o número do capítulo\n");
     
     int opcao;
     
