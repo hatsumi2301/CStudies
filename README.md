@@ -530,7 +530,7 @@ Ponto é usado quando se está referenciando a estrutura ou união real. Seta é
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void OperadoresPontoSeta()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Atribui o valor 123.23 ao elemento **wage** da estrutura **emp** | - |
+| [```void OperadoresPontoSeta(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Atribui o valor 123.23 ao elemento **wage** da estrutura **emp** | - |
 
 # [Capítulo 14](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo14)
 
@@ -568,8 +568,8 @@ Operadores unários (*, & e -) e ? associam da direita para a esquerda.
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void Array()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de um array (operação utilizando colchetes) | - |
-| [```void Parenteses()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de como os parenteses alteram a ordem de execução das operações | - |
+| [```void Array(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de um array (operação utilizando colchetes) | - |
+| [```void Parenteses(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de como os parenteses alteram a ordem de execução das operações | - |
 
 # [Capítulo 15](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo15)
 
@@ -607,17 +607,17 @@ Forçar expressão a ser de determinado tipo.
 
 ```(tipo) expressão```
 
-### #Exemplos de casts
+#### Exemplos de casts
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void Cast()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo15/Casts.c) | Exemplo de uma divisão de um número inteiro sem utilizar o cast e utilizando o cast | - |
+| [```void Cast(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo15/Casts.c) | Exemplo de uma divisão de um número inteiro sem utilizar o cast e utilizando o cast | - |
 
 # [Capítulo 16](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo16)
 
 # C Reduzido
 
-```x = x + 10;``` pode ser escrito como ```x += 10;```
+```x = x + 10;``` pode ser escrito de uma maneira reduzida: ```x += 10;```
 
 **+=** atribui a **x** o valor de **x** mais **10**.
 
@@ -625,5 +625,12 @@ Essas operações existem para todos os operadores binários em C.
 
 ```var = var operador expressão``` é equivalente a ```var operador = expressão```
 
+## Exemplos de operações reduzidas
 
-
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void SomaReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma soma reduzida | - |
+| [```void SubtracaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma subtração reduzida | - |
+| [```void MultiplicacaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma multiplicação reduzida | - |
+| [```void DivisaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma divisão reduzida | - |
+| [```void ModuloReduzido(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de um módulo reduzido | - |
