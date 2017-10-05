@@ -64,6 +64,12 @@ void OperadorSizeof(void);
 void OperadoresPontoSeta(void);
 void Array(void);
 void Parenteses(void);
+void Cast(void);
+void SomaReduzida(void);
+void SubtracaoReduzida(void);
+void MultiplicacaoReduzida(void);
+void DivisaoReduzida(void);
+void ModuloReduzido(void);
 
 int main(){
     while (1==1) {
@@ -225,6 +231,16 @@ int main(){
             case 14:
                 Array();
                 Parenteses();
+                break;
+            case 15:
+                Cast();
+                break;
+            case 16:
+                SomaReduzida();
+                SubtracaoReduzida();
+                MultiplicacaoReduzida();
+                DivisaoReduzida();
+                ModuloReduzido();
                 break;
             default:
                 printf("Opção inexistente.");

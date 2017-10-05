@@ -569,3 +569,61 @@ Operadores unários (*, & e -) e ? associam da direita para a esquerda.
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void Array()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de um array (operação utilizando colchetes) | - |
+| [```void Parenteses()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de como os parenteses alteram a ordem de execução das operações | - |
+
+# [Capítulo 15](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo15)
+
+## Expressões
+
+*Ordem de avaliação*: o padrão C ANSI não estipula que as subexpressões de uma expressão devam ser avaliadas em uma ordem especificada.
+
+Por exemplo, ```x = f1() + f2();``` não garante que **f1()** vai ser executada antes de **f2()**.
+
+### Conversão de tipos
+
+O compilador C converte todos os operandos no tipo do maior operando, o que é denominado de *promoção de tipo*. 
+
+SE um operando é **long double**
+ENTÃO o segundo é convertido para **long double**
+SE um operando é **double**
+ENTÃO o segundo é convertido para **double**
+SE um operando é **float**
+ENTÃO o segundo é convertido para **float**
+SE um operando é **unsigned long**
+ENTÃO o segundo é convertido para **unsigned long**
+SE um operando é **long**
+ENTÃO o segundo é convertido para **long**
+SE um operando é **unsigned int**
+ENTÃO o segundo é convertido para **unsigned int**
+
+**Caso especial**
+
+SE um operando é **long** E o segundo é **unsigned int** E SE valor de **unsigned int** não pode ser representado por um **long**
+ENTÃO os dois operandos são convertidos para **unsigned long**
+
+### Casts
+
+Forçar expressão a ser de determinado tipo.
+
+```(tipo) expressão```
+
+### #Exemplos de casts
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void Cast()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo15/Casts.c) | Exemplo de uma divisão de um número inteiro sem utilizar o cast e utilizando o cast | - |
+
+# [Capítulo 16](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo16)
+
+# C Reduzido
+
+```x = x + 10;``` pode ser escrito como ```x += 10;```
+
+**+=** atribui a **x** o valor de **x** mais **10**.
+
+Essas operações existem para todos os operadores binários em C.
+
+```var = var operador expressão``` é equivalente a ```var operador = expressão```
+
+
+
