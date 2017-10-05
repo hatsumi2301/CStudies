@@ -585,14 +585,19 @@ O compilador C converte todos os operandos no tipo do maior operando, o que é d
 
 SE um operando é **long double**
 ENTÃO o segundo é convertido para **long double**
+
 SE um operando é **double**
 ENTÃO o segundo é convertido para **double**
+
 SE um operando é **float**
 ENTÃO o segundo é convertido para **float**
+
 SE um operando é **unsigned long**
 ENTÃO o segundo é convertido para **unsigned long**
+
 SE um operando é **long**
 ENTÃO o segundo é convertido para **long**
+
 SE um operando é **unsigned int**
 ENTÃO o segundo é convertido para **unsigned int**
 
