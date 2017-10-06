@@ -639,3 +639,73 @@ Essas operações existem para todos os operadores binários em C.
 | [```void MultiplicacaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma multiplicação reduzida | - |
 | [```void DivisaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma divisão reduzida | - |
 | [```void ModuloReduzido(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de um módulo reduzido | - |
+
+# [Capítulo 17](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo17)
+
+# Comandos de controle do programa
+
+| Tipo | Comando | Observação |
+| --- | --- | --- |
+| Seleção ou Condicional | if e switch | - |
+| Iteração ou Laço | while, for e do-while | - |
+| Desvio ou Salto | break, continue, goto e return | - |
+| Rótulo | case e default | Usados juntamente com o comando "switch"|
+| Expressão | Expressão C válida | Qualquer expressão em C que seja válida |
+| Bloco | Blocos de código | Código que está dentro de "{" e "}" |
+
+## Seleção
+
+**if** e **else** (opcional)
+
+**switch**
+
+**?** - Operador ternário
+
+### Utilização
+
+```if(expressão1) comando1;```
+```if(expressão2) comando2;```
+```else if(expressão3) comando3;```
+```else comando4;```
+
+Se a expressão1 for verdadeira, o comando1 será executado.
+
+Se a expressão2 for verdadeira, o comando2 será executado.
+
+Se a expressão2 for falsa, a expressão3 vai ser verificada. Se a expressão3 for verdadeira, o comando3 será executado.
+
+Se a expressão3 for falsa, será executado o comando4.
+
+#### Exemplos de seleção
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void AdivinharONumero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o *if* e o *else* para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
+| [```void AdivinharONumeroComIfElseIf(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o *if* e o *else if* para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
+| [```void AdivinharONumeroComOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o operador ternário *?* para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
+| [```void CalcularQuadradoDeUmNumeroComOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o operador ternário *?* para calcular a raiz quadrada de um número | - |
+| [```void OperadorTernarioComFuncoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | O operador ternário também pode ser utilizado chamando funções | Utiliza os dois métodos abaixo |
+| [```void funcao1(int numero)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Imprime o número passado como parâmetro | Método utilizado pelo método ```OperadorTernarioComFuncoe``` |
+| [```void funcao2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Imprime a mensagem "foi o número digitado." | Método utilizado pelo método ```OperadorTernarioComFuncoe``` |
+
+### Ifs aninhados
+
+**If aninhado** é um comando **if** que é o objeto de um outro **if** ou **else**.
+
+O comando **else** sempre se refere ao comando **if** mais próximo, que está dentro do mesmo bloco do **else** e não está associado a outro **if**
+
+#### Exemplos de ifs aninhados
+
+```if(i){```
+```     if(j) comando1;```
+```     if(k) comando2; //Este if```
+```     else comando3; //está associado a este else```
+```}```
+```else comando4; //Associado ao if(i)```
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void AdivinharONumeroComIfAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o ifs aninhados para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
+
+## 
+

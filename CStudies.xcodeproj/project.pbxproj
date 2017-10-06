@@ -17,6 +17,7 @@
 		7B7947361F847B4C006B7FE3 /* ColchetesParenteses.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947341F847B4C006B7FE3 /* ColchetesParenteses.c */; };
 		7B79473A1F85B9DB006B7FE3 /* Casts.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947381F85B9DB006B7FE3 /* Casts.c */; };
 		7B79473E1F85BEC1006B7FE3 /* CReduzido.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B79473C1F85BEC1006B7FE3 /* CReduzido.c */; };
+		7B7947421F87055E006B7FE3 /* OperadoresDeSelecao.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947401F87055E006B7FE3 /* OperadoresDeSelecao.c */; };
 		7BE933A41F774112008A7CBF /* Saida.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A21F774112008A7CBF /* Saida.c */; };
 		7BE933A71F77479D008A7CBF /* Entrada.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A51F77479D008A7CBF /* Entrada.c */; };
 		7BE933B31F7758AE008A7CBF /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933B11F7758AE008A7CBF /* Variaveis.c */; };
@@ -63,6 +64,8 @@
 		7B7947391F85B9DB006B7FE3 /* Casts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Casts.h; sourceTree = "<group>"; };
 		7B79473C1F85BEC1006B7FE3 /* CReduzido.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CReduzido.c; sourceTree = "<group>"; };
 		7B79473D1F85BEC1006B7FE3 /* CReduzido.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CReduzido.h; sourceTree = "<group>"; };
+		7B7947401F87055E006B7FE3 /* OperadoresDeSelecao.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OperadoresDeSelecao.c; sourceTree = "<group>"; };
+		7B7947411F87055E006B7FE3 /* OperadoresDeSelecao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperadoresDeSelecao.h; sourceTree = "<group>"; };
 		7BE933A21F774112008A7CBF /* Saida.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Saida.c; sourceTree = "<group>"; };
 		7BE933A31F774112008A7CBF /* Saida.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Saida.h; sourceTree = "<group>"; };
 		7BE933A51F77479D008A7CBF /* Entrada.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Entrada.c; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7B79473F1F87053D006B7FE3 /* Capitulo17 */,
 				7B79473B1F85BDA7006B7FE3 /* Capitulo16 */,
 				7B7947371F85B9C8006B7FE3 /* Capitulo15 */,
 				7B7947331F847B39006B7FE3 /* Capitulo14 */,
@@ -208,6 +212,15 @@
 				7B79473D1F85BEC1006B7FE3 /* CReduzido.h */,
 			);
 			path = Capitulo16;
+			sourceTree = "<group>";
+		};
+		7B79473F1F87053D006B7FE3 /* Capitulo17 */ = {
+			isa = PBXGroup;
+			children = (
+				7B7947401F87055E006B7FE3 /* OperadoresDeSelecao.c */,
+				7B7947411F87055E006B7FE3 /* OperadoresDeSelecao.h */,
+			);
+			path = Capitulo17;
 			sourceTree = "<group>";
 		};
 		7BE933AF1F775588008A7CBF /* Capitulo01 */ = {
@@ -352,6 +365,7 @@
 				7B79473E1F85BEC1006B7FE3 /* CReduzido.c in Sources */,
 				7B7947361F847B4C006B7FE3 /* ColchetesParenteses.c in Sources */,
 				7B7947281F7F2D7D006B7FE3 /* OperadoresPonteiros.c in Sources */,
+				7B7947421F87055E006B7FE3 /* OperadoresDeSelecao.c in Sources */,
 				7B79471D1F7DCF86006B7FE3 /* OperadoresBitABit.c in Sources */,
 				7BE933CC1F7899CD008A7CBF /* VariaveisGlobais2.c in Sources */,
 				7B7947321F84763E006B7FE3 /* OperadoresTernarios.c in Sources */,

@@ -70,6 +70,14 @@ void SubtracaoReduzida(void);
 void MultiplicacaoReduzida(void);
 void DivisaoReduzida(void);
 void ModuloReduzido(void);
+void AdivinharONumero(void);
+void AdivinharONumeroComIfElseIf(void);
+void AdivinharONumeroComOperadorTernario(void);
+void CalcularQuadradoDeUmNumeroComOperadorTernario(void);
+void OperadorTernarioComFuncoes(void);
+void funcao1(int numero);
+void funcao2(void);
+void AdivinharONumeroComIfAninhado(void);
 
 int main(){
     while (1==1) {
@@ -241,6 +249,20 @@ int main(){
                 MultiplicacaoReduzida();
                 DivisaoReduzida();
                 ModuloReduzido();
+                break;
+            case 17:
+                printf("\n\nInforme uma opção: \n");
+                printf("1. If e else\n2. If e else if\n3. Operador ternário\n4. Calcular quadrado de um número com operador ternário\n5. Chamada de funções com o operador ternário\n6. Ifs aninhados\n\n");
+                scanf("%d", &opcao2);
+                printf("\n");
+                
+                if(opcao2 == 1) AdivinharONumero();
+                else if(opcao2 == 2) AdivinharONumeroComIfElseIf();
+                else if(opcao2 == 3) AdivinharONumeroComOperadorTernario();
+                else if(opcao2 == 4) CalcularQuadradoDeUmNumeroComOperadorTernario();
+                else if(opcao2 == 5) OperadorTernarioComFuncoes();
+                else if(opcao2 == 6) AdivinharONumeroComIfAninhado();
+                else printf("Opção inexistente.");
                 break;
             default:
                 printf("Opção inexistente.");
