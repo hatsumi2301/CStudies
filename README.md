@@ -126,9 +126,9 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 
 | Loop | Pseudocódigo | Explicação | Utilização |
 | --- | --- | --- | --- |
-| *for* | Enquanto (valor_inicial até a condição_final passo n) faça<br>Inicio<br>__Instruções<br>Fim | *valor_inicial* é uma instrução de atribuição do valor inicial do laço para a variável de controle<br>*condição_final* é a condição que controla o laço<br>*passo* é o incremento ou decremento do laço | for(valor_inicial; condição_final; valor_incremento_ou_decremento){ <br> __Instruções; <br> } |
-| *while* | Iniciar a variável de controle<br>Enquanto (condição) faça<br>Início<br>__Instruções;<br> __Atualizar a variável de controle;<br> Fim;| *condição* é a condição que controla o laço | while(condição){ <br> __Instruções; <br> } |
-| *do ... while* | Iniciar a variável de controle<br>Início<br>__Instruções;<br> __Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim; | *condição* é a condição que controla o laço | do{ <br> __Instruções; <br> }while(condição) |
+| *for* | Enquanto (valor_inicial até a condição_final passo n) faça<br>Inicio<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções<br>Fim | *valor_inicial* é uma instrução de atribuição do valor inicial do laço para a variável de controle<br>*condição_final* é a condição que controla o laço<br>*passo* é o incremento ou decremento do laço | for(valor_inicial; condição_final; valor_incremento_ou_decremento){ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
+| *while* | Iniciar a variável de controle<br>Enquanto (condição) faça<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br> Fim;| *condição* é a condição que controla o laço | while(condição){ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
+| *do ... while* | Iniciar a variável de controle<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim; | *condição* é a condição que controla o laço | do{ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> }while(condição) |
 
 ### Exemplos de loops
 
@@ -687,6 +687,7 @@ Se a expressão3 for falsa, será executado o comando4.
 | [```void OperadorTernarioComFuncoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | O operador ternário também pode ser utilizado chamando funções | Utiliza os dois métodos abaixo |
 | [```void funcao1(int numero)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Imprime o número passado como parâmetro | Método utilizado pelo método ```OperadorTernarioComFuncoe``` |
 | [```void funcao2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Imprime a mensagem "foi o número digitado." | Método utilizado pelo método ```OperadorTernarioComFuncoe``` |
+| [```void VerificaSeONumeroEhZero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Verifica se o segundo número informado pelo usuário é 0 utilizando o if | A condição ```if(b)``` poderia ser escrita como ```if(b != 0)```, porém esta forma é redundante |
 
 ### Ifs aninhados
 
@@ -694,18 +695,69 @@ Se a expressão3 for falsa, será executado o comando4.
 
 O comando **else** sempre se refere ao comando **if** mais próximo, que está dentro do mesmo bloco do **else** e não está associado a outro **if**
 
-#### Exemplos de ifs aninhados
+#### Utilização
 
-```if(i){```
-```     if(j) comando1;```
-```     if(k) comando2; //Este if```
-```     else comando3; //está associado a este else```
-```}```
-```else comando4; //Associado ao if(i)```
+```if(i){```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```if(j) comando1;```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```if(k) comando2; //Este if```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```else comando3; //está associado a este else```<br>```}```<br>```else comando4; //Associado ao if(i)```
+
+#### Exemplos de ifs aninhados
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void AdivinharONumeroComIfAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o ifs aninhados para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
 
-## 
+### Switch
 
+É um comando de seleção múltipla. Esse comando testa sucessivamente o valor de uma expressão contra uma lista de constantes inteiras ou de caractere. Quando o valor coincide, os comandos associados à aquela constante, são executados.
+
+#### Utilização
+
+```switch(expressão){```<br>```case constante1:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequencia de comandos```<br>```break;```<br>```case constante2:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequencia de comandos```<br>```break;```<br>```case constante3:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequencia de comandos```<br>```break;```<br>```.```<br>```.```<br>```.```<br>```default:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequência de comandos```<br>```}```
+
+O *default* é opcional e é executado caso nenhuma coincidência em uma constante seja detectada.
+
+#### Observações
+
+* O comando **switch** difere do comando **if**, porque o **switch** só pode testar igualdade, enquanto o **if** pode avaliar uma expressão lógica ou relacional.
+
+* Duas constantes **case** no mesmo **switch** não podem ter valores idênticos.
+
+* Se constantes de caractere são usadas em um comando **switch**, elas são automaticamente convertidas para seus valores inteiros.
+
+#### Exemplos de switch
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void ComandoSwitchMenu(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do **switch** | - |
+| [```void ComandoSwitchSemBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do **switch** sem o **break** | - |
+| [```void ComandoSwitchDeclarandoVariaveis(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de declaração de variável dentro de um **switch** | - |
+| [```void ComandoSwitchComBlocosDeCodigo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de blocos de código dentro de um **switch** | - |
+| [```void SwitchAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de **switch** aninhado | **NÃO ESTÁ FUNCIONANDO** |
+
+# [Capítulo 18](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo18)
+
+## Iteração
+
+**for**
+
+**while**
+
+**do while**
+
+### Utilização do for
+
+```for(inicialização; condição; incremento) comando;``` 
+
+inicialização é, geralmente, um comando de atribuição que é usado para colocar um valor na variável de controle do laço.
+
+condição é uma expressão relacional que determina quando o laço acaba.
+
+incremento define como a variável do laço varia a cada vez que o laço é repetido.
+
+#### Exemplos de for
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void ForIncremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Exemplo de utilização do **for** incrementando o valor a cada rodada | - |
+| [```void ForDecremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Exemplo de utilização do **for** decrementando o valor a cada rodada | - |
+| [```void ForNaoSeraExecutado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Exemplo de **for** que não será executado, pois a condição é falsa | - |
+| [```void ForComDoisControles(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | É possível utilizar o comando **for** com duas variáveis de controle | - |

@@ -78,6 +78,12 @@ void OperadorTernarioComFuncoes(void);
 void funcao1(int numero);
 void funcao2(void);
 void AdivinharONumeroComIfAninhado(void);
+void VerificaSeONumeroEhZero(void);
+void ComandoSwitchMenu(void);
+void ComandoSwitchSemBreak(void);
+void ComandoSwitchDeclarandoVariaveis(void);
+void ComandoSwitchComBlocosDeCodigo(void);
+void SwitchAninhado(void);
 
 int main(){
     while (1==1) {
@@ -252,16 +258,22 @@ int main(){
                 break;
             case 17:
                 printf("\n\nInforme uma opção: \n");
-                printf("1. If e else\n2. If e else if\n3. Operador ternário\n4. Calcular quadrado de um número com operador ternário\n5. Chamada de funções com o operador ternário\n6. Ifs aninhados\n\n");
+                printf("1. If e else\n2. If e else if\n3. Operador ternário\n4. Calcular quadrado de um número com operador ternário\n5. Chamada de funções com o operador ternário\n6. Ifs aninhados\n7. If para verificar se o número é zero\n8. Menu switch\n9. Comando switch sem break\n10. Comando switch com declação de variáveis\n11. Comando swithc com blocos de código\n12. Switch aninhado\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
-                
+                    
                 if(opcao2 == 1) AdivinharONumero();
                 else if(opcao2 == 2) AdivinharONumeroComIfElseIf();
                 else if(opcao2 == 3) AdivinharONumeroComOperadorTernario();
                 else if(opcao2 == 4) CalcularQuadradoDeUmNumeroComOperadorTernario();
                 else if(opcao2 == 5) OperadorTernarioComFuncoes();
                 else if(opcao2 == 6) AdivinharONumeroComIfAninhado();
+                else if(opcao2 == 7) VerificaSeONumeroEhZero();
+                else if(opcao2 == 8) ComandoSwitchMenu();
+                else if(opcao2 == 9) ComandoSwitchSemBreak();
+                else if(opcao2 == 10) ComandoSwitchDeclarandoVariaveis();
+                else if(opcao2 == 11) ComandoSwitchComBlocosDeCodigo();
+                else if(opcao2 == 12) SwitchAninhado();
                 else printf("Opção inexistente.");
                 break;
             default:
