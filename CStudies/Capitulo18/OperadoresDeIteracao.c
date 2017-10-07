@@ -7,6 +7,11 @@
 //
 
 #include "OperadoresDeIteracao.h"
+#include <string.h>
+
+int QuadradoDeUmNumero(int numero);
+int LerNumero(void);
+int ImprimirTexto(void);
 
 void ForIncremento(){
     int x;
@@ -53,8 +58,99 @@ void ForComDoisControles(){
     //Começando com o número 0 em x e y
     //Se a soma de x e y for menor ou igual a 10
     //Soma 1 unidade em x a cada rodada do laço
-    for(x = 0, y = 0; x + y <= 10; ++x){
-        y++;
+    for(x = 0, y = 0; x + y <= 10; ++x, y++){
         printf("Valor de y = %d e valor de x = %d\n", y, x);
     }
 }
+
+void ForCondicao(){
+    char str[20];
+    int x;
+    
+    //Se a senha digitada for igual a "senha" e se o usuário errou a senha menos de 3 vezes
+    for(x = 0; x < 3 && strcmp(str, "senha"); ++x){
+        printf("Digite a senha: ");
+        gets(str);
+    }
+    
+    if(x == 3) return;
+    else printf("\nSenha correta.");
+}
+
+void ForComFuncoes(){
+    int numero;
+    
+    //For utiliza chamadas de funções para as suas rodadas
+    for(ImprimirTexto(); (numero = LerNumero()); ImprimirTexto()){
+        QuadradoDeUmNumero(numero);
+    }
+}
+
+int QuadradoDeUmNumero(int numero){
+    printf("%d\n", numero*numero);
+    return numero*numero;
+}
+
+int LerNumero(){
+    int numero;
+    scanf("%d", &numero);
+    return numero;
+}
+
+int ImprimirTexto(){
+    printf("Digite um número: ");
+    return 0;
+}
+
+void ForSemParteDaDefinicao(){
+    int x;
+    
+    //Para que o for funcione, não é necessário ter todas as expressões na definição
+    for(x = 0; x != 123; ){
+        printf("Digite um número: ");
+        scanf("%d", &x);
+    }
+}
+
+void ForInfinito(){
+    for(;;){
+        printf("Laço infinito ");
+    }
+}
+
+void ForDigiteA(){
+    char ch = '\0';
+    
+    for(;;){
+        printf("Digite A\n");
+        ch = getchar();
+        if(ch == 'A') break; //Se o caractere digitado for igual a A, sai do laço
+    }
+    
+    printf("Você digitou um A.\n");
+}
+
+void ForSemCorpo(){
+    int x;
+    
+    printf("Começou o for\n");
+    
+    //For de atraso de tempo
+    for(x = 0; x < 1000000000; x++);
+    
+    printf("Terminou o for\n");
+}
+
+void ComandoWhile(){
+    char ch;
+    
+    ch = '\0';
+    
+    //Enquanto o caractere digitado for diferente de A, o código será executado
+    while(ch != 'A'){
+        printf("Digite A\n");
+        ch = getchar();
+    }
+}
+
+

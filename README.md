@@ -731,7 +731,7 @@ O *default* é opcional e é executado caso nenhuma coincidência em uma constan
 | [```void ComandoSwitchSemBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do **switch** sem o **break** | - |
 | [```void ComandoSwitchDeclarandoVariaveis(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de declaração de variável dentro de um **switch** | - |
 | [```void ComandoSwitchComBlocosDeCodigo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de blocos de código dentro de um **switch** | - |
-| [```void SwitchAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de **switch** aninhado | **NÃO ESTÁ FUNCIONANDO** |
+| [```void SwitchAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de **switch** aninhado | - |
 
 # [Capítulo 18](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo18)
 
@@ -743,7 +743,9 @@ O *default* é opcional e é executado caso nenhuma coincidência em uma constan
 
 **do while**
 
-### Utilização do for
+### For
+
+#### Utilização do for
 
 ```for(inicialização; condição; incremento) comando;``` 
 
@@ -761,3 +763,22 @@ incremento define como a variável do laço varia a cada vez que o laço é repe
 | [```void ForDecremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Exemplo de utilização do **for** decrementando o valor a cada rodada | - |
 | [```void ForNaoSeraExecutado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Exemplo de **for** que não será executado, pois a condição é falsa | - |
 | [```void ForComDoisControles(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | É possível utilizar o comando **for** com duas variáveis de controle | - |
+| [```void ForCondicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | A condição do **for** pode ser alguma outra expressão lógica | - |
+| [```void ForComFuncoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | As expressões que controlam o **for** também podem ser funções | Utiliza os métodos ```int QuadradoDeUmNumero(int numero)```, ```int LerNumero(void)``` e ```int ImprimirTexto(void)``` |
+| [```void ForSemParteDaDefinicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Não é necessário que existam todas as expressões na definição de um **for** para que ele funcione adequadamente | - |
+| [```void ForInfinito(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | For irá rodar infinitamente até parar o programa | - |
+| [```void ForSemCorpo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | É possível criar um for sem um corpo. Esse for é um for de atraso de tempo | - |
+
+### While
+
+O laço se repete enquanto a condição for verdadeira.
+
+#### Utilização
+
+```while(condição) comando;```
+
+comando pode ser um comando vazio, um comando simples ou um bloco de comandos.
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void ComandoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Enquanto o caractere A não for digitado, o bloco de código será executado | É necessário limpar o buffer para corrigir o problema de imprimir duas vezes a mensagem |

@@ -2,7 +2,7 @@
 //  OperadoresTernarios.c
 //  CStudies
 //
-//  Created by Hatsumi Hashi on 03/10/17.
+//  Created by Hatsumi Hashi on 06/10/17.
 //  Copyright © 2017 Hatsumi Hashi. All rights reserved.
 //
 

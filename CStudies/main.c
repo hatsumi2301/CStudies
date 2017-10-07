@@ -84,6 +84,12 @@ void ComandoSwitchSemBreak(void);
 void ComandoSwitchDeclarandoVariaveis(void);
 void ComandoSwitchComBlocosDeCodigo(void);
 void SwitchAninhado(void);
+void ForCondicao(void);
+void ForComFuncoes(void);
+void ForSemParteDaDefinicao(void);
+void ForInfinito(void);
+void ForDigiteA(void);
+void ForSemCorpo(void);
 
 int main(){
     while (1==1) {
@@ -258,7 +264,7 @@ int main(){
                 break;
             case 17:
                 printf("\n\nInforme uma opção: \n");
-                printf("1. If e else\n2. If e else if\n3. Operador ternário\n4. Calcular quadrado de um número com operador ternário\n5. Chamada de funções com o operador ternário\n6. Ifs aninhados\n7. If para verificar se o número é zero\n8. Menu switch\n9. Comando switch sem break\n10. Comando switch com declação de variáveis\n11. Comando swithc com blocos de código\n12. Switch aninhado\n\n");
+                printf("1. If e else\n2. If e else if\n3. Operador ternário\n4. Calcular quadrado de um número com operador ternário\n5. Chamada de funções com o operador ternário\n6. Ifs aninhados\n7. If para verificar se o número é zero\n8. Menu switch\n9. Comando switch sem break\n10. Comando switch com declação de variáveis\n11. Comando switch com blocos de código\n12. Switch aninhado\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                     
@@ -276,12 +282,29 @@ int main(){
                 else if(opcao2 == 12) SwitchAninhado();
                 else printf("Opção inexistente.");
                 break;
+            case 18:
+                printf("\n\nInforme uma opção: \n");
+                printf("1. Condição do for\n2. For com funções\n3. For sem parte da definição\n4. Laço infinito\n5. Laço infinito até que digite a letra A\n6. For sem corpo\n7. Comando while\n\n");
+                scanf("%d", &opcao2);
+                printf("\n");
+                
+                if(opcao2 == 1)  ForCondicao();
+                else if(opcao2 == 2) ForComFuncoes();
+                else if(opcao2 == 3) ForSemParteDaDefinicao();
+                else if(opcao2 == 4) ForInfinito();
+                else if(opcao2 == 5) ForDigiteA();
+                else if(opcao2 == 6) ForSemCorpo();
+                else if(opcao2 == 7) ComandoWhile();
+                else printf("Opção inexistente.");
+                break;
             default:
                 printf("Opção inexistente.");
                 break;
         }
     }
 }
+
+//void ComandoWhile(void);
 
 int Opcoes(){
     printf("\n______________________________________\nInforme o número do capítulo\n");
