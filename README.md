@@ -759,15 +759,15 @@ incremento define como a variável do laço varia a cada vez que o laço é repe
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void ForIncremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Exemplo de utilização do **for** incrementando o valor a cada rodada | - |
-| [```void ForDecremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Exemplo de utilização do **for** decrementando o valor a cada rodada | - |
-| [```void ForNaoSeraExecutado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Exemplo de **for** que não será executado, pois a condição é falsa | - |
-| [```void ForComDoisControles(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | É possível utilizar o comando **for** com duas variáveis de controle | - |
-| [```void ForCondicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | A condição do **for** pode ser alguma outra expressão lógica | - |
-| [```void ForComFuncoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | As expressões que controlam o **for** também podem ser funções | Utiliza os métodos ```int QuadradoDeUmNumero(int numero)```, ```int LerNumero(void)``` e ```int ImprimirTexto(void)``` |
-| [```void ForSemParteDaDefinicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Não é necessário que existam todas as expressões na definição de um **for** para que ele funcione adequadamente | - |
-| [```void ForInfinito(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | For irá rodar infinitamente até parar o programa | - |
-| [```void ForSemCorpo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | É possível criar um for sem um corpo. Esse for é um for de atraso de tempo | - |
+| [```void ForIncremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Exemplo de utilização do **for** incrementando o valor a cada rodada | - |
+| [```void ForDecremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Exemplo de utilização do **for** decrementando o valor a cada rodada | - |
+| [```void ForNaoSeraExecutado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Exemplo de **for** que não será executado, pois a condição é falsa | - |
+| [```void ForComDoisControles(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | É possível utilizar o comando **for** com duas variáveis de controle | - |
+| [```void ForCondicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | A condição do **for** pode ser alguma outra expressão lógica | - |
+| [```void ForComFuncoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | As expressões que controlam o **for** também podem ser funções | Utiliza os métodos ```int QuadradoDeUmNumero(int numero)```, ```int LerNumero(void)``` e ```int ImprimirTexto(void)``` |
+| [```void ForSemParteDaDefinicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Não é necessário que existam todas as expressões na definição de um **for** para que ele funcione adequadamente | - |
+| [```void ForInfinito(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | For irá rodar infinitamente até parar o programa | - |
+| [```void ForSemCorpo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | É possível criar um for sem um corpo. Esse for é um for de atraso de tempo | - |
 
 ### While
 
@@ -779,6 +779,26 @@ O laço se repete enquanto a condição for verdadeira.
 
 comando pode ser um comando vazio, um comando simples ou um bloco de comandos.
 
+#### Exemplos de while
+
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void ComandoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeIteracao.c) | Enquanto o caractere A não for digitado, o bloco de código será executado | É necessário limpar o buffer para corrigir o problema de imprimir duas vezes a mensagem |
+| [```void ComandoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Enquanto o caractere A não for digitado, o bloco de código será executado | É necessário limpar o buffer para corrigir o problema de imprimir duas vezes a mensagem |
+| [```void ComandoWhileCondicaoVerdadeira(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Caso a condição do **while** já seja verdadeira, o bloco de código dentro do **while** não será executado | - |
+| [```void ComandoWhileSemCorpo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | O comando **while** não precisa ter um corpo, ele ficará sendo executado até que o usuário digite a letra "A" | - |
+
+### Do-while
+
+Os laços **for** e **while** testam a condição do laço no começo. O **do-while** testa a condição do laço no final, isso significa que o laço **do-while** sempre será executado pelo menos uma vez.
+
+#### Utilização
+
+```do{```
+```&nbsp;&nbsp;&nbsp;comando;```
+```}while(condição);```
+
+#### Exemplos de do-while
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void ComandoDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | O comando **do-while** foi utilizado para a seleção de menu, enquanto um menu válido não for selecionado, ele será executado | - |

@@ -153,4 +153,51 @@ void ComandoWhile(){
     }
 }
 
+void ComandoWhileCondicaoVerdadeira(){
+    int x = 10;
+    
+    printf("Antes do while\n");
+    
+    //Caso a condição do while já seja verdadeira, o bloco de código não será executado
+    while(x != 10) printf("Essa linha não será executada\n");
+    
+    printf("Depois do while\n");
+}
 
+void ComandoWhileSemCorpo(){
+    char ch;
+    
+    ch = '\0';
+    
+    printf("Digite A\n");
+    
+    //Será executado até que o usuário digite A
+    while((ch = getchar()) != 'A');
+    
+    printf("Fim do while\n");
+}
+
+void ComandoDoWhile(){
+    char ch;
+    
+    printf("Escolha uma opção de menu:\n");
+    printf("Opção 1\n");
+    printf("Opção 2\n");
+    printf("Opção 3\n");
+    
+    do{
+        ch = getchar();
+        
+        switch(ch){
+            case 1:
+                printf("Você escolheu a opção 1\n");
+                break;
+            case 2:
+                printf("Você escolheu a opção 2\n");
+                break;
+            case 3:
+                printf("Você escolheu a opção 3\n");
+                break;
+        }
+    }while(ch != '1' && ch != '2' && ch != '3');
+}

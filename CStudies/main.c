@@ -90,6 +90,10 @@ void ForSemParteDaDefinicao(void);
 void ForInfinito(void);
 void ForDigiteA(void);
 void ForSemCorpo(void);
+void ComandoWhile(void);
+void ComandoWhileCondicaoVerdadeira(void);
+void ComandoWhileSemCorpo(void);
+void ComandoDoWhile(void);
 
 int main(){
     while (1==1) {
@@ -105,18 +109,31 @@ int main(){
                 scanf("%d", &opcao2);
                 printf("\n");
                 
-                if(opcao2 == 1) Saida();
-                else if(opcao2 == 2) {
-                    printf("\nInforme uma opção: \n");
-                    printf("1. Número\n2. Texto\n\n");
-                    scanf("%d", &opcao2);
-                    printf("\n");
-                    
-                    if(opcao2 == 1) EntradaNumero();
-                    else if(opcao2 == 2) EntradaTexto();
-                    else printf("Opção inexistente.");
+                switch(opcao2){
+                    case 1:
+                        Saida();
+                        break;
+                    case 2:
+                        printf("\nInforme uma opção: \n");
+                        printf("1. Número\n2. Texto\n\n");
+                        scanf("%d", &opcao2);
+                        printf("\n");
+                        
+                        switch(opcao2){
+                            case 1:
+                                EntradaNumero();
+                                break;
+                            case 2:
+                                EntradaTexto();
+                                break;
+                            default:
+                                printf("Opção inexistente.");
+                        }
+                        break;
+                    default:
+                        printf("Opção inexistente.");
                 }
-                else printf("Opção inexistente.");
+                
                 break;
             case 2:
                 printf("\nInforme uma opção: \n");
@@ -284,7 +301,7 @@ int main(){
                 break;
             case 18:
                 printf("\n\nInforme uma opção: \n");
-                printf("1. Condição do for\n2. For com funções\n3. For sem parte da definição\n4. Laço infinito\n5. Laço infinito até que digite a letra A\n6. For sem corpo\n7. Comando while\n\n");
+                printf("1. Condição do for\n2. For com funções\n3. For sem parte da definição\n4. Laço infinito\n5. Laço infinito até que digite a letra A\n6. For sem corpo\n7. Comando while\n8. Comando while com condição verdadeira\n9. Comando while sem corpo\n10. Comando do-while\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                 
@@ -295,6 +312,9 @@ int main(){
                 else if(opcao2 == 5) ForDigiteA();
                 else if(opcao2 == 6) ForSemCorpo();
                 else if(opcao2 == 7) ComandoWhile();
+                else if(opcao2 == 8) ComandoWhileCondicaoVerdadeira();
+                else if(opcao2 == 9) ComandoWhileSemCorpo();
+                else if(opcao2 == 10) ComandoDoWhile();
                 else printf("Opção inexistente.");
                 break;
             default:
@@ -303,8 +323,6 @@ int main(){
         }
     }
 }
-
-//void ComandoWhile(void);
 
 int Opcoes(){
     printf("\n______________________________________\nInforme o número do capítulo\n");
