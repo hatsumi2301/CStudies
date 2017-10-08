@@ -794,7 +794,9 @@ Os laços **for** e **while** testam a condição do laço no começo. O **do-wh
 #### Utilização
 
 ```do{```
-```&nbsp;&nbsp;&nbsp;comando;```
+
+&nbsp;&nbsp;&nbsp;```comando;```
+
 ```}while(condição);```
 
 #### Exemplos de do-while
@@ -849,9 +851,13 @@ Pode ser utilizado em qualquer parte do código.
 #### Utilização
 
 ```goto rótulo;```
+
 ```.```
+
 ```.```
+
 ```.``
+
 ```rótulo:```
 
 #### Exemplos de goto
@@ -903,4 +909,6 @@ Pode ser utilizado em conjunto com comandos de laço.
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```int ComandoContinue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **continue** em um **loop** | MÉTODO COM ERRO |
+| [```int ComandoContinue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **continue** em um **loop** | - |
+
+# [Capítulo 20](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo20)
