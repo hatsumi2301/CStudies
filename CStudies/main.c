@@ -94,6 +94,13 @@ void ComandoWhile(void);
 void ComandoWhileCondicaoVerdadeira(void);
 void ComandoWhileSemCorpo(void);
 void ComandoDoWhile(void);
+int ReturnInt(void);
+char ReturnChar(void);
+void SemReturn(void);
+float ReturnFloat(void);
+void ComandoGoto(void);
+void ComandoBreak(void);
+void SwitchCaseComBreak(void);
 
 int main(){
     while (1==1) {
@@ -115,7 +122,8 @@ int main(){
                         break;
                     case 2:
                         printf("\nInforme uma opção: \n");
-                        printf("1. Número\n2. Texto\n\n");
+                        printf("1. Número\n");
+                        printf("2. Texto\n\n");
                         scanf("%d", &opcao2);
                         printf("\n");
                         
@@ -137,39 +145,67 @@ int main(){
                 break;
             case 2:
                 printf("\nInforme uma opção: \n");
-                printf("1. Tipos de variáveis\n2. Variáveis podem ter o mesmo nome, se estiverem em contextos diferentes");
+                printf("1. Tipos de variáveis\n");
+                printf("2. Variáveis podem ter o mesmo nome, se estiverem em contextos diferentes");
                 scanf("%d", &opcao2);
                 printf("\n");
                 
-                if(opcao2 == 1) TiposDeVariaveis();
-                else if(opcao2 == 2){
-                    NomeDaVariavel();
-                    NomeDaVariavelRepetido();
-                    NomeDaVariavelRepetidoEmOutraClasse();
+                switch(opcao2){
+                    case 1:
+                        TiposDeVariaveis();
+                        break;
+                    case 2:
+                        NomeDaVariavel();
+                        NomeDaVariavelRepetido();
+                        NomeDaVariavelRepetidoEmOutraClasse();
+                        break;
+                    default:
+                        printf("Opção inexistente.");
                 }
+                
                 break;
             case 3:
                 printf("\nInforme uma opção: \n");
-                printf("1. Verificar se o caractere existe na palavra informando a palavra e o caractere \n2. Verificar que o caractere 'x' não existe na palavra 'fécula'\n3. Verificar que o caractere 'a' existe na palavra 'ave'\n4. Loop for\n5. Loop while\n6. Loop do while\n7. Diferença entre o loop while e do while\n\n");
+                printf("1. Verificar se o caractere existe na palavra informando a palavra e o caractere \n");
+                printf("2. Verificar que o caractere 'x' não existe na palavra 'fécula'\n");
+                printf("3. Verificar que o caractere 'a' existe na palavra 'ave'\n");
+                printf("4. Loop for\n");
+                printf("5. Loop while\n");
+                printf("6. Loop do while\n");
+                printf("7. Diferença entre o loop while e do while\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                 
-                if(opcao2 == 1) VerificarCaractereNaString();
-                else if(opcao2 == 2){
-                    existe = VerificarCaractereNaString2("fécula", 'x');
-                    if(existe == 0) printf("A palavra não contém a letra.\n");
-                    else printf("A palavra contém a letra.\n");
+                switch(opcao2){
+                    case 1:
+                        VerificarCaractereNaString();
+                        break;
+                    case 2:
+                        existe = VerificarCaractereNaString2("fécula", 'x');
+                        if(existe == 0) printf("A palavra não contém a letra.\n");
+                        else printf("A palavra contém a letra.\n");
+                        break;
+                    case 3:
+                        existe = VerificarCaractereNaString2("ave", 'x');
+                        if(existe == 0) printf("A palavra não contém a letra.\n");
+                        else printf("A palavra contém a letra.\n");
+                        break;
+                    case 4:
+                        LoopFor();
+                        break;
+                    case 5:
+                        LoopWhile();
+                        break;
+                    case 6:
+                        LoopDoWhile();
+                        break;
+                    case 7:
+                        DiferencaEntreLoopWhileAndDoWhile();
+                        break;
+                    default:
+                        printf("Opção inexistente.");
                 }
-                else if(opcao2 == 3){
-                    existe = VerificarCaractereNaString2("ave", 'x');
-                    if(existe == 0) printf("A palavra não contém a letra.\n");
-                    else printf("A palavra contém a letra.\n");
-                }
-                else if(opcao2 == 4) LoopFor();
-                else if(opcao2 == 5) LoopWhile();
-                else if(opcao2 == 6) LoopDoWhile();
-                else if(opcao2 == 7) DiferencaEntreLoopWhileAndDoWhile();
-                else printf("Opção inexistente.");
+                
                 break;
             case 4:
                 Condicionais();
@@ -182,37 +218,44 @@ int main(){
             case 6:
                 printf("Variável do tipo const.\n");
                 VariavelDoTipoConst("Isso é um teste");
+                
                 printf("\n\nVariável do tipo volatile.\n");
                 VariavelDoTipoVolatile();
                 break;
             case 7:
                 printf("\nInforme uma opção: \n");
-                printf("1. Variável estática\n2. Variável estática global\n3. Especificador register\n\n");
+                printf("1. Variável estática\n");
+                printf("2. Variável estática global\n");
+                printf("3. Especificador register\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                 
-                if(opcao2 == 1){
-                    printf("A variável estática vai ser inicializada somente uma vez, na primeira chamada do método. Ela será inicializada com o valor 10, será somado 1 ao seu valor e será retornado o valor 11.\nNas próximas chamadas do método, o valor da variável será o resultado do valor da soma da execução anterior.\n");
-                    for(int i = 0; i < 10; i++){
-                        valorDeRetorno = VariavelEstatica();
+                switch (opcao2) {
+                    case 1:
+                        printf("A variável estática vai ser inicializada somente uma vez, na primeira chamada do método. Ela será inicializada com o valor 10, será somado 1 ao seu valor e será retornado o valor 11.\nNas próximas chamadas do método, o valor da variável será o resultado do valor da soma da execução anterior.\n");
+                        for(int i = 0; i < 10; i++){
+                            valorDeRetorno = VariavelEstatica();
+                            printf("%d\n", valorDeRetorno);
+                        }
+                        break;
+                    case 2:
+                        printf("Informe um valor inteiro: ");
+                        scanf("%d", &valorDeRetorno);
+                        
+                        IniciarSerie(valorDeRetorno);
+                        valorDeRetorno = Serie();
+                        
+                        printf("Valor informado + 23 = %d.\n", valorDeRetorno);
+                        break;
+                    case 3:
+                        valorDeRetorno = EspecificadorRegister(10, 10);
+                        
                         printf("%d\n", valorDeRetorno);
-                    }
+                        break;
+                    default:
+                        printf("Opção inexistente.");
                 }
-                else if(opcao2 == 2){
-                    printf("Informe um valor inteiro: ");
-                    scanf("%d", &valorDeRetorno);
-                    
-                    IniciarSerie(valorDeRetorno);
-                    valorDeRetorno = Serie();
-                    
-                    printf("Valor informado + 23 = %d.\n", valorDeRetorno);
-                }
-                else if(opcao2 == 3){
-                    valorDeRetorno = EspecificadorRegister(10, 10);
-                    
-                    printf("%d\n", valorDeRetorno);
-                }
-                else printf("Opção inexistente.");
+                
                 break;
             case 8:
                 printf("Conversão de tipos de valores\n\n");
@@ -222,18 +265,42 @@ int main(){
                 AtribuicoesMultiplas();
                 
                 printf("\n\nInforme uma opção: \n");
-                printf("1. Subtração\n2. Adição\n3. Multiplicação\n4. Divisão\n5. Módulo\n6. Incremento\n7. Decremento\n\n");
+                printf("1. Subtração\n");
+                printf("2. Adição\n");
+                printf("3. Multiplicação\n");
+                printf("4. Divisão\"n");
+                printf("5. Módulo\n");
+                printf("6. Incremento\n");
+                printf("7. Decremento\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                 
-                if(opcao2 == 1) Subtracao();
-                else if(opcao2 == 2) Adicao();
-                else if(opcao2 == 3) Multiplicacao();
-                else if(opcao2 == 4) Divisao();
-                else if(opcao2 == 5) Modulo();
-                else if(opcao2 == 6) Incremento();
-                else if(opcao2 == 7) Decremento();
-                else printf("Opção inexistente.");
+                switch (opcao2) {
+                    case 1:
+                        Subtracao();
+                        break;
+                    case 2:
+                        Adicao();
+                        break;
+                    case 3:
+                        Multiplicacao();
+                        break;
+                    case 4:
+                        Divisao();
+                        break;
+                    case 5:
+                        Modulo();
+                        break;
+                    case 6:
+                        Incremento();
+                        break;
+                    case 7:
+                        Decremento();
+                        break;
+                    default:
+                        printf("Opção inexistente.");
+                }
+                
                 break;
             case 9:
                 MaiorQue();
@@ -253,6 +320,7 @@ int main(){
                 
                 char aCodificado = Codificar('a');
                 printf("Caractere \'a\' codificado: %c\n", aCodificado);
+                
                 break;
             case 11:
                 OperadorTernario();
@@ -281,42 +349,137 @@ int main(){
                 break;
             case 17:
                 printf("\n\nInforme uma opção: \n");
-                printf("1. If e else\n2. If e else if\n3. Operador ternário\n4. Calcular quadrado de um número com operador ternário\n5. Chamada de funções com o operador ternário\n6. Ifs aninhados\n7. If para verificar se o número é zero\n8. Menu switch\n9. Comando switch sem break\n10. Comando switch com declação de variáveis\n11. Comando switch com blocos de código\n12. Switch aninhado\n\n");
+                printf("1. If e else\n");
+                printf("2. If e else if\n");
+                printf("3. Operador ternário\n");
+                printf("4. Calcular quadrado de um número com operador ternário\n");
+                printf("5. Chamada de funções com o operador ternário\n");
+                printf("6. Ifs aninhados\n");
+                printf("7. If para verificar se o número é zero\n");
+                printf("8. Menu switch\n");
+                printf("9. Comando switch sem break\n");
+                printf("10. Comando switch com declação de variáveis\n");
+                printf("11. Comando switch com blocos de código\n");
+                printf("12. Switch aninhado\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                     
-                if(opcao2 == 1) AdivinharONumero();
-                else if(opcao2 == 2) AdivinharONumeroComIfElseIf();
-                else if(opcao2 == 3) AdivinharONumeroComOperadorTernario();
-                else if(opcao2 == 4) CalcularQuadradoDeUmNumeroComOperadorTernario();
-                else if(opcao2 == 5) OperadorTernarioComFuncoes();
-                else if(opcao2 == 6) AdivinharONumeroComIfAninhado();
-                else if(opcao2 == 7) VerificaSeONumeroEhZero();
-                else if(opcao2 == 8) ComandoSwitchMenu();
-                else if(opcao2 == 9) ComandoSwitchSemBreak();
-                else if(opcao2 == 10) ComandoSwitchDeclarandoVariaveis();
-                else if(opcao2 == 11) ComandoSwitchComBlocosDeCodigo();
-                else if(opcao2 == 12) SwitchAninhado();
-                else printf("Opção inexistente.");
+                switch (opcao2) {
+                    case 1:
+                        AdivinharONumero();
+                        break;
+                    case 2:
+                        AdivinharONumeroComIfElseIf();
+                        break;
+                    case 3:
+                        AdivinharONumeroComOperadorTernario();
+                        break;
+                    case 4:
+                        CalcularQuadradoDeUmNumeroComOperadorTernario();
+                        break;
+                    case 5:
+                        OperadorTernarioComFuncoes();
+                        break;
+                    case 6:
+                        AdivinharONumeroComIfAninhado();
+                        break;
+                    case 7:
+                        VerificaSeONumeroEhZero();
+                        break;
+                    case 8:
+                        ComandoSwitchMenu();
+                        break;
+                    case 9:
+                        ComandoSwitchSemBreak();
+                        break;
+                    case 10:
+                        ComandoSwitchDeclarandoVariaveis();
+                        break;
+                    case 11:
+                        ComandoSwitchComBlocosDeCodigo();
+                        break;
+                    case 12:
+                        SwitchAninhado();
+                        break;
+                    default:
+                        printf("Opção inexistente.");
+                }
                 break;
             case 18:
                 printf("\n\nInforme uma opção: \n");
-                printf("1. Condição do for\n2. For com funções\n3. For sem parte da definição\n4. Laço infinito\n5. Laço infinito até que digite a letra A\n6. For sem corpo\n7. Comando while\n8. Comando while com condição verdadeira\n9. Comando while sem corpo\n10. Comando do-while\n\n");
+                printf("1. Condição do for\n");
+                printf("2. For com funções\n");
+                printf("3. For sem parte da definição\n");
+                printf("4. Laço infinito\n");
+                printf("5. Laço infinito até que digite a letra A\n");
+                printf("6. For sem corpo\n");
+                printf("7. Comando while\n");
+                printf("8. Comando while com condição verdadeira\n");
+                printf("9. Comando while sem corpo\n");
+                printf("10. Comando do-while\n\n");
                 scanf("%d", &opcao2);
                 printf("\n");
                 
-                if(opcao2 == 1)  ForCondicao();
-                else if(opcao2 == 2) ForComFuncoes();
-                else if(opcao2 == 3) ForSemParteDaDefinicao();
-                else if(opcao2 == 4) ForInfinito();
-                else if(opcao2 == 5) ForDigiteA();
-                else if(opcao2 == 6) ForSemCorpo();
-                else if(opcao2 == 7) ComandoWhile();
-                else if(opcao2 == 8) ComandoWhileCondicaoVerdadeira();
-                else if(opcao2 == 9) ComandoWhileSemCorpo();
-                else if(opcao2 == 10) ComandoDoWhile();
-                else printf("Opção inexistente.");
+                switch (opcao2) {
+                    case 1:
+                        ForCondicao();
+                        break;
+                    case 2:
+                        ForComFuncoes();
+                        break;
+                    case 3:
+                        ForSemParteDaDefinicao();
+                        break;
+                    case 4:
+                        ForInfinito();
+                        break;
+                    case 5:
+                        ForDigiteA();
+                        break;
+                    case 6:
+                        ForSemCorpo();
+                        break;
+                    case 7:
+                        ComandoWhile();
+                        break;
+                    case 8:
+                        ComandoWhileCondicaoVerdadeira();
+                        break;
+                    case 9:
+                        ComandoWhileSemCorpo();
+                        break;
+                    case 10:
+                        ComandoDoWhile();
+                        break;
+                    default:
+                        printf("Opção inexistente.");
+                }
                 break;
+            case 19:
+                {
+                    int numero;
+                    char ch;
+                    float f;
+                    
+                    numero = ReturnInt();
+                    ch = ReturnChar();
+                    f = ReturnFloat();
+                    
+                    printf("Método que retorna um inteiro, retornou o valor: %d\n", numero);
+                    printf("Método que retorna um caractere, retornou o valor: %c\n", ch);
+                    SemReturn();
+                    printf("Método que retorna um float, retornou o valor: %f\n", f);
+                    
+                    printf("\n\nLoop com goto:\n");
+                    ComandoGoto();
+                    
+                    printf("\n\nComando de loop com break\n");
+                    ComandoBreak();
+                    
+                    printf("\n\nComando switch case com break\n");
+                    SwitchCaseComBreak();
+                    break;
+                }
             default:
                 printf("Opção inexistente.");
                 break;

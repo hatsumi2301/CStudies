@@ -713,7 +713,7 @@ O comando **else** sempre se refere ao comando **if** mais próximo, que está d
 
 ```switch(expressão){```<br>```case constante1:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequencia de comandos```<br>```break;```<br>```case constante2:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequencia de comandos```<br>```break;```<br>```case constante3:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequencia de comandos```<br>```break;```<br>```.```<br>```.```<br>```.```<br>```default:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequência de comandos```<br>```}```
 
-O *default* é opcional e é executado caso nenhuma coincidência em uma constante seja detectada.
+*default* é opcional e é executado caso nenhuma coincidência em uma constante seja detectada.
 
 #### Observações
 
@@ -749,11 +749,11 @@ O *default* é opcional e é executado caso nenhuma coincidência em uma constan
 
 ```for(inicialização; condição; incremento) comando;``` 
 
-inicialização é, geralmente, um comando de atribuição que é usado para colocar um valor na variável de controle do laço.
+*inicialização* é, geralmente, um comando de atribuição que é usado para colocar um valor na variável de controle do laço.
 
-condição é uma expressão relacional que determina quando o laço acaba.
+*condição* é uma expressão relacional que determina quando o laço acaba.
 
-incremento define como a variável do laço varia a cada vez que o laço é repetido.
+*incremento* define como a variável do laço varia a cada vez que o laço é repetido.
 
 #### Exemplos de for
 
@@ -777,7 +777,7 @@ O laço se repete enquanto a condição for verdadeira.
 
 ```while(condição) comando;```
 
-comando pode ser um comando vazio, um comando simples ou um bloco de comandos.
+*comando* pode ser um comando vazio, um comando simples ou um bloco de comandos.
 
 #### Exemplos de while
 
@@ -802,3 +802,77 @@ Os laços **for** e **while** testam a condição do laço no começo. O **do-wh
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void ComandoDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | O comando **do-while** foi utilizado para a seleção de menu, enquanto um menu válido não for selecionado, ele será executado | - |
+
+# [Capítulo 19](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo19)
+
+## Desvio
+
+**return**
+
+**goto**
+
+**break**
+
+**continue**
+
+### Return
+
+Utilizado para retornar de uma função, ele retorna para o ponto em que a chamada à função foi feita.
+
+Pode ser utilizado em qualquer parte do código.
+
+Se o **return** tem um valor associado a ele, esse valor é o valor de retorno da função. Se não existe nenhum valor associado, apenas lixo é retornado. 
+
+#### Exemplos de return
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```int ReturnInt(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um **int** | - |
+| [```char ReturnChar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um **char** | - |
+| [```void SemRetunr(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método sem retorno é um método do tipo **void** | - |
+| [```float ReturnFloat(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um **float** | - |
+
+#### Utilização
+
+```return expressão;```
+
+*expressão* é opcional.
+
+### Goto
+
+Há pouca necessidade do **goto**, pois o mesmo controle pode ser feito por **break** ou **continue**. 
+
+Uma preocupação da maioria dos programadores sobre o **goto** é a sua tendência de tornar os programas ilegíveis.   
+
+Pode ser utilizado em qualquer parte do código.
+
+#### Utilização
+
+```goto rótulo;```
+```.```
+```.```
+```.``
+```rótulo:```
+
+#### Exemplos de goto
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```int ComandoGoto(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de loop com **goto** | - |
+
+### Break
+
+Pode ser utilizado para terminar um **case** em um comando **switch** ou pode ser usado para forçar uma terminação imediata de um laço, evitando o teste condicional normal do laço.
+
+Pode ser utilizado em conjunto com comandos de laço.
+
+### Exemplos de goto
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```int ComandoBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **loop** com **break** | - |
+| [```int SwitchCaseComBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **switch** com **break** | - |
+
+### Continue
+
+Pode ser utilizado em conjunto com comandos de laço.
