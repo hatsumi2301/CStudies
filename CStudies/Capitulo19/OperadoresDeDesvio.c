@@ -7,6 +7,7 @@
 //
 
 #include "OperadoresDeDesvio.h"
+#include <stdlib.h>
 
 int ReturnInt(){
     return 1;
@@ -66,5 +67,27 @@ void SwitchCaseComBreak(){
         }
         
         printf("Linha executada após o break.\n");
+    }
+}
+
+void ComandoExit(){
+    exit(0); //Termina a execução do programa
+}
+
+void ComandoContinue(){
+    char fim;
+    char ch;
+    
+    fim = 0;
+    
+    while(!fim){
+        printf("\n\nDigite um valor: ");
+        scanf(" %c", &ch);
+        if(ch == '$'){
+            fim = 1;
+            continue;
+        }
+        printf("Valor codificado: ");
+        putchar(ch + 1); //Desloca o alfabeto uma posição
     }
 }

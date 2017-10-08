@@ -873,6 +873,34 @@ Pode ser utilizado em conjunto com comandos de laço.
 | [```int ComandoBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **loop** com **break** | - |
 | [```int SwitchCaseComBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **switch** com **break** | - |
 
+### Exit
+
+Da mesma forma que você pode sair de um laço, pode sair de um programa usando a função **exit()**. 
+
+Força uma terminação imediata do programa inteiro, forçando um retorno ao sistema operacional. 
+
+#### Utilização
+
+```void exit(int codigo_de_retorno);```
+
+O valor de *codigo_de_retorno* é retornado ao processo chamador, que normalmente é o sistema operacional. 
+
+Código de retorno 0 indica terminação normal do programa.
+
+#### Exemplos de exit
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```int ComandoExit(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Finaliza o programa | Esse exemplo é utilizado no menu do main |
+
 ### Continue
 
+Funciona de forma um pouco parecida com o comando **break**, mas ao invés de forçar a terminação, ele força que ocorra a próxima iteração do laço, pulando qualquer código intermediário.
+
 Pode ser utilizado em conjunto com comandos de laço.
+
+#### Exemplos de continue
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```int ComandoContinue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **continue** em um **loop** | MÉTODO COM ERRO |

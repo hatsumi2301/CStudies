@@ -478,8 +478,14 @@ int main(){
                     
                     printf("\n\nComando switch case com break\n");
                     SwitchCaseComBreak();
+                    
+                    printf("\n\nComando continue\n");
+                    ComandoContinue();
                     break;
                 }
+            case 100:
+                ComandoExit();
+                break;
             default:
                 printf("Opção inexistente.");
                 break;
@@ -487,8 +493,13 @@ int main(){
     }
 }
 
+//void ComandoExit(void);
+//void ComandoContinue(void);
+
 int Opcoes(){
-    printf("\n______________________________________\nInforme o número do capítulo\n");
+    printf("\n______________________________________________________\n");
+    printf("Para finalizar o programa, digite 100 ou \n");
+    printf("informe o número do capítulo\n");
     
     int opcao;
     
