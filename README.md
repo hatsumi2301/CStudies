@@ -920,8 +920,11 @@ Uma expressão válida em C seguida por um ponto e vírgula.
 ### Utilização
 
 ```func();``` - uma chamada a uma função
+
 ```a = b + c;``` - um comando de atribuição
+
 ```b + f();``` - um comando válido que não faz nada
+
 ```;``` - um comando vazio
 
 ### Exemplos de comandos de expressão
@@ -940,4 +943,43 @@ Um bloco começa com um **{** e termina com um **}** correspondente.
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void Expressoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo20/ComandosDeExpressoes.c) | Exemplo de comandos de expressão | - |
+| [```void Bloco(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo20/BlocosDeCodigo.c) | Exemplo de um bloco de código | - |
+
+# [Capítulo 21](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo21)
+
+## Matriz
+
+Coleção de variáveis do mesmo tipo que é referenciada por um nome comum. 
+
+Um elemento específico em uma matriz é acessado por meio de um índice. Em C, todas as matrizes consistem em posições contíguas na memória. O endereço mais baixo corresponde ao primeiro elemento e o mais alto, ao último elemento. 
+
+A matriz mais comum em C é a string, que é uma matriz de caracteres terminada por um nulo. 
+
+### Matrizes unidimensionais
+
+Como outras variáveis, as matrizes devem ser explicitamente declaradas para que o compilador possa alocar espaço para elas na memória.
+
+O primeiro índice de uma matriz em C é o 0.
+
+#### Utilização
+
+```tipo nome[tamanho];```
+
+*tipo* declara o tipo de base da matriz.
+
+*tamanho* define quantos elementos a matriz irá guardar.
+
+#### Quantidade de armazenamento
+
+A quantidade de armazenamento necessário para guardar uma matriz está diretamente relacionada ao seu tamanho e seu tipo. Para uma matriz unidimensional, o tamanho total em bytes é calculado da seguinte maneira:
+
+*total em bytes = sizeof(tipo) * tamanho da matriz*
+
+C não tem verificação de limites em matrizes. Você poderia ultrapassar o fim de uma matriz e escrever nos dados de alguma outra variável ou mesmo no código do programa. 
+
+#### Exemplos de comandos de bloco de código
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void Matriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de uma **matriz** com tamanho 10 | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
+| [```void UltrapassaLimiteDaMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de um **for** que ultrapassa o limite de tamanho de uma **matriz** | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |

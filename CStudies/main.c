@@ -491,6 +491,8 @@ int main(){
                 Expressoes();
                 Bloco();
                 break;
+            case 21:
+                break;
             case 100:
                 ComandoExit();
                 break;
