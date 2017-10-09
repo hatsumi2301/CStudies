@@ -977,9 +977,35 @@ A quantidade de armazenamento necessário para guardar uma matriz está diretame
 
 C não tem verificação de limites em matrizes. Você poderia ultrapassar o fim de uma matriz e escrever nos dados de alguma outra variável ou mesmo no código do programa. 
 
-#### Exemplos de comandos de bloco de código
+#### Exemplos de matrizes unidimensionais
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void Matriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de uma **matriz** com tamanho 10 | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
 | [```void UltrapassaLimiteDaMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de um **for** que ultrapassa o limite de tamanho de uma **matriz** | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
+
+### Ponteiro
+
+Você pode gerar um ponteiro para o primeiro elemento de uma matriz simplesmente especificando o nome da matriz, sem nenhum índice. 
+
+Também é possível especificar o endereço do primeiro elemento de uma matriz utilizando o operador **&**. 
+
+```int matriz[10];```
+
+**matriz** e **&matriz[0]** produzem os mesmos resultados.
+
+#### Exemplos de ponteiros
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void PonteiroNaMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de ponteiro em uma matriz | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
+
+### Passagem de matrizes unidimensionais para funções
+
+Em C, você não pode passar uma matriz inteira como um argumento para uma função. Porém é possível passar um ponteiro para uma matriz para uma função, especificando, o nome da matriz sem um índice. 
+
+#### Exemplos de passagem de matrizes unidimensionais para funções
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void MatrizFuncao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de como passar uma matriz para uma função | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |

@@ -492,6 +492,7 @@ int main(){
                 Bloco();
                 break;
             case 21:
+                printf("Os métodos não são chamados aqui, pois não produzem nenhuma saída significativa para o usuário.\n");
                 break;
             case 100:
                 ComandoExit();
