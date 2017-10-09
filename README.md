@@ -856,7 +856,7 @@ Pode ser utilizado em qualquer parte do código.
 
 ```.```
 
-```.``
+```.```
 
 ```rótulo:```
 
@@ -912,3 +912,32 @@ Pode ser utilizado em conjunto com comandos de laço.
 | [```int ComandoContinue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **continue** em um **loop** | - |
 
 # [Capítulo 20](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo20)
+
+## Comandos de expressões
+
+Uma expressão válida em C seguida por um ponto e vírgula.
+
+### Utilização
+
+```func();``` - uma chamada a uma função
+```a = b + c;``` - um comando de atribuição
+```b + f();``` - um comando válido que não faz nada
+```;``` - um comando vazio
+
+### Exemplos de comandos de expressão
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void Expressoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo20/ComandosDeExpressoes.c) | Exemplo de comandos de expressão | - |
+
+## Blocos de comando
+
+Grupos de comandos relacionados que são tratados como uma unidade. Os comandos que constituem um bloco estão logicamente conectados. 
+
+Um bloco começa com um **{** e termina com um **}** correspondente. 
+
+### Exemplos de comandos de bloco de código
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void Expressoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo20/ComandosDeExpressoes.c) | Exemplo de comandos de expressão | - |

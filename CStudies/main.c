@@ -101,6 +101,10 @@ float ReturnFloat(void);
 void ComandoGoto(void);
 void ComandoBreak(void);
 void SwitchCaseComBreak(void);
+void ComandoExit(void);
+void ComandoContinue(void);
+void Expressoes(void);
+void Bloco(void);
 
 int main(){
     while (1==1) {
@@ -483,6 +487,10 @@ int main(){
                     ComandoContinue();
                     break;
                 }
+            case 20:
+                Expressoes();
+                Bloco();
+                break;
             case 100:
                 ComandoExit();
                 break;
@@ -492,9 +500,6 @@ int main(){
         }
     }
 }
-
-//void ComandoExit(void);
-//void ComandoContinue(void);
 
 int Opcoes(){
     printf("\n______________________________________________________\n");
