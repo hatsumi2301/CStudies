@@ -1033,9 +1033,61 @@ Por este motivo, é necessário que o tamanho das matrizes de caracteres sejam u
 
 **OBS**: para utilizar essas funções é necessário adicionar o cabeçalho "string.h""
 
-#### Exemplos de das funções de strings
+#### Exemplos das funções de strings
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void String(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo22/String.c) | Exemplo de utilização das funções de string | - |
+
+# [Capítulo 23](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo23)
+
+## Matrizes bidimensionais
+
+O primeiro índice da matriz indica a linha e o segundo índice indica a coluna.
+
+Quando uma matriz bidimensional é usada como argumento para uma função, apenas um ponteiro para o primeiro elemento é realmente passado. Porém, uma função que recebe uma matriz bidimensional como um parâmetro, deve definir pelo menos o comprimento da segunda dimensão. Isso ocorre, porque o compilador C precisa saber o comprimento de cada linha para indexar a matriz corretamente.
+
+### Tamanho necessário em bytes para armazenamento na memória
+
+*bytes = tamanho do 1º índice * tamanho do 2º índice * size of(tipo base)*
+
+#### Exemplo de cálculo de bytes
+
+```int matriz[10][5];```
+
+Tem o tamanho *10 * 5 * 2* que seriam 100 bytes.
+
+### Utilização
+
+```int d[10][20];``` - Matriz bidimensional de tamanho 10, 20.
+
+```d[1][2];``` - Acessando o ponto 1, 2.
+
+### Exemplo de chamada de função
+
+```void funcao(int x[][10]){```
+
+```.```
+
+```.```
+
+```.```
+
+```}```
+
+### Visualização da matriz
+
+|  | Coluna 1 | Coluna 2 | Coluna 3 |
+| --- | --- | --- | --- |
+| Linha 1 | ch[0][0] | ch[0][1] | ch[0][2] |
+| Linha 2 | ch[1][0] | ch[1][1] | ch[1][2] |
+| Linha 3 | ch[2][0] | ch[2][1] | ch[2][2] |
+| Linha 4 | ch[3][0] | ch[3][1] | ch[3][2] |
+
+#### Exemplos de matrizes bidimensionais
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void MatrizBidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo23/MatrizesBidimensionais.c) | Exemplo de uma matriz bidimensional | - |
+| [```void NotasDosAlunos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo23/MatrizesBidimensionais.c) | Exemplo de uma matriz bidimensial | MÉTODO ESTÁ COM ERRO |
 

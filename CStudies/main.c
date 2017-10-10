@@ -105,6 +105,7 @@ void ComandoExit(void);
 void ComandoContinue(void);
 void Expressoes(void);
 void Bloco(void);
+void String(void);
 
 int main(){
     while (1==1) {
@@ -494,6 +495,14 @@ int main(){
             case 21:
                 printf("Os métodos não são chamados aqui, pois não produzem nenhuma saída significativa para o usuário.\n");
                 break;
+            case 22:
+                String();
+                break;
+            case 23:
+                MatrizBidimensional();
+                printf("\n\n");
+                NotasDosAlunos();
+                break;
             case 100:
                 ComandoExit();
                 break;
@@ -503,6 +512,9 @@ int main(){
         }
     }
 }
+
+//void MatrizBidimensional(void);
+//void NotasDosAlunos(void);
 
 int Opcoes(){
     printf("\n______________________________________________________\n");

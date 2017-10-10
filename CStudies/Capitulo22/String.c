@@ -13,7 +13,9 @@ void String(){
     char s1[80];
     char s2[80];
     
+    printf("Informe uma palavra: \n");
     scanf(" %s", s1);
+    printf("Informe outra palavra: \n");
     scanf(" %s", s2);
     
     //Retorna o tamanho de s1 e s2
@@ -36,5 +38,5 @@ void String(){
     if(strchr("alo", 'o')) printf("o está em alo\n");
     
     //Retorna um ponteiro para a primeira ocorrência de "ola" em "ola aqui"
-    if(strstr("ola aqui", "ola") printf("ola encontrado\n");
+    if(strstr("ola aqui", "ola")) printf("ola encontrado\n");
 }
