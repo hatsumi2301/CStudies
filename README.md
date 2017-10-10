@@ -136,7 +136,7 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 | ------------- |:-------------:| -----:|
 | [```void VerificarCaractereNaString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Obtém uma palavra e um caractere como dados de entrada, informados pelo usuário e verifica se a palavra contém o caractere informado | - |
 | [```int VerificarCaractereNaString2(char *s, char c)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Verifica se a palavra contém a letra. Os dados devem ser passados como parâmetros. Retorna 1 se a palavra contém a letra e 0 se a palavra não contém a letra. | *Exemplo* ```VerificarCaractereNaString2("teste", "e")``` verifica se a palavra "teste" contém a letra "e" |
-| [```void LoopFor(doiv)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo "for" | - |
+| [```void LoopFor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo "for" | - |
 | [```void LoopWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo "while" | - |
 | [```void LoopDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo "do while" | - |
 | [```void DiferencaEntreLoopWhileAndDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Exemplo da diferença entre os loops "while" e "do while" | - |
@@ -202,7 +202,7 @@ O modificador volatile é usado para informar ao compilador que o valor de uma v
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void VariavelDoTipoVolatile()```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Esse método altera o valor da const por meio de um ponteiro | - |
+| [```void VariavelDoTipoVolatile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Esse método altera o valor da const por meio de um ponteiro | - |
 
 # [Capítulo 07](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo07)
 
@@ -315,7 +315,7 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 | ------------- |:-------------:| -----:|
 | [```void Subtracao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Subtrai 1 de 2 | - |
 | [```void Adicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Soma 2 e 1 | - |
-| [```void Multiplicacao(void)```]() | Multiplica 2 e 1 | - |
+| [```void Multiplicacao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Multiplica 2 e 1 | - |
 | [```void Divisao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Divide 4 por 2 | - |
 | [```void Modulo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Calcula o módulo de 5 por 2 e o módulo de 1 por 2 | - |
 | [```void Incremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Exemplo de incremento | - |
@@ -459,8 +459,8 @@ Esse código é equivalente a:
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void OperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadorTernario.c) | Exemplo de operador ternário | - |
-| [```void ExemploComIfElseOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadorTernario.c) | O mesmo exemplo do método acima, mas com if e else | - |
+| [```void OperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadoresTernarios.c) | Exemplo de operador ternário | - |
+| [```void ExemploComIfElseOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadoresTernarios.c) | O mesmo exemplo do método acima, mas com if e else | - |
 
 # [Capítulo 12](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo12)
 
@@ -1009,3 +1009,33 @@ Em C, você não pode passar uma matriz inteira como um argumento para uma funç
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void MatrizFuncao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de como passar uma matriz para uma função | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
+
+# [Capítulo 22](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo22)
+
+## String
+
+Matriz de caracteres terminada por um nulo.
+
+*Nulo = '\0'*
+
+Por este motivo, é necessário que o tamanho das matrizes de caracteres sejam uma unidade maior do que o requisitado.
+
+### Funções
+
+| Nome | Função |
+| --- | --- |
+| strcpy(s1, s2) | Copia s2 em s1 |
+| strcat(s1, s2) | Concatena s2 ao final de s1 |
+| strlen(s1) | Retorna o tamanho de s1 |
+| strcmp(s1, s2) | Retorna 0 se s1 e s2 são iguais; menor que 0 se s1 < s2; maior que 0 se s1 > s2 |
+| strchr(s1, ch) | Retorna um ponteiro para a primeira ocorrência de ch em s1 |
+| strstr(s1, s2) | Retorna um ponteiro para a primeira ocorrência de s2 em s1 |
+
+**OBS**: para utilizar essas funções é necessário adicionar o cabeçalho "string.h""
+
+#### Exemplos de das funções de strings
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void String(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo22/String.c) | Exemplo de utilização das funções de string | - |
+
