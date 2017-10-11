@@ -503,6 +503,9 @@ int main(){
                 printf("\n\n");
                 NotasDosAlunos();
                 break;
+            case 24:
+                MatrizDeString();
+                break;
             case 100:
                 ComandoExit();
                 break;
@@ -515,6 +518,7 @@ int main(){
 
 //void MatrizBidimensional(void);
 //void NotasDosAlunos(void);
+//void MatrizDeString(void);
 
 int Opcoes(){
     printf("\n______________________________________________________\n");

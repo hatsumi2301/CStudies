@@ -1089,5 +1089,30 @@ Tem o tamanho *10 * 5 * 2* que seriam 100 bytes.
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void MatrizBidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo23/MatrizesBidimensionais.c) | Exemplo de uma matriz bidimensional | - |
-| [```void NotasDosAlunos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo23/MatrizesBidimensionais.c) | Exemplo de uma matriz bidimensial | MÉTODO ESTÁ COM ERRO |
+| [```void NotasDosAlunos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo23/MatrizesBidimensionais.c) | Exemplo de uma matriz bidimensial | - |
 
+# [Capítulo 24](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo24)
+
+## Matrizes de strings
+
+### Utilização
+
+```char string_array[30][81];```
+
+Uma matriz de 30 strings, cada qual com o comprimento máximo de 80 caracteres.
+
+### Acessar uma string
+
+```gets(string_array[2]);```
+
+Acessa a string na posição de índice 2.
+
+O comando acima é equivalente a:
+
+```gets(&string_array[2][0]);```
+
+#### Exemplos de matrizes de strings
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void MatrizDeString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo24/MatrizesDeStrings.c) | Exemplo de uma matriz de string | ESSE MÉTODO ESTÁ COM ERRO |

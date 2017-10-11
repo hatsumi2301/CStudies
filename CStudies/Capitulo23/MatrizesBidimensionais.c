@@ -36,7 +36,7 @@ void MatrizBidimensional(){
 }
 
 void NotasDosAlunos(){
-    char ch;
+    char ch = '\0';
     char str[80];
     
     for(;;){
@@ -45,7 +45,7 @@ void NotasDosAlunos(){
             printf("(E)xibir as notas\n");
             printf("(S)air\n");
             
-            scanf(" %c", &ch);
+            scanf(" %c", str);
             
             ch = toupper(*str);
         }while((ch != 'I') && (ch != 'E') && (ch != 'S'));
@@ -95,3 +95,4 @@ void ExibirNotas(int nota[][NOTAS]){
         }
     }
 }
+
