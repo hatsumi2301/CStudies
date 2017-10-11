@@ -1116,3 +1116,40 @@ O comando acima é equivalente a:
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void MatrizDeString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo24/MatrizesDeStrings.c) | Exemplo de uma matriz de string | ESSE MÉTODO ESTÁ COM ERRO |
+
+# [Capítulo 25](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo25)
+
+## Matrizes multidimensionais
+
+Matrizes de de três ou mais dimensões não são frequentemente usadas devido à quantidade de memória de que elas necessitam. 
+
+### Utilização
+
+```tipo nome[tamanho1][tamanho2][tamanho3]...[tamanhoN];```
+
+### Exemplo de cálculo de bytes
+
+```int matriz[10][6][9][4];```
+
+Tem o tamanho *10 * 6 * 9 * 4* 2* que seriam 4.320 bytes.
+
+### Passagem de matrizes multidimensionais para funções
+
+```int m[4][3][6][5];```
+<br><br>
+```void funcao(int[][3][6][5])```
+
+```.```
+
+```.```
+
+```.```
+
+```}```
+
+#### Exemplos de matrizes multidimensionais
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void MatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo25/MatrizesMultidimensionais.c) | Exemplo de uma matriz multidimensional | - |
+
