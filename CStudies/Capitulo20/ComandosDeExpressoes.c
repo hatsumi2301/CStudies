@@ -21,7 +21,7 @@ void Expressoes(){
     
     func(); //uma chamada a uma função
     a = b + c; //um comando de atribuição
-    b + f(); //um comando válido que não faz nada
+    //b + f(); //um comando válido que não faz nada - comentado para evitar warnings
     ; //um comando vazio
 }
 

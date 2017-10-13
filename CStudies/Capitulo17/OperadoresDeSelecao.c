@@ -188,9 +188,11 @@ void ComandoSwitchDeclarandoVariaveis(){
     
     scanf(" %c", &ch);
     
+    int i;
+    char k;
+    
     switch (ch) {
-        int i;
-        char k;
+        
         case '1':
             printf("Digite um valor inteiro: ");
             scanf(" %d", &i);
@@ -242,6 +244,7 @@ void ComandoSwitchComBlocosDeCodigo(){
 void SwitchAninhado(){
     char ch;
     char ch2;
+    int i;
     
     printf("Escolha uma opção:\n");
     printf("1. Soma e subtração\n");
@@ -251,13 +254,12 @@ void SwitchAninhado(){
     
     switch (ch) {
         case '1':
+            
             printf("Escolha uma opção:\n");
             printf("1. Soma\n");
             printf("2. Subtração\n");
             scanf(" %c", &ch2);
-            
             switch(ch2){
-                int i;
                 case 1:
                     i = 1 + 1;
                     printf("1 + 1 = %d\n", i);
@@ -274,9 +276,7 @@ void SwitchAninhado(){
             printf("1. Divisão\n");
             printf("2. Multiplicação\n");
             scanf(" %c", &ch2);
-            
             switch(ch2){
-                int i;
                 case 1:
                     i = 4 / 2;
                     printf("4 / 2 = %d\n", i);

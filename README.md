@@ -59,10 +59,10 @@ Caso deseje colocar valores em variáveis, é necessário utilizar especificador
 
 | Valor | Exemplo |
 | ----- | ---------------- |
-| char | ```scan("%c", &<char>)``` |
-| int | ```scan("%d", &<int>)``` |
-| float | ```scan("%f", &<float>)``` |
-| double | ```scan("%f", &<double>)``` |
+| char | ```scanf("%c", &<char>)``` |
+| int | ```scanf("%d", &<int>)``` |
+| float | ```scanf("%f", &<float>)``` |
+| double | ```scanf("%f", &<double>)``` |
 
 ### Exemplos de scanf
 
@@ -446,14 +446,21 @@ Expressão1 é avaliada e se ela for verdadeira, expressão2 é avaliada e se to
 
 ### Utilização
 
-```x = 10;```
-```y = x > 9 ? 100 : 200;```
+```c
+x = 10;
+
+y = x > 9 ? 100 : 200;
+```
 
 Esse código é equivalente a:
 
-```x = 10;```
-```ìf(x > 9) y = 100;```
-```else y = 200;```
+```c
+x = 10;
+
+if(x > 9) y = 100;
+
+else y = 200;
+```
 
 ### Exemplos de operador ternário
 
@@ -478,11 +485,13 @@ Esse código é equivalente a:
 
 **&**
 
-* Operador unário que devolve o endeço na memória de seu operando.
+* Operador unário que devolve o endereço na memória de seu operando.
 
 * Exemplo:
 
-    * ```m = &count;```
+    ```c
+    m = &count;
+    ```
 
     * m recebe o valor do endereço na memória da variável. Posição interna da variável no computador. 
 
@@ -490,17 +499,22 @@ Esse código é equivalente a:
 
 * Operador unário que devolve o valor da variável localizada no endereço que o segue. 
 
-* ```q = *m;```
+    ```c
+    q = *m;
+    ```
 
 ### Utilização
 
-```char *ch;``` 
+- ch é um ponteiro
 
-ch é um ponteiro
+    ```c
+    char *ch;
+    ``` 
+- y é um ponteiro
 
-```int x, *y, count;```
-
-y é um ponteiro
+    ```c
+    int x, *y, count;
+    ```
 
 ### Exemplos de operadores de ponteiros
 
@@ -530,7 +544,7 @@ Ponto é usado quando se está referenciando a estrutura ou união real. Seta é
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void OperadoresPontoSeta(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Atribui o valor 123.23 ao elemento **wage** da estrutura **emp** | - |
+| [```void OperadoresPontoSeta(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Atribui o valor 123.23 ao elemento **salario** da estrutura **trab** | - |
 
 # [Capítulo 14](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo14)
 
@@ -622,7 +636,14 @@ Forçar expressão a ser de determinado tipo.
 
 # C Reduzido
 
-```x = x + 10;``` pode ser escrito de uma maneira reduzida: ```x += 10;```
+```c
+x = x + 10;
+``` 
+pode ser escrito de uma maneira reduzida: 
+
+```c
+x += 10;
+```
 
 **+=** atribui a **x** o valor de **x** mais **10**.
 
@@ -663,10 +684,12 @@ Essas operações existem para todos os operadores binários em C.
 
 ### Utilização
 
-```if(expressão1) comando1;```
-```if(expressão2) comando2;```
-```else if(expressão3) comando3;```
-```else comando4;```
+```c
+if(expressão1) comando1;
+if(expressão2) comando2;
+else if(expressão3) comando3;
+else comando4;
+```
 
 Se a expressão1 for verdadeira, o comando1 será executado.
 
@@ -697,7 +720,14 @@ O comando **else** sempre se refere ao comando **if** mais próximo, que está d
 
 #### Utilização
 
-```if(i){```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```if(j) comando1;```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```if(k) comando2; //Este if```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```else comando3; //está associado a este else```<br>```}```<br>```else comando4; //Associado ao if(i)```
+```c
+if(i){
+    if(j) comando1;
+    if(k) comando2; //Este if
+    else comando3; //está associado a este else
+}
+else comando4; //Associado ao if(i)
+```
 
 #### Exemplos de ifs aninhados
 
@@ -711,7 +741,24 @@ O comando **else** sempre se refere ao comando **if** mais próximo, que está d
 
 #### Utilização
 
-```switch(expressão){```<br>```case constante1:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequencia de comandos```<br>```break;```<br>```case constante2:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequencia de comandos```<br>```break;```<br>```case constante3:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequencia de comandos```<br>```break;```<br>```.```<br>```.```<br>```.```<br>```default:```<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```sequência de comandos```<br>```}```
+```c
+switch(expressão){
+    case constante1:
+        sequência de comandos
+        break;
+    case constante2:
+        sequência de comandos
+        break;
+    case constante3;
+        sequência de comandos
+        break;
+    .
+    .
+    .
+    default:
+        sequência de comandos
+}
+```
 
 *default* é opcional e é executado caso nenhuma coincidência em uma constante seja detectada.
 
@@ -775,7 +822,9 @@ O laço se repete enquanto a condição for verdadeira.
 
 #### Utilização
 
-```while(condição) comando;```
+```c
+while(condição) comando;
+```
 
 *comando* pode ser um comando vazio, um comando simples ou um bloco de comandos.
 
@@ -793,11 +842,11 @@ Os laços **for** e **while** testam a condição do laço no começo. O **do-wh
 
 #### Utilização
 
-```do{```
-
-&nbsp;&nbsp;&nbsp;```comando;```
-
-```}while(condição);```
+```c
+do{
+    comando;
+}while(condição);
+```
 
 #### Exemplos de do-while
 
@@ -836,7 +885,9 @@ Se o **return** tem um valor associado a ele, esse valor é o valor de retorno d
 
 #### Utilização
 
-```return expressão;```
+```c
+return expressão;
+```
 
 *expressão* é opcional.
 
@@ -850,15 +901,14 @@ Pode ser utilizado em qualquer parte do código.
 
 #### Utilização
 
-```goto rótulo;```
+```c
+goto rótulo;
+.
+.
+.
 
-```.```
-
-```.```
-
-```.```
-
-```rótulo:```
+rótulo:
+```
 
 #### Exemplos de goto
 
@@ -887,7 +937,9 @@ Força uma terminação imediata do programa inteiro, forçando um retorno ao si
 
 #### Utilização
 
-```void exit(int codigo_de_retorno);```
+```c
+void exit(int codigo_de_retorno);
+```
 
 O valor de *codigo_de_retorno* é retornado ao processo chamador, que normalmente é o sistema operacional. 
 
@@ -919,13 +971,25 @@ Uma expressão válida em C seguida por um ponto e vírgula.
 
 ### Utilização
 
-```func();``` - uma chamada a uma função
+- Chamada a uma função
+```c
+func();
+```
 
-```a = b + c;``` - um comando de atribuição
+- Comando de atribuição
+```c
+a = b + c;
+```
 
-```b + f();``` - um comando válido que não faz nada
+- Comando válido que não faz nada
+```c
+b + f();
+```
 
-```;``` - um comando vazio
+- Comando vazio
+```c
+;
+```
 
 ### Exemplos de comandos de expressão
 
@@ -990,7 +1054,9 @@ Você pode gerar um ponteiro para o primeiro elemento de uma matriz simplesmente
 
 Também é possível especificar o endereço do primeiro elemento de uma matriz utilizando o operador **&**. 
 
-```int matriz[10];```
+```c
+int matriz[10];
+```
 
 **matriz** e **&matriz[0]** produzem os mesmos resultados.
 
@@ -1053,27 +1119,35 @@ Quando uma matriz bidimensional é usada como argumento para uma função, apena
 
 #### Exemplo de cálculo de bytes
 
-```int matriz[10][5];```
+```c
+int matriz[10][5];
+```
 
 Tem o tamanho *10 * 5 * 2* que seriam 100 bytes.
 
 ### Utilização
 
-```int d[10][20];``` - Matriz bidimensional de tamanho 10, 20.
+Matriz bidimensional de tamanho 10, 20:
+```c
+int d[10][20];
+```
+<br>
+Acessando o ponto 1, 2:
 
-```d[1][2];``` - Acessando o ponto 1, 2.
+```c
+d[1][2];
+```
 
 ### Exemplo de chamada de função
 
-```void funcao(int x[][10]){```
+```c
+void funcao(int x[][10]){
+.
+.
+.
 
-```.```
-
-```.```
-
-```.```
-
-```}```
+}
+```
 
 ### Visualização da matriz
 
@@ -1084,7 +1158,7 @@ Tem o tamanho *10 * 5 * 2* que seriam 100 bytes.
 | Linha 3 | ch[2][0] | ch[2][1] | ch[2][2] |
 | Linha 4 | ch[3][0] | ch[3][1] | ch[3][2] |
 
-#### Exemplos de matrizes bidimensionais
+### Exemplos de matrizes bidimensionais
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -1097,21 +1171,27 @@ Tem o tamanho *10 * 5 * 2* que seriam 100 bytes.
 
 ### Utilização
 
-```char string_array[30][81];```
+```c
+char string_array[30][81];
+```
 
 Uma matriz de 30 strings, cada qual com o comprimento máximo de 80 caracteres.
 
 ### Acessar uma string
 
-```gets(string_array[2]);```
+```c
+gets(string_array[2]);
+```
 
 Acessa a string na posição de índice 2.
 
 O comando acima é equivalente a:
 
-```gets(&string_array[2][0]);```
+```c
+gets(&string_array[2][0]);
+```
 
-#### Exemplos de matrizes de strings
+### Exemplos de matrizes de strings
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -1129,27 +1209,40 @@ Matrizes de de três ou mais dimensões não são frequentemente usadas devido �
 
 ### Exemplo de cálculo de bytes
 
-```int matriz[10][6][9][4];```
+```c
+int matriz[10][6][9][4];
+```
 
 Tem o tamanho *10 * 6 * 9 * 4* 2* que seriam 4.320 bytes.
 
 ### Passagem de matrizes multidimensionais para funções
 
-```int m[4][3][6][5];```
-<br><br>
-```void funcao(int[][3][6][5])```
+```c
+int m[4][3][6][5];
+void funcao(int[][3][6][5]){
+.
+.
+.
 
-```.```
+}
+```
 
-```.```
-
-```.```
-
-```}```
-
-#### Exemplos de matrizes multidimensionais
+### Exemplos de matrizes multidimensionais
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void MatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo25/MatrizesMultidimensionais.c) | Exemplo de uma matriz multidimensional | - |
+
+
+
+
+
+
+
+
+| A | B |
+| --- | --- |
+| ```c
+codigo aqui
+```| Descrição bonita |
 

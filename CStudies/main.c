@@ -106,6 +106,10 @@ void ComandoContinue(void);
 void Expressoes(void);
 void Bloco(void);
 void String(void);
+void MatrizBidimensional(void);
+void NotasDosAlunos(void);
+void MatrizDeString(void);
+void MatrizMultidimensional(void);
 
 int main(){
     while (1==1) {
@@ -518,11 +522,6 @@ int main(){
         }
     }
 }
-
-//void MatrizBidimensional(void);
-//void NotasDosAlunos(void);
-//void MatrizDeString(void);
-//void MatrizMultidimensional(void);
 
 int Opcoes(){
     printf("\n______________________________________________________\n");
