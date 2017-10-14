@@ -7,7 +7,6 @@
 //
 
 #include "OperadoresDeSelecao.h"
-#include <stdlib.h>
 
 int funcao1(int numero);
 int funcao2(void);
@@ -192,7 +191,9 @@ void ComandoSwitchDeclarandoVariaveis(){
     char k;
     
     switch (ch) {
-        
+        //Dá para declarar as variáveis aqui
+        //int i;
+        //char k;
         case '1':
             printf("Digite um valor inteiro: ");
             scanf(" %d", &i);

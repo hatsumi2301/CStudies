@@ -7,9 +7,6 @@
 //
 
 #include "Loops.h"
-#include "Saida.h"
-#include "Entrada.h"
-#include <string.h>
 
 #define MAX_STRING_LEN 80
 

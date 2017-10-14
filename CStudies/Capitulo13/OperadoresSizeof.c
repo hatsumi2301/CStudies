@@ -7,7 +7,6 @@
 //
 
 #include "OperadoresSizeof.h"
-#include <stdio.h>
 
 //Struct empregado
 struct empregado{

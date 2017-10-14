@@ -11,6 +11,8 @@
 #include "Entrada.h"
 #include "Loops.h"
 
+extern numeros[10][10];
+
 int Opcoes(void);
 void Saida(void);
 void EntradaNumero(void);
@@ -513,6 +515,24 @@ int main(){
             case 25:
                 MatrizMultidimensional();
                 break;
+            case 26:
+            {
+                int i;
+                int k;
+                int numero;
+                
+                for(i = 0; i < 10; i++)
+                    for(k = 0; k < 10; k++)
+                        numeros[i][k] = i + k; //Utilizando variável global
+                
+                printf("Informe um número: \n");
+                scanf(" %d", &numero);
+                
+                printf("Valores da linha %d: \n", numero);
+                
+                ImprimeLinha(numero);
+                break;
+            }
             case 100:
                 ComandoExit();
                 break;
@@ -522,6 +542,8 @@ int main(){
         }
     }
 }
+
+//void ImprimeLinha(int numero);
 
 int Opcoes(){
     printf("\n______________________________________________________\n");

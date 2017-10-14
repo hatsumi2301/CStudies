@@ -7,7 +7,6 @@
 //
 
 #include "OperadoresDeIteracao.h"
-#include <string.h>
 
 int QuadradoDeUmNumero(int numero);
 int LerNumero(void);

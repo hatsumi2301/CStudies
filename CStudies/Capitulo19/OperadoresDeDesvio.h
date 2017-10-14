@@ -10,5 +10,6 @@
 #define OperadoresDeDesvio_h
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #endif /* OperadoresDeDesvio_h */

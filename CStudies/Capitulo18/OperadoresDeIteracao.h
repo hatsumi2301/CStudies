@@ -10,5 +10,6 @@
 #define OperadoresDeIteracao_h
 
 #include <stdio.h>
+#include <string.h>
 
 #endif /* OperadoresDeIteracao_h */

@@ -7,7 +7,6 @@
 //
 
 #include "String.h"
-#include <string.h>
 
 void String(){
     char s1[80];

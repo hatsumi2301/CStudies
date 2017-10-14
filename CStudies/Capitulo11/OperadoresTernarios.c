@@ -7,7 +7,6 @@
 //
 
 #include "OperadoresTernarios.h"
-#include <stdio.h>
 
 void OperadorTernario(){
     int x, y;

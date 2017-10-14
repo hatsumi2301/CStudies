@@ -10,5 +10,7 @@
 #define MatrizesBidimensionais_h
 
 #include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
 
 #endif /* MatrizesBidimensionais_h */

@@ -8,9 +8,6 @@
 
 #include "MatrizesDeStrings.h"
 
-#define MAX 100
-#define LEN 80
-
 char texto[MAX][LEN];
 
 void MatrizDeString(){

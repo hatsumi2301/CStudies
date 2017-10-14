@@ -260,7 +260,9 @@ As variáveis register podem ser armazenadas em um registrador da CPU e podem n�
 
 *Atribuição* 
 
-```nome_da_variavel = expressão```
+```
+nome_da_variavel = expressão
+```
 
 ### Conversão de tipos em atribuições
 
@@ -624,7 +626,9 @@ ENTÃO os dois operandos são convertidos para **unsigned long**
 
 Forçar expressão a ser de determinado tipo.
 
-```(tipo) expressão```
+```
+(tipo) expressão
+```
 
 #### Exemplos de casts
 
@@ -649,7 +653,13 @@ x += 10;
 
 Essas operações existem para todos os operadores binários em C.
 
-```var = var operador expressão``` é equivalente a ```var operador = expressão```
+```
+var = var operador expressão
+``` 
+é equivalente a 
+```
+var operador = expressão
+```
 
 ## Exemplos de operações reduzidas
 
@@ -794,7 +804,9 @@ switch(expressão){
 
 #### Utilização do for
 
-```for(inicialização; condição; incremento) comando;``` 
+```
+for(inicialização; condição; incremento) comando;
+``` 
 
 *inicialização* é, geralmente, um comando de atribuição que é usado para colocar um valor na variável de controle do laço.
 
@@ -1027,7 +1039,9 @@ O primeiro índice de uma matriz em C é o 0.
 
 #### Utilização
 
-```tipo nome[tamanho];```
+```
+tipo nome[tamanho];
+```
 
 *tipo* declara o tipo de base da matriz.
 
@@ -1205,7 +1219,9 @@ Matrizes de de três ou mais dimensões não são frequentemente usadas devido �
 
 ### Utilização
 
-```tipo nome[tamanho1][tamanho2][tamanho3]...[tamanhoN];```
+```
+tipo nome[tamanho1][tamanho2][tamanho3]...[tamanhoN];
+```
 
 ### Exemplo de cálculo de bytes
 
@@ -1233,16 +1249,55 @@ void funcao(int[][3][6][5]){
 | ------------- |:-------------:| -----:|
 | [```void MatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo25/MatrizesMultidimensionais.c) | Exemplo de uma matriz multidimensional | - |
 
+# [Capítulo 26](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo26)
 
+## Indexando ponteiros
 
+Um nome de matriz sem um índice é um ponteiro para o primeiro elemento dela mesma.
 
+```c
+//Considere a matriz
+char p[10];
 
+//As seguintes sentenças são equivalentes
+p;
+&p[0];
+```
 
+Outro exemplo:
 
+```c
+int * p;
+int i[10];
 
-| A | B |
-| --- | --- |
-| ```c
-codigo aqui
-```| Descrição bonita |
+p[5] = 100; //Atribui o valor 100 no sexto elemento de i
+*(p+5) = 100; //Atribui usando aritmética de ponteiros, será explicado posteriormente
+```
 
+Analogamente, essa regra também vale para matrizes de duas ou mais dimensões.
+
+```
+a[j][k]; //É equivalente a
+*a(a+(j*comprimento das linhas)+k);
+```
+
+Exemplo:
+
+```c
+a;
+&a[0][0];
+
+a[0][4];
+*(a+4);
+
+a[1][2];
+*(a+12);
+```
+
+A aritmética de ponteiros é geralmente mais rápida que a indexação de matrizes.
+
+### Exemplos de index e ponteiros
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void ImprimeLinha(int j)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo26/IndexacaoDePonteiros.h.c) | Exemplo de ponteiros em uma matriz | - |

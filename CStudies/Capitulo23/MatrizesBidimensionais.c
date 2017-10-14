@@ -7,8 +7,6 @@
 //
 
 #include "MatrizesBidimensionais.h"
-#include <ctype.h>
-#include <stdlib.h>
 
 #define CLASSES 3
 #define NOTAS 30

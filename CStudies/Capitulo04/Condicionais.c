@@ -7,7 +7,6 @@
 //
 
 #include "Condicionais.h"
-#include "Entrada.h"
 
 int EntradaNumero(void);
 

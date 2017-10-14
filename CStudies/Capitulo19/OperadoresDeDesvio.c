@@ -7,7 +7,6 @@
 //
 
 #include "OperadoresDeDesvio.h"
-#include <stdlib.h>
 
 int ReturnInt(){
     return 1;

@@ -10,5 +10,6 @@
 #define OperadoresDeSelecao_h
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #endif /* OperadoresDeSelecao_h */

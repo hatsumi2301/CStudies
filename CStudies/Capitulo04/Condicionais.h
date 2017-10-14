@@ -9,6 +9,8 @@
 #ifndef Condicionais_h
 #define Condicionais_h
 
+#include "Entrada.h"
+
 #include <stdio.h>
 
 #endif /* Condicionais_h */

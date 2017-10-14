@@ -9,6 +9,10 @@
 #ifndef Loops_h
 #define Loops_h
 
+#include "Saida.h"
+#include "Entrada.h"
+
 #include <stdio.h>
+#include <string.h>
 
 #endif /* Loops_h */

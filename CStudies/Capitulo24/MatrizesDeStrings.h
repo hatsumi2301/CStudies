@@ -11,4 +11,7 @@
 
 #include <stdio.h>
 
+#define MAX 100
+#define LEN 80
+
 #endif /* MatrizesDeStrings_h */
