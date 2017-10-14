@@ -11,7 +11,7 @@
 #include "Entrada.h"
 #include "Loops.h"
 
-extern numeros[10][10];
+extern int numeros[10][10];
 
 int Opcoes(void);
 void Saida(void);
@@ -112,6 +112,10 @@ void MatrizBidimensional(void);
 void NotasDosAlunos(void);
 void MatrizDeString(void);
 void MatrizMultidimensional(void);
+void ImprimeLinha(int numero);
+void InicializacaoMatriz(void);
+void InicializacaoMatrizString(void);
+void InicializacaoMatrizMultidimensional(void);
 
 int main(){
     while (1==1) {
@@ -533,6 +537,16 @@ int main(){
                 ImprimeLinha(numero);
                 break;
             }
+            case 27:
+                printf("Inicialização matriz de int:\n");
+                InicializacaoMatriz();
+                
+                printf("\n\nInicialização matriz de caracteres:\n");
+                InicializacaoMatrizString();
+                
+                printf("\n\nInicialização matriz multidimensional:\n");
+                InicializacaoMatrizMultidimensional();
+                break;
             case 100:
                 ComandoExit();
                 break;
@@ -542,8 +556,6 @@ int main(){
         }
     }
 }
-
-//void ImprimeLinha(int numero);
 
 int Opcoes(){
     printf("\n______________________________________________________\n");

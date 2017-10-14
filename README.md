@@ -550,11 +550,11 @@ Ponto é usado quando se está referenciando a estrutura ou união real. Seta é
 
 # [Capítulo 14](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo14)
 
-## Parênteses e colchetes como operadores
+## Parênteses e colchetes com operadores
 
-Parênteses são operadores que aumentam a precedência das operações dentro deles.
+Parênteses são elementos que indicam o aumento da precedência das operações dentro deles.
 
-Colchetes realizam a indexação de matrizes.
+Colchetes indicam a indexação de uma matriz.
 
 ### Precedências
 
@@ -562,7 +562,7 @@ Todos os operadores, com exceção do ?, associam da esquerda para a direita.
 
 Operadores unários (*, & e -) e ? associam da direita para a esquerda.
 
-| Precedência | Operador | 
+| Precedência | Elemento | 
 | --- | --- |
 | Maior | () [] -> |
 | | ! ~ ++ -- - (tipo) * & sizeof |
@@ -1301,3 +1301,60 @@ A aritmética de ponteiros é geralmente mais rápida que a indexação de matri
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void ImprimeLinha(int j)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo26/IndexacaoDePonteiros.h.c) | Exemplo de ponteiros em uma matriz | - |
+
+# [Capítulo 27](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo27)
+
+## Inicialização de matrizes
+
+A inicialização de matrizes é semelhante à de outras variáveis:
+
+```
+especificador_de_tipo nome_da_matriz[tamanho1]...[tamanhoN] = {lista_de_valores};
+```
+
+*lista_de_valores* é uma lista separada por vírgulas de valores compatíveis com o *especificador_de_tipo*. 
+
+```c
+int i[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+```
+
+ Matrizes que contêm strings permitem a inicialiçazão abreviada:
+ 
+ ```
+ char nome_da_matriz[tamanho] = "string";
+ ```
+
+```c
+char string[30] = "Eu gosto de legumes.";
+
+//Bem melhor do que escrever
+char string[30] = {'E', 'u', ' ', 'g', 'o', 's', 't', 'o', ' ', 'd', 'e', ' ', 'l', 'e', 'g', 'u', 'm', 'e', 's', '.', '\0'}
+//Nessa atribuição é necessário incluir o terminador nulo, pois o compilador não fará isso automaticamente como no caso da atribuição abreviada
+```
+
+Matriz multidimensionais são inicializadas da seguinte forma:
+
+```c
+int matriz[10][2] = {
+    1,1,
+    2,4,
+    3,9,
+    4,16,
+    5,25,
+    7,49,
+    8,64,
+    9,81,
+    10,11
+}
+```
+
+### Exemplos de inicialização de matrizes
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void InicializacaoMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de int | - |
+| [```void InicializacaoMatrizString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de caracteres (string) e compara o modo abreviado com o convencional de inicialização | - |
+| [```void InicializacaoMatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz multidimensional | - |
+
+## Inicialização de matrizes não-dimensionais
+

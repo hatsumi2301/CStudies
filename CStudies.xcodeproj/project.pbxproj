@@ -16,6 +16,7 @@
 		7B6FC7D51F8DAC4A00AC6F78 /* MatrizesDeStrings.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FC7D31F8DAC4A00AC6F78 /* MatrizesDeStrings.c */; };
 		7B6FC7D91F8DB05B00AC6F78 /* MatrizesMultidimensionais.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FC7D71F8DB05B00AC6F78 /* MatrizesMultidimensionais.c */; };
 		7B6FC7DD1F91A2E300AC6F78 /* IndexacaoDePonteiros.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FC7DB1F91A2E300AC6F78 /* IndexacaoDePonteiros.c */; };
+		7B6FC7E11F91AAC100AC6F78 /* InicializacaoDeMatrizes.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FC7DF1F91AAC100AC6F78 /* InicializacaoDeMatrizes.c */; };
 		7B7947151F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947131F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c */; };
 		7B7947181F7C8DAD006B7FE3 /* Operadores.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947161F7C8DAD006B7FE3 /* Operadores.c */; };
 		7B79471D1F7DCF86006B7FE3 /* OperadoresBitABit.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B79471B1F7DCF86006B7FE3 /* OperadoresBitABit.c */; };
@@ -72,6 +73,8 @@
 		7B6FC7D81F8DB05B00AC6F78 /* MatrizesMultidimensionais.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrizesMultidimensionais.h; sourceTree = "<group>"; };
 		7B6FC7DB1F91A2E300AC6F78 /* IndexacaoDePonteiros.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IndexacaoDePonteiros.c; sourceTree = "<group>"; };
 		7B6FC7DC1F91A2E300AC6F78 /* IndexacaoDePonteiros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexacaoDePonteiros.h; sourceTree = "<group>"; };
+		7B6FC7DF1F91AAC100AC6F78 /* InicializacaoDeMatrizes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = InicializacaoDeMatrizes.c; sourceTree = "<group>"; };
+		7B6FC7E01F91AAC100AC6F78 /* InicializacaoDeMatrizes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InicializacaoDeMatrizes.h; sourceTree = "<group>"; };
 		7B7947131F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OperadoresLogicosRelacionais.c; sourceTree = "<group>"; };
 		7B7947141F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperadoresLogicosRelacionais.h; sourceTree = "<group>"; };
 		7B7947161F7C8DAD006B7FE3 /* Operadores.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Operadores.c; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7B6FC7DE1F91A6D900AC6F78 /* Capitulo27 */,
 				7B6FC7DA1F91A2CD00AC6F78 /* Capitulo26 */,
 				7B6FC7D61F8DB04B00AC6F78 /* Capitulo25 */,
 				7B6FC7D21F8DAC3B00AC6F78 /* Capitulo24 */,
@@ -244,6 +248,15 @@
 				7B6FC7DC1F91A2E300AC6F78 /* IndexacaoDePonteiros.h */,
 			);
 			path = Capitulo26;
+			sourceTree = "<group>";
+		};
+		7B6FC7DE1F91A6D900AC6F78 /* Capitulo27 */ = {
+			isa = PBXGroup;
+			children = (
+				7B6FC7DF1F91AAC100AC6F78 /* InicializacaoDeMatrizes.c */,
+				7B6FC7E01F91AAC100AC6F78 /* InicializacaoDeMatrizes.h */,
+			);
+			path = Capitulo27;
 			sourceTree = "<group>";
 		};
 		7B7947121F7C8D63006B7FE3 /* Capitulo09 */ = {
@@ -507,6 +520,7 @@
 				7B6FC7BF1F8AF3DC00AC6F78 /* ComandosDeExpressoes.c in Sources */,
 				7B15DBC61F5F8A6F003F515E /* main.c in Sources */,
 				7BE933B31F7758AE008A7CBF /* Variaveis.c in Sources */,
+				7B6FC7E11F91AAC100AC6F78 /* InicializacaoDeMatrizes.c in Sources */,
 				7B6FC7C21F8AF6A800AC6F78 /* BlocosDeCodigo.c in Sources */,
 				7B79474D1F89A08A006B7FE3 /* OperadoresDeDesvio.c in Sources */,
 				7B6FC7C91F8AFFCF00AC6F78 /* MatrizesUnitarias.c in Sources */,
