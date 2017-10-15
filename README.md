@@ -638,7 +638,7 @@ Forçar expressão a ser de determinado tipo.
 
 # [Capítulo 16](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo16)
 
-# C Reduzido
+## C Reduzido
 
 ```c
 x = x + 10;
@@ -661,7 +661,7 @@ var = var operador expressão
 var operador = expressão
 ```
 
-## Exemplos de operações reduzidas
+### Exemplos de operações reduzidas
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -673,18 +673,7 @@ var operador = expressão
 
 # [Capítulo 17](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo17)
 
-# Comandos de controle do programa
-
-| Tipo | Comando | Observação |
-| --- | --- | --- |
-| Seleção ou Condicional | if e switch | - |
-| Iteração ou Laço | while, for e do-while | - |
-| Desvio ou Salto | break, continue, goto e return | - |
-| Rótulo | case e default | Usados juntamente com o comando "switch"|
-| Expressão | Expressão C válida | Qualquer expressão em C que seja válida |
-| Bloco | Blocos de código | Código que está dentro de "{" e "}" |
-
-## Seleção
+## Condicional
 
 **if** e **else** (opcional)
 
@@ -794,11 +783,7 @@ switch(expressão){
 
 ## Iteração
 
-**for**
-
-**while**
-
-**do while**
+```for```, ```while``` e ```do while```
 
 ### For
 
@@ -838,7 +823,7 @@ O laço se repete enquanto a condição for verdadeira.
 while(condição) comando;
 ```
 
-*comando* pode ser um comando vazio, um comando simples ou um bloco de comandos.
+*comando* pode ser sem comando, uma expressão ou um bloco de expressões.
 
 #### Exemplos de while
 
@@ -870,13 +855,7 @@ do{
 
 ## Desvio
 
-**return**
-
-**goto**
-
-**break**
-
-**continue**
+```return```, ```goto```, ```break``` e ```continue```
 
 ### Return
 
@@ -884,7 +863,15 @@ Utilizado para retornar de uma função, ele retorna para o ponto em que a chama
 
 Pode ser utilizado em qualquer parte do código.
 
-Se o **return** tem um valor associado a ele, esse valor é o valor de retorno da função. Se não existe nenhum valor associado, apenas lixo é retornado. 
+Se o **return** tem um valor associado a ele, esse valor é o valor de retorno da função. Se não existe nenhum valor associado à variável de retorno, apenas lixo é retornado. 
+
+#### Utilização
+
+```c
+return expressão;
+```
+
+*expressão* é opcional.
 
 #### Exemplos de return
 
@@ -895,17 +882,9 @@ Se o **return** tem um valor associado a ele, esse valor é o valor de retorno d
 | [```void SemRetunr(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método sem retorno é um método do tipo **void** | - |
 | [```float ReturnFloat(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um **float** | - |
 
-#### Utilização
-
-```c
-return expressão;
-```
-
-*expressão* é opcional.
-
 ### Goto
 
-Há pouca necessidade do **goto**, pois o mesmo controle pode ser feito por **break** ou **continue**. 
+O ```goto``` vai para uma área demarcada com ```<nome_da_area>:``` no código.
 
 Uma preocupação da maioria dos programadores sobre o **goto** é a sua tendência de tornar os programas ilegíveis.   
 
@@ -1029,7 +1008,7 @@ Coleção de variáveis do mesmo tipo que é referenciada por um nome comum.
 
 Um elemento específico em uma matriz é acessado por meio de um índice. Em C, todas as matrizes consistem em posições contíguas na memória. O endereço mais baixo corresponde ao primeiro elemento e o mais alto, ao último elemento. 
 
-A matriz mais comum em C é a string, que é uma matriz de caracteres terminada por um nulo. 
+A matriz mais comum em C é a string, que é uma matriz de caracteres que, por convenção, é terminada por um nulo, inserindo o valor ```\0``` no final. 
 
 ### Matrizes unidimensionais
 
@@ -1053,7 +1032,7 @@ A quantidade de armazenamento necessário para guardar uma matriz está diretame
 
 *total em bytes = sizeof(tipo) * tamanho da matriz*
 
-C não tem verificação de limites em matrizes. Você poderia ultrapassar o fim de uma matriz e escrever nos dados de alguma outra variável ou mesmo no código do programa. 
+C não tem verificação de limites em matrizes. Você poderia ultrapassar o fim de uma matriz e escrever nos dados de alguma outra variável ou mesmo no código do programa, entretando estaria trabalhando com lixo de memória. 
 
 #### Exemplos de matrizes unidimensionais
 
@@ -1213,9 +1192,9 @@ gets(&string_array[2][0]);
 
 # [Capítulo 25](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo25)
 
-## Matrizes multidimensionais
+## Matrizes de 3 ou mais dimensões
 
-Matrizes de de três ou mais dimensões não são frequentemente usadas devido à quantidade de memória de que elas necessitam. 
+Não são frequentemente usadas devido à quantidade de memória de que elas necessitam. 
 
 ### Utilização
 
@@ -1229,7 +1208,7 @@ tipo nome[tamanho1][tamanho2][tamanho3]...[tamanhoN];
 int matriz[10][6][9][4];
 ```
 
-Tem o tamanho *10 * 6 * 9 * 4* 2* que seriam 4.320 bytes.
+Tem o tamanho *10 * 6 * 9 * 4 * 2*, que seria equivalente à 4.320 bytes.
 
 ### Passagem de matrizes multidimensionais para funções
 
@@ -1276,7 +1255,7 @@ p[5] = 100; //Atribui o valor 100 no sexto elemento de i
 
 Analogamente, essa regra também vale para matrizes de duas ou mais dimensões.
 
-```
+```c
 a[j][k]; //É equivalente a
 *a(a+(j*comprimento das linhas)+k);
 ```
@@ -1320,7 +1299,7 @@ int i[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
  Matrizes que contêm strings permitem a inicialiçazão abreviada:
  
- ```
+ ```c
  char nome_da_matriz[tamanho] = "string";
  ```
 

@@ -39,12 +39,12 @@ void AdivinharONumeroComIfElseIf(){
     scanf("%d", &chute);
     
     if(chute == magico) printf("Você acertou!!");
-        else if(chute > magico){
-            printf("Muito alto.\n");
-        }
-        else{
-            printf("Muito baixo.\n\n");
-        }
+    else if(chute > magico){
+        printf("Muito alto.\n");
+    }
+    else{
+        printf("Muito baixo.\n\n");
+    }
 }
 
 void AdivinharONumeroComOperadorTernario(){
@@ -59,7 +59,7 @@ void AdivinharONumeroComOperadorTernario(){
     
     if(chute == magico) printf("Você acertou!!");
         else chute > magico ? printf("Muito alto.\n") : printf("Muito baixo.\n\n");
-            }
+}
 
 void CalcularQuadradoDeUmNumeroComOperadorTernario(){
     int quadrado;
@@ -68,7 +68,7 @@ void CalcularQuadradoDeUmNumeroComOperadorTernario(){
     printf("Digite um número: ");
     scanf("%d", &i);
     
-    quadrado = i > 0 ? i * i : - (i * i);
+    quadrado = i >= 0 ? i * i : - (i * i);
     
     printf("%d ao quadrado é %d", i, quadrado);
 }
@@ -119,7 +119,8 @@ void VerificaSeONumeroEhZero(){
     printf("Digite dois números: ");
     scanf("%d%d", &a, &b);
     
-    if(b) printf("%d\n", a/b); //Se b for diferente de 0, então é realizada a divisão
+    //Se b for diferente de 0, então é realizada a divisão
+    if(b) printf("%d\n", a/b); 
     else printf("Não é possível dividir um número por zero.\n");
 }
 
@@ -166,13 +167,13 @@ void ComandoSwitchSemBreak(){
     
     switch (ch) {
         case '1':
-            printf("Se a opção 1 for escolhida\nSerá executado\n\n");
+            printf("Se a opção 1 for escolhida\nEntão essa opção será executada\n\n");
         case '2':
-            printf("Se a opção 1 for escolhida ou a opção 2 for escolhida\nSerá executado\n\n");
+            printf("Se a opção 1 for escolhida ou a opção 2 for escolhida\nEntão essa opção será executada\n\n");
         case '3':
-            printf("Se a opção 1 for escolhida ou a opção 2 for escolhida ou a opção 3 for escolhida\nSerá executado\n\n");
+            printf("Se a opção 1 for escolhida ou a opção 2 for escolhida ou a opção 3 for escolhida\nEntão essa opção será executada\n\n");
         case '4':
-            printf("Se a opção 1 for escolhida ou a opção 2 for escolhida ou a opção 4\nSerá executado\n\n");
+            printf("Se a opção 1 for escolhida ou a opção 2 for escolhida ou a opção 4\nEntão essa opção será executada\n\n");
         default:
             printf("Sempre vai ser executado\n");
     }
@@ -254,8 +255,8 @@ void SwitchAninhado(){
     scanf(" %c", &ch);
     
     switch (ch) {
+
         case '1':
-            
             printf("Escolha uma opção:\n");
             printf("1. Soma\n");
             printf("2. Subtração\n");
@@ -269,9 +270,9 @@ void SwitchAninhado(){
                     i = 1 - 1;
                     printf("1 - 1 = %d\n", i);
                     break;
-            }
-            
-            break;
+            }    
+        break;
+
         case '2':
             printf("Escolha uma opção:\n");
             printf("1. Divisão\n");
@@ -287,8 +288,10 @@ void SwitchAninhado(){
                     printf("2 * 3 = %d\n", i);
                     break;
             }
+        break;
+
         default:
             printf("Opção inexistente\n");
-            break;
+        break;
     }
 }
