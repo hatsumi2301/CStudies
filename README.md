@@ -170,11 +170,11 @@ Basta declarar a variável fora de qualquer função e ao utilizar em outra clas
 
 ### Exemplos de variáveis globais
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void FuncaoQueUtilizaAsVariaveisGlobais(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais.c) | Utiliza a variável x global que foi declarada na mesma classe que o método | - |
-| [```void FuncaoQueUtilizaAsVariaveisGlobais2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza as variáveis x e y globais que foram declaradas em outra classe | - |
-| [```void FuncaoQueUtilizaAsVariaveisGlobais3(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza a variável y global que foi declarada em outra classe | - |
+| Método  | O que faz |
+| ------------- |:-------------:|
+| [```void FuncaoQueUtilizaAsVariaveisGlobais(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais.c) | Utiliza a variável x global que foi declarada na mesma classe que o método |
+| [```void FuncaoQueUtilizaAsVariaveisGlobais2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza as variáveis x e y globais que foram declaradas em outra classe |
+| [```void FuncaoQueUtilizaAsVariaveisGlobais3(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo05/VariaveisGlobais2.c) | Utiliza a variável y global que foi declarada em outra classe |
 
 # [Capítulo 06](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo06)
 
@@ -186,9 +186,9 @@ O uso do ```const``` no parâmetro de entrada do método, faz com que o código 
 
 #### Exemplos de const
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void VariavelDoTipoConst(const char *frase)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Troca os espaços da frase por "-" e imprime a frase com a modificação, ou apenas imprime a frase inteira | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void VariavelDoTipoConst(const char *frase)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Troca os espaços da frase por "-" e imprime a frase com a modificação, ou apenas imprime a frase inteira |
 
 ### volatile
 
@@ -196,9 +196,9 @@ O modificador ```volatile``` é usado para informar ao compilador que o valor de
 
 #### Exemplos de volatile
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void VariavelDoTipoVolatile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Esse método altera o valor da const por meio de um ponteiro | - |
+| Método  | O que faz |
+| ------------- |:-------------:|
+| [```void VariavelDoTipoVolatile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo06/ModificadoresDeVariaveis.c) | Esse método altera o valor da const por meio de um ponteiro | 
 
 # [Capítulo 07](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo07)
 
@@ -228,11 +228,11 @@ Uma variável global estática é apenas reconhecida no arquivo no qual a mesma 
 
 #### Exemplos de static
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void IniciarSerie(int semente)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | Inicializa a variável estática global | - |
-| [```int Serie(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | Utiliza a variável estática global para somar um valor à ela | - |
-| [```int VariavelEstatica(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | O número vai ser inicializado com o valor 10 somente na primeira execução, pois a variável estática continua existindo após a função ser finalizada. A variável não é destruída e na segunda chamada dessa função, a variável já vai ter seu valor inicializado. | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void IniciarSerie(int semente)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | Inicializa a variável estática global | 
+| [```int Serie(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | Utiliza a variável estática global para somar um valor à ela |
+| [```int VariavelEstatica(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/VariaveisEstaticas.c) | O número vai ser inicializado com o valor 10 somente na primeira execução, pois a variável estática continua existindo após a função ser finalizada. A variável não é destruída e na segunda chamada dessa função, a variável já vai ter seu valor inicializado. | 
 
 ### register
 
@@ -246,9 +246,9 @@ As variáveis ```register``` podem ser armazenadas em um registrador da CPU e po
 
 #### Exemplos de register
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```int EspecificadorRegister(register int m, register int e)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/Register.c) | Exemplo em um loop de um especificador ```register``` | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```int EspecificadorRegister(register int m, register int e)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/Register.c) | Exemplo em um loop de um especificador ```register``` |
 
 # [Capítulo 08](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo08)
 
@@ -279,9 +279,9 @@ Situação em que variáveis de um tipo são misturadas com variáveis de outro 
 
 #### Exemplos de tipos em atribuições
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void ConversaoTiposDeValores(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Conversão de tipos de valores | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void ConversaoTiposDeValores(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Conversão de tipos de valores | 
 
 ### Atribuições múltiplas
 
@@ -289,9 +289,9 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 
 #### Exemplos de atribuições múltiplas
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void AtribuicoesMultiplas(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Atribuições múltiplas | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void AtribuicoesMultiplas(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Atribuições múltiplas | 
 
 ### Operadores aritméticos
 
@@ -309,15 +309,15 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 
 #### Exemplos de operadores aritméticos
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void Subtracao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Subtrai 1 de 2 | - |
-| [```void Adicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Soma 2 e 1 | - |
-| [```void Multiplicacao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Multiplica 2 e 1 | - |
-| [```void Divisao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Divide 4 por 2 | - |
-| [```void Modulo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Calcula o módulo de 5 por 2 e o módulo de 1 por 2 | - |
-| [```void Incremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Exemplo de incremento | - |
-| [```void Decremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Exemplo de decremento | - |
+| Método  | O que faz | 
+| ------------- |:-------------:|
+| [```void Subtracao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Subtrai 1 de 2 | 
+| [```void Adicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Soma 2 e 1 | 
+| [```void Multiplicacao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Multiplica 2 e 1 |
+| [```void Divisao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Divide 4 por 2 | 
+| [```void Modulo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Calcula o módulo de 5 por 2 e o módulo de 1 por 2 | 
+| [```void Incremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Exemplo de incremento |
+| [```void Decremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo08/Operadores.c) | Exemplo de decremento | 
 
 # [Capítulo 09](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo09)
 
@@ -368,16 +368,16 @@ Falso é igual a 0 e verdadeiro é qualquer valor diferente de 0.
 
 ### Exemplos de operadores relacionais e lógicos
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void MaiorQue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de maior que | - |
-| [```void MaiorQueOuIgual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de maior que ou igual | - |
-| [```void MenorQue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de menor que | - |
-| [```void MenorQueOuIgual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de menor que ou igual | - |
-| [```void Igual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de igual | - |
-| [```void Diferente(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de diferente | - |
-| [```int xor(int a, int b)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Método de ou excluviso | - |
-| [```void PrintXor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Imprime o resultado de alguns valores utilizando o ou exclusivo | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void MaiorQue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de maior que | 
+| [```void MaiorQueOuIgual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de maior que ou igual | 
+| [```void MenorQue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de menor que | 
+| [```void MenorQueOuIgual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de menor que ou igual |
+| [```void Igual(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de igual | 
+| [```void Diferente(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Exemplos de diferente | 
+| [```int xor(int a, int b)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Método de ou excluviso | 
+| [```void PrintXor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo09/OperadoresLogicosRelacionais.c) | Imprime o resultado de alguns valores utilizando o ou exclusivo | 
 
 # [Capítulo 10](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo10)
 
@@ -425,14 +425,14 @@ São frequentemente usados em rotinas de criptografia.
 
 ### Exemplos de operadores bit a bit
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void And(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador AND | - |
-| [```void Or(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador OR | - |
-| [```void Xor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador XOR | - |
-| [```void ComplementoDeUm(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador complemento de um | - |
-| [```void Deslocamentos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador deslocamento à direita e à esquerda | - |
-| [```char Codificar(char)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Recebe um caractere e devolve o complemento de um desse caractere | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void And(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador AND |
+| [```void Or(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador OR |
+| [```void Xor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador XOR |
+| [```void ComplementoDeUm(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador complemento de um |
+| [```void Deslocamentos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Exemplo do operador deslocamento à direita e à esquerda | 
+| [```char Codificar(char)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo10/OperadoresBitABit.c) | Recebe um caractere e devolve o complemento de um desse caractere |
 
 # [Capítulo 11](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo11)
 
@@ -466,10 +466,10 @@ else y = 200;
 
 ### Exemplos de operador ternário
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void OperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadoresTernarios.c) | Exemplo de operador ternário | - |
-| [```void ExemploComIfElseOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadoresTernarios.c) | O mesmo exemplo do método acima, mas com ```if``` e ```else``` | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void OperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadoresTernarios.c) | Exemplo de operador ternário |
+| [```void ExemploComIfElseOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadoresTernarios.c) | O mesmo exemplo do método acima, mas com ```if``` e ```else``` |
 
 # [Capítulo 12](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo12)
 
@@ -520,9 +520,9 @@ m = &count;
 
 ### Exemplos de operadores de ponteiros
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void OperadoresPonteiros(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo12/OperadoresPonteiros.c) | Exemplo de operadores de ponteiros | - |
+| Método  | O que faz | 
+| ------------- |:-------------:|
+| [```void OperadoresPonteiros(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo12/OperadoresPonteiros.c) | Exemplo de operadores de ponteiros | 
 
 # [Capítulo 13](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo13)
 
@@ -532,9 +532,9 @@ Operador em tempo de compilação unário que retorna o tamanho, em bytes, da va
 
 ### Exemplos de operadores sizeof
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void GravarDisco(int rec[6], FILE *fp)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Escreve 6 inteiros em um arquivo em disco | - |
+| Método  | O que faz | 
+| ------------- |:-------------:|
+| [```void GravarDisco(int rec[6], FILE *fp)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Escreve 6 inteiros em um arquivo em disco | 
 
 ## Operador ponto e seta
 
@@ -544,9 +544,9 @@ Ponto é usado quando se está referenciando a estrutura. Seta é usado quando u
 
 ### Exemplos de operadores ponto e seta
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void OperadoresPontoSeta(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Atribui o valor 123.23 ao elemento **salario** da estrutura **trab** | - |
+| Método  | O que faz |
+| ------------- |:-------------:| 
+| [```void OperadoresPontoSeta(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo13/OperadoresSizeof.c) | Atribui o valor 123.23 ao elemento **salario** da estrutura **trab** | 
 
 # [Capítulo 14](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo14)
 
@@ -582,10 +582,10 @@ Operadores unários (```*```, ```&``` e ```-```) e ```?``` associam da **direita
 
 ### Exemplos de parênteses e colchetes
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void Array(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de um array (operação utilizando colchetes) | - |
-| [```void Parenteses(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de como os parenteses alteram a ordem de execução das operações | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void Array(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de um array (operação utilizando colchetes) |
+| [```void Parenteses(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo14/ColchetesParenteses.c) | Exemplo de como os parenteses alteram a ordem de execução das operações |
 
 # [Capítulo 15](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo15)
 
@@ -634,9 +634,9 @@ Forçar expressão a ser de determinado tipo.
 
 ### Exemplos de casts
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void Cast(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo15/Casts.c) | Exemplo de uma divisão de um número inteiro sem utilizar o cast e utilizando o cast | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void Cast(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo15/Casts.c) | Exemplo de uma divisão de um número inteiro sem utilizar o cast e utilizando o cast |
 
 # [Capítulo 16](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo16)
 
@@ -669,23 +669,19 @@ var operador = expressão
 
 ### Exemplos de operações reduzidas
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void SomaReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma soma reduzida | - |
-| [```void SubtracaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma subtração reduzida | - |
-| [```void MultiplicacaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma multiplicação reduzida | - |
-| [```void DivisaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma divisão reduzida | - |
-| [```void ModuloReduzido(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de um módulo reduzido | - |
+| Método  | O que faz | 
+| ------------- |:-------------:|
+| [```void SomaReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma soma reduzida | 
+| [```void SubtracaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma subtração reduzida |
+| [```void MultiplicacaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma multiplicação reduzida | 
+| [```void DivisaoReduzida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de uma divisão reduzida | 
+| [```void ModuloReduzido(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo16/CReduzido.c) | Exemplo de um módulo reduzido | 
 
 # [Capítulo 17](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo17)
 
 ## Condicional
 
-```if``` e ```else``` (opcional)
-
-```switch```
-
-```?``` 
+```if``` e ```else``` (opcional), ```switch``` e ```?``` .
 
 ### If e ?
 
@@ -746,13 +742,15 @@ Se a *expressao1* for verdadeira, então o *comando1* será executado, senão o 
 
 #### Exemplos de ifs aninhados
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void AdivinharONumeroComIfAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o ifs aninhados para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void AdivinharONumeroComIfAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o ifs aninhados para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa |
 
 ### Switch
 
 É um comando de verificação múltipla. Esse comando testa sucessivamente o valor de uma expressão contra uma lista de constantes inteiras ou de caractere. Quando o valor coincide, os comandos associados à aquela constante, são executados.
+
+Também é possível fazer um ```switch``` aninhado, ou seja, um comando ```switch``` dentro de um ```case``` de um outro ```switch```.
 
 #### Utilização
 
@@ -787,13 +785,13 @@ switch(expressão){
 
 #### Exemplos de switch
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void ComandoSwitchMenu(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do ```switch``` | - |
-| [```void ComandoSwitchSemBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do ```switch``` sem o ```break``` | - |
-| [```void ComandoSwitchDeclarandoVariaveis(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de declaração de variável dentro de um ```switch``` | - |
-| [```void ComandoSwitchComBlocosDeCodigo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de blocos de código dentro de um ```switch*```| - |
-| [```void SwitchAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de ```switch``` aninhado | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void ComandoSwitchMenu(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do ```switch``` |
+| [```void ComandoSwitchSemBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do ```switch``` sem o ```break``` |
+| [```void ComandoSwitchDeclarandoVariaveis(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de declaração de variável dentro de um ```switch``` | 
+| [```void ComandoSwitchComBlocosDeCodigo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de blocos de código dentro de um ```switch*```| 
+| [```void SwitchAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de ```switch``` aninhado | 
 
 # [Capítulo 18](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo18)
 
@@ -865,9 +863,9 @@ do{
 
 #### Exemplos de do-while
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void ComandoDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | O comando ```do-while``` foi utilizado para a seleção de menu, enquanto um menu válido não for selecionado, ele será executado | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void ComandoDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | O comando ```do-while``` foi utilizado para a seleção de menu, enquanto um menu válido não for selecionado, ele será executado |
 
 # [Capítulo 19](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo19)
 
@@ -893,12 +891,12 @@ return expressão;
 
 #### Exemplos de return
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```int ReturnInt(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```int``` | - |
-| [```char ReturnChar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```char``` | - |
-| [```void SemRetunr(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método sem retorno é um método do tipo ```void``` | - |
-| [```float ReturnFloat(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```float``` | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```int ReturnInt(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```int``` | 
+| [```char ReturnChar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```char``` | 
+| [```void SemRetunr(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método sem retorno é um método do tipo ```void``` |
+| [```float ReturnFloat(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```float``` |
 
 ### Goto
 
@@ -921,9 +919,9 @@ rótulo:
 
 #### Exemplos de goto
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```int ComandoGoto(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de loop com ```goto``` | - |
+| Método  | O que faz | 
+| ------------- |:-------------:|
+| [```int ComandoGoto(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de loop com ```goto``` | 
 
 ### Break
 
@@ -933,10 +931,10 @@ Pode ser utilizado em conjunto com comandos de laço.
 
 ### Exemplos de goto
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```int ComandoBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de ```loop``` com ```break``` | - |
-| [```int SwitchCaseComBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de ```switch``` com ```break``` | - |
+| Método  | O que faz |
+| ------------- |:-------------:|
+| [```int ComandoBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de ```loop``` com ```break``` |
+| [```int SwitchCaseComBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de ```switch``` com ```break``` |
 
 ### Exit
 
@@ -968,9 +966,9 @@ Pode ser utilizado em conjunto com comandos de laço.
 
 #### Exemplos de continue
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```int ComandoContinue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de ```continue``` em um ```loop``` | - |
+| Método  | O que faz |
+| ------------- |:-------------:|
+| [```int ComandoContinue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de ```continue``` em um ```loop``` |
 
 # [Capítulo 20](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo20)
 
@@ -1002,9 +1000,9 @@ b + f();
 
 ### Exemplos de comandos de expressão
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void Expressoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo20/ComandosDeExpressoes.c) | Exemplo de comandos de expressão | - |
+| Método  | O que faz |
+| ------------- |:-------------:|
+| [```void Expressoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo20/ComandosDeExpressoes.c) | Exemplo de comandos de expressão | 
 
 ## Blocos de comando
 
@@ -1014,9 +1012,9 @@ Um bloco começa com uma chave e termina com uma chave correspondente.
 
 ### Exemplos de comandos de bloco de código
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void Bloco(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo20/BlocosDeCodigo.c) | Exemplo de um bloco de código | - |
+| Método  | O que faz |
+| ------------- |:-------------:| 
+| [```void Bloco(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo20/BlocosDeCodigo.c) | Exemplo de um bloco de código |
 
 # [Capítulo 21](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo21)
 
@@ -1112,9 +1110,9 @@ Por este motivo, é necessário que o tamanho das matrizes de caracteres sejam u
 
 #### Exemplos das funções de strings
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void String(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo22/String.c) | Exemplo de utilização das funções de string | - |
+| Método  | O que faz |
+| ------------- |:-------------:| 
+| [```void String(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo22/String.c) | Exemplo de utilização das funções de string |
 
 # [Capítulo 23](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo23)
 
@@ -1171,10 +1169,10 @@ void funcao(int x[][10]){
 
 ### Exemplos de matrizes bidimensionais
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void MatrizBidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo23/MatrizesBidimensionais.c) | Exemplo de uma matriz bidimensional | - |
-| [```void NotasDosAlunos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo23/MatrizesBidimensionais.c) | Exemplo de uma matriz bidimensial | - |
+| Método  | O que faz |
+| ------------- |:-------------:|
+| [```void MatrizBidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo23/MatrizesBidimensionais.c) | Exemplo de uma matriz bidimensional |
+| [```void NotasDosAlunos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo23/MatrizesBidimensionais.c) | Exemplo de uma matriz bidimensial |
 
 # [Capítulo 24](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo24)
 
@@ -1242,9 +1240,9 @@ void funcao(int[][3][6][5]){
 
 ### Exemplos de matrizes multidimensionais
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void MatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo25/MatrizesMultidimensionais.c) | Exemplo de uma matriz multidimensional | - |
+| Método  | O que faz |
+| ------------- |:-------------:|
+| [```void MatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo25/MatrizesMultidimensionais.c) | Exemplo de uma matriz multidimensional |
 
 # [Capítulo 26](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo26)
 
@@ -1295,9 +1293,9 @@ A aritmética de ponteiros é geralmente mais rápida que a indexação de matri
 
 ### Exemplos de index e ponteiros
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void ImprimeLinha(int j)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo26/IndexacaoDePonteiros.h.c) | Exemplo de ponteiros em uma matriz | - |
+| Método  | O que faz |
+| ------------- |:-------------:|
+| [```void ImprimeLinha(int j)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo26/IndexacaoDePonteiros.h.c) | Exemplo de ponteiros em uma matriz |
 
 # [Capítulo 27](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo27)
 
@@ -1347,11 +1345,11 @@ int matriz[10][2] = {
 
 ### Exemplos de inicialização de matrizes
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void InicializacaoMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de int | - |
-| [```void InicializacaoMatrizString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de caracteres (string) e compara o modo abreviado com o convencional de inicialização | - |
-| [```void InicializacaoMatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz multidimensional | - |
+| Método  | O que faz |
+| ------------- |:-------------:|
+| [```void InicializacaoMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de int |
+| [```void InicializacaoMatrizString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de caracteres (string) e compara o modo abreviado com o convencional de inicialização |
+| [```void InicializacaoMatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz multidimensional |
 
 ## Inicialização de matrizes não-dimensionais
 
