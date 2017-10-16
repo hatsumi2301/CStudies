@@ -79,16 +79,16 @@ Variável é um espaço na memória para guardar um determinado dado.
 
 As variáveis locais devem ser declaradas no início do bloco em que elas são definidas.
 
-Os nomes das variáveis devem ser únicos em cada contexto.
+Os nomes das variáveis devem ser únicos em cada contexto. Um contexto pode ser uma classe, um método, entre outros.
 
 ## Modificando os tipos básicos
 
 | Modificador | Descrição |
 | --- | --- |
-| *signed* | Valores positivos e negativos |
-| *unsigned* | Apenas valores positivos |
-| *long* | Faixa de valor maior |
-| *short* | Faixa de valor menor |
+| ```signed``` | Valores positivos e negativos |
+| ```unsigned``` | Apenas valores positivos |
+| ```long``` | Faixa de valor maior |
+| ```short``` | Faixa de valor menor |
 
 ## Tipos de variáveis com seus modificadores
 
@@ -126,9 +126,9 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 
 | Loop | Pseudocódigo | Explicação | Utilização |
 | --- | --- | --- | --- |
-| *for* | Enquanto (valor_inicial até a condição_final passo n) faça<br>Inicio<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções<br>Fim | *valor_inicial* é uma instrução de atribuição do valor inicial do laço para a variável de controle<br>*condição_final* é a condição que controla o laço<br>*passo* é o incremento ou decremento do laço | for(valor_inicial; condição_final; valor_incremento_ou_decremento){ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
-| *while* | Iniciar a variável de controle<br>Enquanto (condição) faça<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br> Fim;| *condição* é a condição que controla o laço | while(condição){ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
-| *do ... while* | Iniciar a variável de controle<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim; | *condição* é a condição que controla o laço | do{ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> }while(condição) |
+| ```for``` | Enquanto (valor_inicial até a condição_final passo n) faça<br>Inicio<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções<br>Fim | *valor_inicial* é uma instrução de atribuição do valor inicial do laço para a variável de controle<br>*condição_final* é a condição que controla o laço<br>*passo* é o incremento ou decremento do laço | for(valor_inicial; condição_final; valor_incremento_ou_decremento){ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
+| ```while``` | Iniciar a variável de controle<br>Enquanto (condição) faça<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br> Fim;| *condição* é a condição que controla o laço | while(condição){ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
+| ```do ... while``` | Iniciar a variável de controle<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim; | *condição* é a condição que controla o laço | do{ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> }while(condição) |
 
 ### Exemplos de loops
 
@@ -136,10 +136,10 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 | ------------- |:-------------:| -----:|
 | [```void VerificarCaractereNaString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Obtém uma palavra e um caractere como dados de entrada, informados pelo usuário e verifica se a palavra contém o caractere informado | - |
 | [```int VerificarCaractereNaString2(char *s, char c)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Verifica se a palavra contém a letra. Os dados devem ser passados como parâmetros. Retorna 1 se a palavra contém a letra e 0 se a palavra não contém a letra. | *Exemplo* ```VerificarCaractereNaString2("teste", "e")``` verifica se a palavra "teste" contém a letra "e" |
-| [```void LoopFor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo "for" | - |
-| [```void LoopWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo "while" | - |
-| [```void LoopDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo "do while" | - |
-| [```void DiferencaEntreLoopWhileAndDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Exemplo da diferença entre os loops "while" e "do while" | - |
+| [```void LoopFor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo ```for``` | - |
+| [```void LoopWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo ```while``` | - |
+| [```void LoopDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Loop do tipo ```do...while``` | - |
+| [```void DiferencaEntreLoopWhileAndDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo03/Loops.c) | Exemplo da diferença entre os loops ```while``` e ```do...while``` | - |
 
 # [Capítulo 04](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo04)
 
@@ -149,28 +149,24 @@ Verifica se uma determinada condição é verdadeira ou falsa para executar o c�
 
 **Tipos de condicionais**
 
-*if*
-
-*else*
-
-*else if*
+```if```, ```else``` e ```else if```
 
 ### Exemplos de condicionais
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void Condicionais(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo04/Condicionais.c) | Condicionais *if*, *else if* e *else* | Informar o número 1 para executar o comando do *if*, informar o número 2 para executar o comando do *else if* e informar qualquer outro número para executar o comando do *else* |
+| [```void Condicionais(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo04/Condicionais.c) | Condicionais ```if```, ```else if``` e ```else``` | Informar o número 1 para executar o comando do *if*, informar o número 2 para executar o comando do ```else if``` e informar qualquer outro número para executar o comando do ```else``` |
 
 # [Capítulo 05](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo05)
 
 ## Variáveis globais
 
-Variáveis globais são reconhecidas pelo contexto global do programa e podem ser utilizadas em qualquer parte do código. 
+Variáveis globais são reconhecidas pelo contexto global do programa e podem ser utilizadas em qualquer parte do código. Se a variável global for utilizada em outra classe do código, deve-se utilizar o ```extern``` para sinalizar que a variável é global. 
 Elas também estão acessíveis durante toda a execução do programa. 
 
 ### Utilização
 
-Basta declarar a variável fora de qualquer função.
+Basta declarar a variável fora de qualquer função e ao utilizar em outra classe, declarar a variável com o ```extern```.
 
 ### Exemplos de variáveis globais
 
@@ -186,7 +182,7 @@ Basta declarar a variável fora de qualquer função.
 
 ### const
 
-O uso do const no parâmetro de entrada do método, faz com que o código da função não seja capaz de modificar o objeto apontado pelo parâmetro. Apenas um evento externo pode modificar uma variável do tipo const.
+O uso do ```const``` no parâmetro de entrada do método, faz com que o código da função não seja capaz de modificar o objeto apontado pelo parâmetro. Apenas um evento externo pode modificar uma variável do tipo ```const```.
 
 #### Exemplos de const
 
@@ -196,7 +192,7 @@ O uso do const no parâmetro de entrada do método, faz com que o código da fun
 
 ### volatile
 
-O modificador volatile é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa. Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema.
+O modificador ```volatile``` é usado para informar ao compilador que o valor de uma variável pode ser alterado de uma maneira não explicitamente especificada pelo programa. Exemplo, um endereço de uma variável global pode ser passado para a rotina de relógio do sistema operacional e usado para guardar o tempo real do sistema.
 
 #### Exemplos de volatile
 
@@ -210,7 +206,7 @@ O modificador volatile é usado para informar ao compilador que o valor de uma v
 
  ### extern
  
- C permite que módulos do programa sejam compilados separadamente e por conta disso é necessário que haja uma maneira de informar a todos os arquivos sobre as variáveis globais solicitadas pelo programa. Ao declarar a variável global em um determinado arquivo e utilizar ela em outro, será necessário usar o extern, para indicar que aquela é uma variável global. 
+ C permite que módulos do programa sejam compilados separadamente e por conta disso é necessário que haja uma maneira de informar a todos os arquivos sobre as variáveis globais solicitadas pelo programa. Ao declarar a variável global em um determinado arquivo e utilizar ela em outro, será necessário usar o ```extern```, para indicar que aquela é uma variável global. 
 
 #### Exemplos de extern
 
@@ -221,11 +217,11 @@ O modificador volatile é usado para informar ao compilador que o valor de uma v
 
 ### static
 
-Ao declarar uma variável como static, o compilador cria um armazenamento permanente para ela quase da mesma forma que cria um armazenamento para uma variável global. 
+Ao declarar uma variável como ```static```, o compilador cria um armazenamento permanente para ela quase da mesma forma que cria um armazenamento para uma variável global. 
 
 Com variáveis estáticas é possível preservar um valor entre as chamadas das funções. 
 
-Poderiam ser utilizadas variáveis globais no lugar de variáveis estáticas, no entanto, haveriam outras preocupações. Toda vez que a função é usada, seria necessário lembrar-se de declarar a variável global (como extern) e garantir que ela não conflite com nenhuma outra variável global já declarada. 
+Poderiam ser utilizadas variáveis globais no lugar de variáveis estáticas, no entanto, haveriam outras preocupações. Toda vez que a função é usada, seria necessário lembrar-se de declarar a variável global (como ```extern```) e garantir que ela não conflite com nenhuma outra variável global já declarada. 
 
 Elas não são reconhecidas fora de sua função ou arquivo, mas mantém seus valores entre chamadas.
 Uma variável global estática é apenas reconhecida no arquivo no qual a mesma foi declarada.
@@ -244,15 +240,15 @@ Os objetos são colocados nos registradores da CPU. Portanto, o acesso ao objeto
 
 São usadas onde são feitas muitas referências a uma mesma variável.
 
-Só é possível aplicar o especificador register a variáveis locais e parâmetros formais (os parâmetros da função na sua declaração são chamados parâmetros formais. Na chamada da função os parâmetros são chamados parâmetros atuais/reais) de uma função.
+Só é possível aplicar o especificador ```register``` a variáveis locais e parâmetros formais (os parâmetros da função na sua declaração são chamados parâmetros formais. Na chamada da função os parâmetros são chamados parâmetros atuais/reais) de uma função.
 
-As variáveis register podem ser armazenadas em um registrador da CPU e podem não ter endereços.
+As variáveis ```register``` podem ser armazenadas em um registrador da CPU e podem não ter endereços.
 
 #### Exemplos de register
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```int EspecificadorRegister(register int m, register int e)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/Register.c) | Exemplo em um loop de um especificador register | - |
+| [```int EspecificadorRegister(register int m, register int e)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo07/Register.c) | Exemplo em um loop de um especificador ```register``` | - |
 
 # [Capítulo 08](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo08)
 
@@ -355,7 +351,7 @@ C permite que você atribua o mesmo valor a muitas variáveis usando atribuiçõ
 | Operador | Ação |
 | --- | --- |
 | && | AND |
-| <code>&#124;</code> | OR |
+| &#124; | OR |
 | ! | NOT |
 
 Embora C não tenha um operador lógico OR exclusivo, é possível criar uma função que execute essa tarefa usando os outros operadores lógicos. 
@@ -387,9 +383,9 @@ Falso é igual a 0 e verdadeiro é qualquer valor diferente de 0.
 
 ## Operador bit a bit
 
-Testar, atribuir ou deslocar os bits efetivos em um byte ou uma palavra, que correspondem aos tipos de dados **char** e **int** e variantes do padrão. 
+Testar, atribuir ou deslocar os bits efetivos em um byte ou uma palavra, que correspondem aos tipos de dados ```char``` e ```int``` e variantes do padrão. 
 
-Operações bit não podem ser usadas em **float**, **double**, **long double**, **void** ou outros tipos mais complexos. 
+Operações bit não podem ser usadas em ```float```, ```double```, ```long double```, ```void``` ou outros tipos mais complexos. 
 
 Operações bit a bit encontram aplicações mais frequentemente em "drivers"de dispositivos - como em programas de modems, rotinas de arquivos em disco e rotinas de impressoras - porque as operações bit a bit mascaram certos bits, como o bit de paridade (confirma se o restante dos bits em um byte não se modificaram, é normalmente o bit mais significativo em cada byte).
 
@@ -398,7 +394,7 @@ São frequentemente usados em rotinas de criptografia.
 | Operador | Ação |
 | --- | --- |
 | & | AND |
-| <code>&#124;</code> | OR |
+| &#124; | OR |
 | ^ | OR exclusivo (XOR) |
 | ~ | Complemento de um |
 | >> | Deslocamento à esquerda |
@@ -406,7 +402,7 @@ São frequentemente usados em rotinas de criptografia.
 
 ### Tabela verdade
 
-| A | B | A & B | A <code>&#124;</code> B | A ^ B | ~A |
+| A | B | A & B | A &#124; B | A ^ B | ~A |
 | --- | --- | --- | --- | --- | --- |
 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 0 | 1 | 0 | 1 | 1 | 1 |
@@ -442,9 +438,13 @@ São frequentemente usados em rotinas de criptografia.
 
 ## Operador ternário
 
-*expressão1 ? expressão2 : expressão3*
+O operador ternário é equivalente à um ```if``` com ```else```.
 
-Expressão1 é avaliada e se ela for verdadeira, expressão2 é avaliada e se torna o valor da expressão, senão, expressão3 é avaliada e se torna o valor da expressão.
+```
+expressão1 ? expressão2 : expressão3
+```
+
+*expressão1* é avaliada e se ela for verdadeira, *expressão2* é avaliada e se torna o valor da expressão, senão, *expressão3* é avaliada e se torna o valor da expressão.
 
 ### Utilização
 
@@ -469,15 +469,15 @@ else y = 200;
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void OperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadoresTernarios.c) | Exemplo de operador ternário | - |
-| [```void ExemploComIfElseOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadoresTernarios.c) | O mesmo exemplo do método acima, mas com if e else | - |
+| [```void ExemploComIfElseOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo11/OperadoresTernarios.c) | O mesmo exemplo do método acima, mas com ```if``` e ```else``` | - |
 
 # [Capítulo 12](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo12)
 
 ## Operadores de ponteiros & e *
 
-É um endereço na memória de uma variável. Uma *variável de ponteiro* é uma variável especialmente declarada para guardar um ponteiro para seu tipo especificado. 
+Ponteiro é um endereço na memória de uma variável. Uma *variável de ponteiro* é uma variável especialmente declarada para guardar um ponteiro para seu tipo especificado. 
 
-*Funções*
+**Funções**
 
 * Fornecer uma maneira rápida de referenciar elementos de uma matriz.
 
@@ -489,13 +489,13 @@ else y = 200;
 
 * Operador unário que devolve o endereço na memória de seu operando.
 
-* Exemplo:
+### Utilização
 
-    ```c
-    m = &count;
-    ```
+ ```c
+m = &count;
+```
 
-    * m recebe o valor do endereço na memória da variável. Posição interna da variável no computador. 
+* *m* recebe o valor do endereço na memória da variável. Posição interna da variável no computador. 
 
 **\***
 
@@ -507,12 +507,12 @@ else y = 200;
 
 ### Utilização
 
-- ch é um ponteiro
+* ch é um ponteiro
 
     ```c
     char *ch;
     ``` 
-- y é um ponteiro
+* y é um ponteiro
 
     ```c
     int x, *y, count;
@@ -540,7 +540,7 @@ Operador em tempo de compilação unário que retorna o tamanho, em bytes, da va
 
 Referenciam elementos individuais de estruturas e uniões. 
 
-Ponto é usado quando se está referenciando a estrutura ou união real. Seta é usado quando um ponteiro para uma estrutura é usado.
+Ponto é usado quando se está referenciando a estrutura. Seta é usado quando um ponteiro para uma estrutura é usado.
 
 ### Exemplos de operadores ponto e seta
 
@@ -575,7 +575,7 @@ Operadores unários (*, & e -) e ? associam da direita para a esquerda.
 | | ^ |
 | | ! |
 | | && | 
-| | <code>&#124; &#124;</code> |
+| | &#124; &#124; |
 | | ? |
 | | = += -= *= /= |
 | Menor | , |
