@@ -447,6 +447,24 @@ int main(){
                 printf("\n\nInicialização matriz multidimensional não dimensionada:\n");
                 InicializacaoMatrizMultidimensionalNaoDimensionada();
                 break;
+            case 28:
+                printf("\n\nInforme uma opção: \n");
+                printf("1. Jogo da velha versão Hatsumi\n");
+                printf("2. Jogo da velha versão livro\n");
+                scanf("%d", &opcao2);
+                printf("\n");
+                
+                switch (opcao2) {
+                    case 1:
+                        JogoDaVelhaVersaoHatsumi();
+                        break;
+                    case 2:
+                        JogoDaVelhaLivro();
+                        break;
+                    default:
+                        printf("Opção inexistente.");
+                }
+                break;
             case 100:
                 ComandoExit();
                 break;

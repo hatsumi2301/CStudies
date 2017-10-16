@@ -627,7 +627,7 @@ ENTÃO os dois operandos são convertidos para **unsigned long**
 ### Exemplos de conversão de tipos
 | Método  | O que faz | 
 | --- |:---:| 
-| [```void ConversaoDeTipos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo15/ConversaoDeTipos.h.c) | Exemplo de conversão de tipos |
+| [```void ConversaoDeTipos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo15/ConversaoDeTipos.c) | Exemplo de conversão de tipos |
 
 ## Casts
 
@@ -1314,7 +1314,7 @@ A aritmética de ponteiros é geralmente mais rápida que a indexação de matri
 
 | Método  | O que faz |
 | --- |:---:|
-| [```void ImprimeLinha(int j)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo26/IndexacaoDePonteiros.h.c) | Exemplo de ponteiros em uma matriz |
+| [```void ImprimeLinha(int j)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo26/IndexacaoDePonteiros.c) | Exemplo de ponteiros em uma matriz |
 
 # [Capítulo 27](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo27)
 
@@ -1366,9 +1366,9 @@ int matriz[10][2] = {
 
 | Método  | O que faz |
 | --- |:---:|
-| [```void InicializacaoMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de int |
-| [```void InicializacaoMatrizString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de caracteres (string) e compara o modo abreviado com o convencional de inicialização |
-| [```void InicializacaoMatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz multidimensional |
+| [```void InicializacaoMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.c) | Exemplo de inicialização de uma matriz de int |
+| [```void InicializacaoMatrizString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.c) | Exemplo de inicialização de uma matriz de caracteres (string) e compara o modo abreviado com o convencional de inicialização |
+| [```void InicializacaoMatrizMultidimensional(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.c) | Exemplo de inicialização de uma matriz multidimensional |
 
 ## Inicialização de matrizes não-dimensionais
 
@@ -1413,5 +1413,33 @@ int strings[][2] = {
 
 | Método  | O que faz |
 | --- |:---:|
-| [```void InicializacaoMatrizNaoDimensionada(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de unidimencional não dimensionada |
-| [```void InicializacaoMatrizMultidimensionalNaoDimensionada(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de multidimensional não dimensionada |
+| [```void InicializacaoMatrizNaoDimensionada(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.c) | Exemplo de inicialização de uma matriz de unidimencional não dimensionada |
+| [```void InicializacaoMatrizMultidimensionalNaoDimensionada(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.c) | Exemplo de inicialização de uma matriz de multidimensional não dimensionada |
+
+# [Capítulo 28](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo28)
+
+## Jogo da velha
+
+Foram criadas dois códigos do jogo da velha.
+
+### Exemplo jogo da velha versão Hatsumi
+
+| Método  | O que faz |
+| --- |:---:|
+| [```void JogoDaVelhaVersaoHatsumi(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaHatsumi.c) | Realiza a chamada do jogo |
+| [```void InicializaOTabuleiro(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaHatsumi.c) | Inicializa o tabuleiro com hífens |
+| [```void Verificar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaHatsumi.c) | Verifica se ainda existem espaços em branco no tabuleiro ou se algum jogador venceu o jogo |
+| [```void ImprimirTabuleiro(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaHatsumi.c) | Imprime os valores do tabuleiro |
+| [```void ReceberValor(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaHatsumi.c) | Recebe o valor da jogada do usuário |
+| [```void VezDoRobo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaHatsumi.c) | Realiza a jogada do robô colocando um 0 no primeiro espaço vazio encontrado |
+
+### Exemplo jogo da velha versão do livro
+
+| Método  | O que faz |
+| --- |:---:|
+| [```void JogoDaVelhaLivro(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaLivro.c) | Realiza a chamada do jogo |
+| [```void InicializarMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaLivro.c) | Inicializa a matriz com espaços em branco |
+| [```void ObterJogadaDoJogador(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaLivro.c) | Recebe a jogada do usuário |
+| [```void ObterJogadaDoComputador(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaLivro.c) | Realiza a jogada do computador |
+| [```void Checar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaLivro.c) | Verifica se algum jogador ganhou |
+| [```void ImprimirMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaLivro.c) | Imprime a matriz |

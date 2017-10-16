@@ -18,6 +18,8 @@
 		7B6FC7DD1F91A2E300AC6F78 /* IndexacaoDePonteiros.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FC7DB1F91A2E300AC6F78 /* IndexacaoDePonteiros.c */; };
 		7B6FC7E11F91AAC100AC6F78 /* InicializacaoDeMatrizes.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FC7DF1F91AAC100AC6F78 /* InicializacaoDeMatrizes.c */; };
 		7B6FC7E41F9433A700AC6F78 /* ConversaoDeTipos.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FC7E21F9433A700AC6F78 /* ConversaoDeTipos.c */; };
+		7B6FC7EE1F95061000AC6F78 /* JogoDaVelhaHatsumi.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FC7EC1F95061000AC6F78 /* JogoDaVelhaHatsumi.c */; };
+		7B6FC7F11F950E8200AC6F78 /* JogoDaVelhaLivro.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B6FC7EF1F950E8200AC6F78 /* JogoDaVelhaLivro.c */; };
 		7B7947151F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947131F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c */; };
 		7B7947181F7C8DAD006B7FE3 /* Operadores.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B7947161F7C8DAD006B7FE3 /* Operadores.c */; };
 		7B79471D1F7DCF86006B7FE3 /* OperadoresBitABit.c in Sources */ = {isa = PBXBuildFile; fileRef = 7B79471B1F7DCF86006B7FE3 /* OperadoresBitABit.c */; };
@@ -79,6 +81,10 @@
 		7B6FC7E21F9433A700AC6F78 /* ConversaoDeTipos.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ConversaoDeTipos.c; sourceTree = "<group>"; };
 		7B6FC7E31F9433A700AC6F78 /* ConversaoDeTipos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConversaoDeTipos.h; sourceTree = "<group>"; };
 		7B6FC7E61F94675E00AC6F78 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		7B6FC7EC1F95061000AC6F78 /* JogoDaVelhaHatsumi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = JogoDaVelhaHatsumi.c; sourceTree = "<group>"; };
+		7B6FC7ED1F95061000AC6F78 /* JogoDaVelhaHatsumi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JogoDaVelhaHatsumi.h; sourceTree = "<group>"; };
+		7B6FC7EF1F950E8200AC6F78 /* JogoDaVelhaLivro.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = JogoDaVelhaLivro.c; sourceTree = "<group>"; };
+		7B6FC7F01F950E8200AC6F78 /* JogoDaVelhaLivro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JogoDaVelhaLivro.h; sourceTree = "<group>"; };
 		7B7947131F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OperadoresLogicosRelacionais.c; sourceTree = "<group>"; };
 		7B7947141F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperadoresLogicosRelacionais.h; sourceTree = "<group>"; };
 		7B7947161F7C8DAD006B7FE3 /* Operadores.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Operadores.c; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7B6FC7E81F95056400AC6F78 /* Capitulo28 */,
 				7B6FC7DE1F91A6D900AC6F78 /* Capitulo27 */,
 				7B6FC7DA1F91A2CD00AC6F78 /* Capitulo26 */,
 				7B6FC7D61F8DB04B00AC6F78 /* Capitulo25 */,
@@ -262,6 +269,17 @@
 				7B6FC7E01F91AAC100AC6F78 /* InicializacaoDeMatrizes.h */,
 			);
 			path = Capitulo27;
+			sourceTree = "<group>";
+		};
+		7B6FC7E81F95056400AC6F78 /* Capitulo28 */ = {
+			isa = PBXGroup;
+			children = (
+				7B6FC7EC1F95061000AC6F78 /* JogoDaVelhaHatsumi.c */,
+				7B6FC7ED1F95061000AC6F78 /* JogoDaVelhaHatsumi.h */,
+				7B6FC7EF1F950E8200AC6F78 /* JogoDaVelhaLivro.c */,
+				7B6FC7F01F950E8200AC6F78 /* JogoDaVelhaLivro.h */,
+			);
+			path = Capitulo28;
 			sourceTree = "<group>";
 		};
 		7B7947121F7C8D63006B7FE3 /* Capitulo09 */ = {
@@ -502,8 +520,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6FC7EE1F95061000AC6F78 /* JogoDaVelhaHatsumi.c in Sources */,
 				7BE933C91F7899BD008A7CBF /* VariaveisGlobais.c in Sources */,
 				7B7947181F7C8DAD006B7FE3 /* Operadores.c in Sources */,
+				7B6FC7F11F950E8200AC6F78 /* JogoDaVelhaLivro.c in Sources */,
 				7B6FC7D51F8DAC4A00AC6F78 /* MatrizesDeStrings.c in Sources */,
 				7B79473E1F85BEC1006B7FE3 /* CReduzido.c in Sources */,
 				7B6FC7D11F8C582B00AC6F78 /* MatrizesBidimensionais.c in Sources */,

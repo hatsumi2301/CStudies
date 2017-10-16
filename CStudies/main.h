@@ -126,5 +126,7 @@ void InicializacaoMatrizMultidimensionalNaoDimensionada(void);
 void InicializacaoMatrizNaoDimensionada(void);
 void ConversaoDeLongEUnsignedInt(void);
 void ConversaoDeTipos(void);
+void JogoDaVelhaVersaoHatsumi(void);
+void JogoDaVelhaLivro(void);
 
 #endif /* mainn_h */
