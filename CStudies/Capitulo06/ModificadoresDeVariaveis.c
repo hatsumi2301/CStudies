@@ -20,7 +20,8 @@ void VariavelDoTipoConst(const char *frase){
 void VariavelDoTipoVolatile(){
     //Exemplo do site: http://www.geeksforgeeks.org/understanding-volatile-qualifier-in-c/
     const volatile int local = 10; //Inicializa uma variável como const e volatile
-    int *ponteiro = (int*) &local; //O valor do endereço de memória de "local" é atribuido ao ponteiro "ponteiro"
+    //O valor do endereço de memória de "local" é atribuido ao ponteiro "ponteiro"
+    int *ponteiro = (int*) &local;
     
     printf("Valor inicial da variável local: %d \n", local); //Imprime o valor da variável local
     

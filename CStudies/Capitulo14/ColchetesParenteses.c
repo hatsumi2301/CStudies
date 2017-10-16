@@ -8,9 +8,6 @@
 
 #include "ColchetesParenteses.h"
 
-//Cria um array com 80 posições
-char string[80];
-
 void Array(){
     //Atribui o valor x na posição 3 do array
     string[3] = 'c';

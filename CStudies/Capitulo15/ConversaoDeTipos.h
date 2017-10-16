@@ -10,5 +10,6 @@
 #define ConversaoDeTipos_h
 
 #include <stdio.h>
+#include <stddef.h>
 
 #endif /* ConversaoDeTipos_h */

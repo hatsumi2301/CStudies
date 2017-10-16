@@ -31,7 +31,8 @@ void ComandoGoto(){
         x++;
         printf("%d ", x);
 
-    if(x < 100) goto loop1; //Se x for menor que 100, então vá para o rótulo loop1
+    //Se x for menor que 100, então vá para o rótulo loop1
+    if(x < 100) goto loop1;
 }
 
 void ComandoBreak(){
@@ -40,7 +41,8 @@ void ComandoBreak(){
     //Executar o laço de 0 até 100
     for(t = 0; t < 100; t++){
         printf("%d ", t);
-        if(t == 10) break; //Quando 1 for igual a 10, sai do laço, ou seja, não será executado até o 100
+        //Quando 1 for igual a 10, sai do laço, ou seja, não será executado até o 100
+        if(t == 10) break;
     }
 }
 

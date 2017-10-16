@@ -8,19 +8,10 @@
 
 #include "MatrizesBidimensionais.h"
 
-#define CLASSES 3
-#define NOTAS 30
-
-int nota[CLASSES][NOTAS];
-
-void InserirNota(void);
-int ObterNota(int numero);
-void ExibirNotas(int nota[][NOTAS]);
-
 void MatrizBidimensional(){
     int t;
     int i;
-    int num[3][4];
+    int num[3][4]; //Matriz bidimensional de 3 por 4
     
     for(t = 0; t < 3; ++t) //Laço que controla o primeiro índice da matriz
         for(i = 0; i < 4; ++i) //Laço que controla o segundo índice da matriz
@@ -34,10 +25,10 @@ void MatrizBidimensional(){
 }
 
 void NotasDosAlunos(){
-    char ch = '\0';
+    char ch = '\0'; //Caractere nulo
     char str[80];
     
-    for(;;){
+    for(;;){ //Loop infinito
         do{
             printf("(I)nserir as notas\n");
             printf("(E)xibir as notas\n");
@@ -45,8 +36,10 @@ void NotasDosAlunos(){
             
             scanf(" %c", str);
             
+            //Faz com que o caractere recebido fique em caixa alta
             ch = toupper(*str);
-        }while((ch != 'I') && (ch != 'E') && (ch != 'S'));
+        }//Enquanto os valores inseridos forem diferentes de I, E ou S
+        while((ch != 'I') && (ch != 'E') && (ch != 'S'));
         
         switch (ch) {
             case 'I':
@@ -56,7 +49,7 @@ void NotasDosAlunos(){
                 ExibirNotas(nota);
                 break;
             case 'S':
-                exit(0);
+                exit(0); //Termina o programa
                 break;
         }
     }

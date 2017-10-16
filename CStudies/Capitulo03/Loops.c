@@ -8,21 +8,23 @@
 
 #include "Loops.h"
 
-#define MAX_STRING_LEN 80
-
-void Saida(void);
-void EntradaNumero(void);
-
 void VerificarCaractereNaString(){
     char *ponteiroPalavra; //Ponteiro aponta para o endereço de memória
     char palavra[MAX_STRING_LEN]; //Array de chars com MAX_STRING_LEN de comprimento
-    char caractere; 
-    char texto[] = "A palavra não contém a letra.\n"; //Não é necessário informar o comprimento do array de chars, pois ele vai obter o tamanho da string que é atribuída à ele.
+    char caractere;
+    //Não é necessário informar o comprimento do array de chars
+    //Pois ele vai obter o tamanho da string que é atribuída à ele.
+    char texto[] = "A palavra não contém a letra.\n";
     
     printf("Informe uma palavra: ");
-    scanf("%s", palavra); //Não é necessário informar o tamanho do array e o &. O dado será armazenado na variável palavra, sendo o primeiro caractere armazenado na posição 0 do array, o segundo caractere na posição 1 e assim consecutivamente.
+    //Não é necessário informar o tamanho do array e o &
+    //O dado será armazenado na variável palavra,
+    //sendo o primeiro caractere armazenado na posição 0 do array,
+    //o segundo caractere na posição 1 e assim consecutivamente.
+    scanf("%s", palavra);
     
-    ponteiroPalavra = &palavra[0]; //Atribui o valor endereço do primeiro caractere do array de chars na variável ponteiro
+    //Atribui o valor endereço do primeiro caractere do array de chars na variável ponteiro
+    ponteiroPalavra = &palavra[0];
     
     printf("\nInforme uma letra: ");
     scanf(" %c", &caractere);
@@ -30,7 +32,8 @@ void VerificarCaractereNaString(){
     while(*ponteiroPalavra) //Enquanto o ponteiro apontar para alguma letra da palavra
     {
         if(*ponteiroPalavra == caractere){ //Se a letra atual é igual ao caractere
-            strcpy(texto, "\nA palavra contém a letra.\n"); //Copia o texto "A palavra contém a letra." para a variável texto
+            //Copia o texto "A palavra contém a letra." para a variável texto
+            strcpy(texto, "\nA palavra contém a letra.\n");
             break;
         }
         else ponteiroPalavra++; //Avança um espaço na memória
@@ -41,7 +44,8 @@ void VerificarCaractereNaString(){
 
 int VerificarCaractereNaString2(char *s, char c){
     while(*s) //Enquanto o ponteiro apontar para alguma letra da palavra
-        if(*s == c) return 1; //Se a letra atual é igual ao caractere retorna o valor 1 e finaliza o método
+        //Se a letra atual é igual ao caractere retorna o valor 1 e finaliza o método
+        if(*s == c) return 1;
         else s++; //Avança um espaço na memória
     
     return 0; //Se o caractere não estiver na palavra, será retornado o valor 0
@@ -88,7 +92,9 @@ void LoopDoWhile(){
         EntradaNumero();
         
         i++;
-    }while(i < 3); //Executa a condição do laço de repetição. Caso ela seja verdadeira, executa o método novamente.
+    }//Executa a condição do laço de repetição
+    //Caso ela seja verdadeira, executa o método novamente.
+    while(i < 3);
 }
 
 void DiferencaEntreLoopWhileAndDoWhile(){
@@ -96,14 +102,16 @@ void DiferencaEntreLoopWhileAndDoWhile(){
     
     int i = 0;
     
-    //A verificação da condição para a execução do "while" é executada primeiro, por isso, se a condição for falsa, o código no escopo abaixo
+    //A verificação da condição para a execução do "while" é executada primeiro
+    //Por isso, se a condição for falsa, o código no escopo abaixo
     while(i < numero){
         printf("Método while não vai ser executado.\n");
         
         i++;
     }
     
-    //O do while executa o código pelo menos uma vez, pois a condição de execução é realizada somente após terminar de rodar o código dentro do escopo abaixo
+    //O do while executa o código pelo menos uma vez/
+    //Pois a condição de execução é realizada somente após terminar de rodar o código dentro do escopo abaixo
     do{
         printf("Método do while vai ser executado.\n");
         

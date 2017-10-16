@@ -11,4 +11,9 @@
 
 #include <stdio.h>
 
+static int variavelEstaticaGlobal;
+
+void IniciarSerie(int semente);
+int Serie(void);
+
 #endif /* VariaveisEstaticas_h */

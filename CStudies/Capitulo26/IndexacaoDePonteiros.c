@@ -8,8 +8,6 @@
 
 #include "IndexacaoDePonteiros.h"
 
-int numeros[10][10];
-
 void ImprimeLinha(int j){
     int *p;
     int t;

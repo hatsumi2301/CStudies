@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+int numeros[10][10];
+
 #endif /* IndexacaoDePonteiros_h */

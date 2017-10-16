@@ -7,7 +7,6 @@
 //
 
 #include "ConversaoDeTipos.h"
-#include <stddef.h>
 
 void ConversaoDeLongEUnsgnedInt(){
     long numeroLongo = 1;

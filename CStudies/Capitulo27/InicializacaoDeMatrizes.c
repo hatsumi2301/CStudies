@@ -28,7 +28,8 @@ void InicializacaoMatrizString(){
     printf("\n");
     
     //Modo convencional de atribuição
-    char string2[30] = {'E', 'u', ' ', 'g', 'o', 's', 't', 'o', ' ', 'd', 'e', ' ', 'l', 'e', 'g', 'u', 'm', 'e', 's', '.', '\0'};
+    char string2[30] = {'E', 'u', ' ', 'g', 'o', 's', 't', 'o', ' ', 'd', 'e', ' ',
+        'l', 'e', 'g', 'u', 'm', 'e', 's', '.', '\0'};
     
     for(k = 0; string2[k] != '\0'; k++)
         printf("%c", string2[k]);

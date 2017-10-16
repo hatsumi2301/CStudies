@@ -8,9 +8,6 @@
 
 #include "OperadoresDeSelecao.h"
 
-int funcao1(int numero);
-int funcao2(void);
-
 void AdivinharONumero()
 {
     int magico;
@@ -58,7 +55,7 @@ void AdivinharONumeroComOperadorTernario(){
     scanf("%d", &chute);
     
     if(chute == magico) printf("Você acertou!!");
-        else chute > magico ? printf("Muito alto.\n") : printf("Muito baixo.\n\n");
+    else chute > magico ? printf("Muito alto.\n") : printf("Muito baixo.\n\n");
 }
 
 void CalcularQuadradoDeUmNumeroComOperadorTernario(){
@@ -169,11 +166,20 @@ void ComandoSwitchSemBreak(){
         case '1':
             printf("Se a opção 1 for escolhida\nEntão essa opção será executada\n\n");
         case '2':
-            printf("Se a opção 1 for escolhida ou a opção 2 for escolhida\nEntão essa opção será executada\n\n");
+            printf("Se a opção 1");
+            printf(" ou a opção 2 for escolhida\n");
+            printf("Então essa opção será executada\n\n");
         case '3':
-            printf("Se a opção 1 for escolhida ou a opção 2 for escolhida ou a opção 3 for escolhida\nEntão essa opção será executada\n\n");
+            printf("Se a opção 1");
+            printf(" ou a opção 2");
+            printf(" ou a opção 3 for escolhida\n");
+            printf("Então essa opção será executada\n\n");
         case '4':
-            printf("Se a opção 1 for escolhida ou a opção 2 for escolhida ou a opção 4\nEntão essa opção será executada\n\n");
+            printf("Se a opção 1");
+            printf(" ou a opção 2");
+            printf(" ou a opção 3");
+            printf(" ou a opção 4 for escolhida");
+            printf("\nEntão essa opção será executada\n\n");
         default:
             printf("Sempre vai ser executado\n");
     }

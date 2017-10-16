@@ -12,4 +12,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int funcao1(int numero);
+int funcao2(void);
+
 #endif /* OperadoresDeSelecao_h */

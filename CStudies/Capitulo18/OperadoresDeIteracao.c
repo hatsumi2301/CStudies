@@ -8,10 +8,6 @@
 
 #include "OperadoresDeIteracao.h"
 
-int QuadradoDeUmNumero(int numero);
-int LerNumero(void);
-int ImprimirTexto(void);
-
 void ForIncremento(){
     int x;
     

@@ -15,4 +15,9 @@
 #include <stdio.h>
 #include <string.h>
 
+#define MAX_STRING_LEN 80
+
+void Saida(void);
+void EntradaNumero(void);
+
 #endif /* Loops_h */

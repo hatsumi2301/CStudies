@@ -8,13 +8,10 @@
 
 #include "MatrizesUnitarias.h"
 
-void MatrizRecebePonteiroModo1(int *p);
-void MatrizRecebePonteiroModo2(int i[10]);
-void MatrizRecebePonteiroModo3(int i[]);
-
 void Matriz(){
     int i;
-    char matriz[10]; //Declaração de uma matriz com 10 posições, posição de 0 a 9
+    //Declaração de uma matriz com 10 posições, posição de 0 a 9
+    char matriz[10];
     
     for(i = 0; i < 10; i++){
         matriz[i] = i; //Coloca na posição de 0 a 9, o valor de i

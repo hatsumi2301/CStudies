@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+int x, y; //Declaração das variáveis globais
+
 #endif /* VariaveisGlobais_h */

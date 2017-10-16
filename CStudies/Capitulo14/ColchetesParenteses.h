@@ -11,4 +11,7 @@
 
 #include <stdio.h>
 
+//Cria um array com 80 posições
+char string[80];
+
 #endif /* ColchetesParenteses_h */

@@ -78,6 +78,7 @@
 		7B6FC7E01F91AAC100AC6F78 /* InicializacaoDeMatrizes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InicializacaoDeMatrizes.h; sourceTree = "<group>"; };
 		7B6FC7E21F9433A700AC6F78 /* ConversaoDeTipos.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ConversaoDeTipos.c; sourceTree = "<group>"; };
 		7B6FC7E31F9433A700AC6F78 /* ConversaoDeTipos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConversaoDeTipos.h; sourceTree = "<group>"; };
+		7B6FC7E61F94675E00AC6F78 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		7B7947131F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OperadoresLogicosRelacionais.c; sourceTree = "<group>"; };
 		7B7947141F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperadoresLogicosRelacionais.h; sourceTree = "<group>"; };
 		7B7947161F7C8DAD006B7FE3 /* Operadores.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Operadores.c; sourceTree = "<group>"; };
@@ -184,6 +185,7 @@
 				7BE933B01F775871008A7CBF /* Capitulo02 */,
 				7BE933AF1F775588008A7CBF /* Capitulo01 */,
 				7B15DBC51F5F8A6F003F515E /* main.c */,
+				7B6FC7E61F94675E00AC6F78 /* main.h */,
 			);
 			path = CStudies;
 			sourceTree = "<group>";

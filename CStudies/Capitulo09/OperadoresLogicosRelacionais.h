@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+int xor(int a, int b);
+
 #endif /* OperadoresLogicosRelacionais_h */

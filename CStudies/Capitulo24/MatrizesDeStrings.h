@@ -14,4 +14,6 @@
 #define MAX 100
 #define LEN 80
 
+char texto[MAX][LEN];
+
 #endif /* MatrizesDeStrings_h */

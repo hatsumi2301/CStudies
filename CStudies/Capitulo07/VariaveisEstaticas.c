@@ -8,11 +8,6 @@
 
 #include "VariaveisEstaticas.h"
 
-static int variavelEstaticaGlobal;
-
-void IniciarSerie(int semente);
-int Serie(void);
-
 void IniciarSerie(int semente){
     //Esse método é utilizado para atribuir um valor à variável estática variavelEstaticaGlobal
     variavelEstaticaGlobal = semente;

@@ -8,8 +8,6 @@
 
 #include "Condicionais.h"
 
-int EntradaNumero(void);
-
 void Condicionais(){
     int numero = EntradaNumero();
     
@@ -20,7 +18,8 @@ void Condicionais(){
     }
     //Se a condição acima for falsa, será verificada se a condição abaixo é verdadeira
     else if(numero == 2){
-        printf("Executa esse comando se a condição do primeiro if for falsa e a condição do segundo if for verdadeira.\n");
+        printf("Executa esse comando se a condição do primeiro if for falsa");
+        printf(" e a condição do segundo if for verdadeira.\n");
         printf("A condição do if vai ser verdadeira se o número for igual a 2.\n");
     }
     //Se nenhuma das condições acima forem verdadeiras, será executado o código do escopo abaixo

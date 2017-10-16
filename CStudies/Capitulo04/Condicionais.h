@@ -13,4 +13,6 @@
 
 #include <stdio.h>
 
+int EntradaNumero(void);
+
 #endif /* Condicionais_h */

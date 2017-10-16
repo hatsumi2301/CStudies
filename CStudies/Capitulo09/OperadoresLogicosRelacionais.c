@@ -8,8 +8,6 @@
 
 #include "OperadoresLogicosRelacionais.h"
 
-int xor(int a, int b);
-
 void PrintXor(){
     printf("%d, %d, %d\n", 1, 0, xor(1, 0)); //Verdadeiro
     printf("%d, %d, %d\n", 1, 1, xor(1, 1)); //Falso

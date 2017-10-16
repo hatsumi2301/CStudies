@@ -11,4 +11,7 @@
 
 #include <stdio.h>
 
+void func(void);
+int f(void);
+
 #endif /* ComandosDeExpressoes_h */

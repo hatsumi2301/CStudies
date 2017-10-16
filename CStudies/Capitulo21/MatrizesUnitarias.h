@@ -11,4 +11,8 @@
 
 #include <stdio.h>
 
+void MatrizRecebePonteiroModo1(int *p);
+void MatrizRecebePonteiroModo2(int i[10]);
+void MatrizRecebePonteiroModo3(int i[]);
+
 #endif /* MatrizesUnitarias_h */

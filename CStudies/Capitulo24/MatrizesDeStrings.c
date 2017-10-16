@@ -8,8 +8,6 @@
 
 #include "MatrizesDeStrings.h"
 
-char texto[MAX][LEN];
-
 void MatrizDeString(){
     register int t;
     register int i;
@@ -20,7 +18,8 @@ void MatrizDeString(){
     for(t = 0; t < MAX; t++){
         printf("%d: ", t);
         scanf(" %s", texto[t]);
-        if(!*texto[t]) break; //Se o valor de texto na posição t for igual a 0, sai do loop
+        //Se o valor de texto na posição t for igual a 0, sai do loop
+        if(!*texto[t]) break;
     }
     
     for(i = 0; i < t; i++){

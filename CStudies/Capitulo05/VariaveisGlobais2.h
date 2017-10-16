@@ -11,4 +11,6 @@
 
 #include <stdio.h>
 
+extern int x, y; //Sinaliza que x e y são variáveis globais
+
 #endif /* VariaveisGlobais2_h */

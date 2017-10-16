@@ -8,9 +8,6 @@
 
 #include "ComandosDeExpressoes.h"
 
-void func(void);
-int f(void);
-
 void Expressoes(){
     int a;
     int b;

@@ -46,5 +46,7 @@ void NomeDaVariavelRepetido(){
     
     //int x = 3; //Se essa linha for descomentada (apagando os "//"), será gerado um erro
     
-    printf("Método: NomeDaVariavelRepetido. Nome da variável é x e o valor de x é %d. Essa variável está em um contexto diferente da variável x do método NomeDaVariavel", x);
+    printf("Método: NomeDaVariavelRepetido.");
+    printf(" Nome da variável é x e o valor de x é %d.", x);
+    printf(" Essa variável está em um contexto diferente da variável x do método NomeDaVariavel");
 }

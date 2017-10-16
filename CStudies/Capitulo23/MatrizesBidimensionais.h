@@ -13,4 +13,13 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+#define CLASSES 3
+#define NOTAS 30
+
+int nota[CLASSES][NOTAS];
+
+void InserirNota(void);
+int ObterNota(int numero);
+void ExibirNotas(int nota[][NOTAS]);
+
 #endif /* MatrizesBidimensionais_h */
