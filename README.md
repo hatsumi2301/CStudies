@@ -550,17 +550,17 @@ Ponto é usado quando se está referenciando a estrutura. Seta é usado quando u
 
 # [Capítulo 14](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo14)
 
-## Parênteses e colchetes com operadores
+## Delimitadores com operadores
 
-Parênteses são elementos que indicam o aumento da precedência das operações dentro deles.
+*Parênteses* são delimitadores que indicam o aumento da precedência das operações dentro deles.
 
-Colchetes indicam a indexação de uma matriz.
+*Colchetes* indicam a indexação de uma matriz.
 
 ### Precedências
 
-Todos os operadores, com exceção do ?, associam da esquerda para a direita.
+Todos os operadores, com exceção de operadores unários e ```?```, associam da **esquerda para a direita**.
 
-Operadores unários (*, & e -) e ? associam da direita para a esquerda.
+Operadores unários (```*```, ```&``` e ```-```) e ```?``` associam da **direita para a esquerda**.
 
 | Precedência | Elemento | 
 | --- | --- |
@@ -593,9 +593,9 @@ Operadores unários (*, & e -) e ? associam da direita para a esquerda.
 
 *Ordem de avaliação*: o padrão C ANSI não estipula que as subexpressões de uma expressão devam ser avaliadas em uma ordem especificada.
 
-Por exemplo, ```x = f1() + f2();``` não garante que **f1()** vai ser executada antes de **f2()**.
+Por exemplo, ```x = f1() + f2();``` não garante que ```f1()``` vai ser executada antes de ```f2()```.
 
-### Conversão de tipos
+## Conversão de tipos
 
 O compilador C converte todos os operandos no tipo do maior operando, o que é denominado de *promoção de tipo*. 
 
@@ -622,15 +622,17 @@ ENTÃO o segundo é convertido para **unsigned int**
 SE um operando é **long** E o segundo é **unsigned int** E SE valor de **unsigned int** não pode ser representado por um **long**
 ENTÃO os dois operandos são convertidos para **unsigned long**
 
-### Casts
+## Casts
 
 Forçar expressão a ser de determinado tipo.
+
+### Utilização
 
 ```
 (tipo) expressão
 ```
 
-#### Exemplos de casts
+### Exemplos de casts
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
@@ -639,6 +641,8 @@ Forçar expressão a ser de determinado tipo.
 # [Capítulo 16](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo16)
 
 ## C Reduzido
+
+Algumas operações podem ser escritas de maneira reduzida em C.
 
 ```c
 x = x + 10;
@@ -649,14 +653,16 @@ pode ser escrito de uma maneira reduzida:
 x += 10;
 ```
 
-**+=** atribui a **x** o valor de **x** mais **10**.
+```+=``` atribui a ```x``` o valor de ```x``` mais ```10```.
 
 Essas operações existem para todos os operadores binários em C.
 
 ```
 var = var operador expressão
 ``` 
+
 é equivalente a 
+
 ```
 var operador = expressão
 ```
@@ -675,49 +681,19 @@ var operador = expressão
 
 ## Condicional
 
-**if** e **else** (opcional)
+```if``` e ```else``` (opcional)
 
-**switch**
+```switch```
 
-**?** - Operador ternário
+```?``` 
 
-### Utilização
+### If e ?
 
-```c
-if(expressão1) comando1;
-if(expressão2) comando2;
-else if(expressão3) comando3;
-else comando4;
-```
+```if``` e ```?``` são comandos condicionais.
 
-Se a expressão1 for verdadeira, o comando1 será executado.
+O comando ```else``` sempre se refere ao comando ```if``` mais próximo, que está dentro do mesmo bloco do ```else``` e não está associado a outro ```if```.
 
-Se a expressão2 for verdadeira, o comando2 será executado.
-
-Se a expressão2 for falsa, a expressão3 vai ser verificada. Se a expressão3 for verdadeira, o comando3 será executado.
-
-Se a expressão3 for falsa, será executado o comando4.
-
-#### Exemplos de seleção
-
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void AdivinharONumero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o *if* e o *else* para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
-| [```void AdivinharONumeroComIfElseIf(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o *if* e o *else if* para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
-| [```void AdivinharONumeroComOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o operador ternário *?* para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
-| [```void CalcularQuadradoDeUmNumeroComOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o operador ternário *?* para calcular a raiz quadrada de um número | - |
-| [```void OperadorTernarioComFuncoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | O operador ternário também pode ser utilizado chamando funções | Utiliza os dois métodos abaixo |
-| [```void funcao1(int numero)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Imprime o número passado como parâmetro | Método utilizado pelo método ```OperadorTernarioComFuncoe``` |
-| [```void funcao2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Imprime a mensagem "foi o número digitado." | Método utilizado pelo método ```OperadorTernarioComFuncoe``` |
-| [```void VerificaSeONumeroEhZero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Verifica se o segundo número informado pelo usuário é 0 utilizando o if | A condição ```if(b)``` poderia ser escrita como ```if(b != 0)```, porém esta forma é redundante |
-
-### Ifs aninhados
-
-**If aninhado** é um comando **if** que é o objeto de um outro **if** ou **else**.
-
-O comando **else** sempre se refere ao comando **if** mais próximo, que está dentro do mesmo bloco do **else** e não está associado a outro **if**
-
-#### Utilização
+#### Exemplo de else
 
 ```c
 if(i){
@@ -728,6 +704,46 @@ if(i){
 else comando4; //Associado ao if(i)
 ```
 
+#### Utilização
+
+```c
+if(expressão1) comando1;
+if(expressão2) comando2;
+else if(expressão3) comando3;
+else comando4;
+```
+
+Se a *expressão1* for verdadeira, o *comando1* será executado.
+
+Se a *expressão2* for verdadeira, o *comando2* será executado.
+
+Se a *expressão2* for falsa, a *expressão3* vai ser verificada. Se a *expressão3* for verdadeira, o *comando3* será executado.
+
+Se a *expressão3* for falsa, será executado o *comando4*.
+
+```c
+expressao1 ? comando1 : comando2
+```
+
+Se a *expressao1* for verdadeira, então o *comando1* será executado, senão o *comando2* será executado.
+
+##### Exemplos de if e ?
+
+| Método  | O que faz | Observações |
+| ------------- |:-------------:| -----:|
+| [```void AdivinharONumero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o ```if``` e o ```else``` para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
+| [```void AdivinharONumeroComIfElseIf(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o ```if``` e o ```else if``` para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
+| [```void AdivinharONumeroComOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o operador ternário ```?``` para verificar se o usuário adivinhou o número gerado aleatoriamente pelo programa | - |
+| [```void CalcularQuadradoDeUmNumeroComOperadorTernario(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Utiliza o operador ternário ```?``` para calcular a raiz quadrada de um número | - |
+| [```void OperadorTernarioComFuncoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | O operador ternário também pode ser utilizado chamando funções | Utiliza os dois métodos abaixo |
+| [```void funcao1(int numero)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Imprime o número passado como parâmetro | Método utilizado pelo método ```OperadorTernarioComFuncoe``` |
+| [```void funcao2(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Imprime a mensagem "foi o número digitado." | Método utilizado pelo método ```OperadorTernarioComFuncoe``` |
+| [```void VerificaSeONumeroEhZero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Verifica se o segundo número informado pelo usuário é 0 utilizando o if | A condição ```if(b)``` poderia ser escrita como ```if(b != 0)```, porém esta forma é redundante |
+
+### Ifs aninhados
+
+**If aninhado** é um comando ```if``` dentro de um outro ```if``` ou ```else```.
+
 #### Exemplos de ifs aninhados
 
 | Método  | O que faz | Observações |
@@ -736,7 +752,7 @@ else comando4; //Associado ao if(i)
 
 ### Switch
 
-É um comando de seleção múltipla. Esse comando testa sucessivamente o valor de uma expressão contra uma lista de constantes inteiras ou de caractere. Quando o valor coincide, os comandos associados à aquela constante, são executados.
+É um comando de verificação múltipla. Esse comando testa sucessivamente o valor de uma expressão contra uma lista de constantes inteiras ou de caractere. Quando o valor coincide, os comandos associados à aquela constante, são executados.
 
 #### Utilização
 
@@ -759,25 +775,25 @@ switch(expressão){
 }
 ```
 
-*default* é opcional e é executado caso nenhuma coincidência em uma constante seja detectada.
+*default* é opcional e é executado caso nenhuma coincidência seja detectada.
 
 #### Observações
 
-* O comando **switch** difere do comando **if**, porque o **switch** só pode testar igualdade, enquanto o **if** pode avaliar uma expressão lógica ou relacional.
+* O comando ```switch``` difere do comando ```if```, porque o ```switch``` só pode testar igualdade, enquanto o ```if``` pode avaliar uma expressão lógica ou relacional.
 
-* Duas constantes **case** no mesmo **switch** não podem ter valores idênticos.
+* Duas constantes ```case``` no mesmo ```switch``` não podem ter valores idênticos.
 
-* Se constantes de caractere são usadas em um comando **switch**, elas são automaticamente convertidas para seus valores inteiros.
+* Se constantes de caractere são usadas em um comando ```switch```, elas são automaticamente convertidas para seus valores inteiros.
 
 #### Exemplos de switch
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void ComandoSwitchMenu(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do **switch** | - |
-| [```void ComandoSwitchSemBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do **switch** sem o **break** | - |
-| [```void ComandoSwitchDeclarandoVariaveis(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de declaração de variável dentro de um **switch** | - |
-| [```void ComandoSwitchComBlocosDeCodigo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de blocos de código dentro de um **switch** | - |
-| [```void SwitchAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de **switch** aninhado | - |
+| [```void ComandoSwitchMenu(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do ```switch``` | - |
+| [```void ComandoSwitchSemBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de utilização do ```switch``` sem o ```break``` | - |
+| [```void ComandoSwitchDeclarandoVariaveis(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de declaração de variável dentro de um ```switch``` | - |
+| [```void ComandoSwitchComBlocosDeCodigo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de blocos de código dentro de um ```switch*```| - |
+| [```void SwitchAninhado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo17/OperadoresDeSelecao.c) | Exemplo de ```switch``` aninhado | - |
 
 # [Capítulo 18](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo18)
 
@@ -786,6 +802,8 @@ switch(expressão){
 ```for```, ```while``` e ```do while```
 
 ### For
+
+Laço de repetição que inicializa o valor de controle, verifica se a condição de finalização já foi atingida e incrementa/decrementa o valor de controle.
 
 #### Utilização do for
 
@@ -803,13 +821,13 @@ for(inicialização; condição; incremento) comando;
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void ForIncremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Exemplo de utilização do **for** incrementando o valor a cada rodada | - |
-| [```void ForDecremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Exemplo de utilização do **for** decrementando o valor a cada rodada | - |
-| [```void ForNaoSeraExecutado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Exemplo de **for** que não será executado, pois a condição é falsa | - |
-| [```void ForComDoisControles(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | É possível utilizar o comando **for** com duas variáveis de controle | - |
-| [```void ForCondicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | A condição do **for** pode ser alguma outra expressão lógica | - |
-| [```void ForComFuncoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | As expressões que controlam o **for** também podem ser funções | Utiliza os métodos ```int QuadradoDeUmNumero(int numero)```, ```int LerNumero(void)``` e ```int ImprimirTexto(void)``` |
-| [```void ForSemParteDaDefinicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Não é necessário que existam todas as expressões na definição de um **for** para que ele funcione adequadamente | - |
+| [```void ForIncremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Exemplo de utilização do ```for``` incrementando o valor a cada rodada | - |
+| [```void ForDecremento(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Exemplo de utilização do ```for``` decrementando o valor a cada rodada | - |
+| [```void ForNaoSeraExecutado(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Exemplo de ```for``` que não será executado, pois a condição é falsa | - |
+| [```void ForComDoisControles(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | É possível utilizar o comando ```for``` com duas variáveis de controle | - |
+| [```void ForCondicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | A condição do ```for``` pode ser alguma outra expressão lógica | - |
+| [```void ForComFuncoes(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | As expressões que controlam o ```for``` também podem ser funções | Utiliza os métodos ```int QuadradoDeUmNumero(int numero)```, ```int LerNumero(void)``` e ```int ImprimirTexto(void)``` |
+| [```void ForSemParteDaDefinicao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Não é necessário que existam todas as expressões na definição de um ```for``` para que ele funcione adequadamente | - |
 | [```void ForInfinito(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | For irá rodar infinitamente até parar o programa | - |
 | [```void ForSemCorpo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | É possível criar um for sem um corpo. Esse for é um for de atraso de tempo | - |
 
@@ -830,12 +848,12 @@ while(condição) comando;
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
 | [```void ComandoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Enquanto o caractere A não for digitado, o bloco de código será executado | É necessário limpar o buffer para corrigir o problema de imprimir duas vezes a mensagem |
-| [```void ComandoWhileCondicaoVerdadeira(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Caso a condição do **while** já seja verdadeira, o bloco de código dentro do **while** não será executado | - |
-| [```void ComandoWhileSemCorpo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | O comando **while** não precisa ter um corpo, ele ficará sendo executado até que o usuário digite a letra "A" | - |
+| [```void ComandoWhileCondicaoVerdadeira(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | Caso a condição do ```while``` já seja verdadeira, o bloco de código dentro do ```while``` não será executado | - |
+| [```void ComandoWhileSemCorpo(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | O comando ```while``` não precisa ter um corpo, ele ficará sendo executado até que o usuário digite a letra "A" | - |
 
 ### Do-while
 
-Os laços **for** e **while** testam a condição do laço no começo. O **do-while** testa a condição do laço no final, isso significa que o laço **do-while** sempre será executado pelo menos uma vez.
+Os laços ```for``` e ```while``` testam a condição do laço no começo. O ```do-while``` testa a condição do laço no final, isso significa que o laço ```do-while``` sempre será executado pelo menos uma vez.
 
 #### Utilização
 
@@ -849,7 +867,7 @@ do{
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void ComandoDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | O comando **do-while** foi utilizado para a seleção de menu, enquanto um menu válido não for selecionado, ele será executado | - |
+| [```void ComandoDoWhile(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo18/OperadoresDeIteracao.c) | O comando ```do-while``` foi utilizado para a seleção de menu, enquanto um menu válido não for selecionado, ele será executado | - |
 
 # [Capítulo 19](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo19)
 
@@ -863,7 +881,7 @@ Utilizado para retornar de uma função, ele retorna para o ponto em que a chama
 
 Pode ser utilizado em qualquer parte do código.
 
-Se o **return** tem um valor associado a ele, esse valor é o valor de retorno da função. Se não existe nenhum valor associado à variável de retorno, apenas lixo é retornado. 
+Se o ```return``` tem um valor associado a ele, esse valor é o valor de retorno da função. Se não existe nenhum valor associado à variável de retorno, apenas lixo é retornado. 
 
 #### Utilização
 
@@ -877,16 +895,16 @@ return expressão;
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```int ReturnInt(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um **int** | - |
-| [```char ReturnChar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um **char** | - |
-| [```void SemRetunr(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método sem retorno é um método do tipo **void** | - |
-| [```float ReturnFloat(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um **float** | - |
+| [```int ReturnInt(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```int``` | - |
+| [```char ReturnChar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```char``` | - |
+| [```void SemRetunr(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método sem retorno é um método do tipo ```void``` | - |
+| [```float ReturnFloat(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```float``` | - |
 
 ### Goto
 
 O ```goto``` vai para uma área demarcada com ```<nome_da_area>:``` no código.
 
-Uma preocupação da maioria dos programadores sobre o **goto** é a sua tendência de tornar os programas ilegíveis.   
+Uma preocupação da maioria dos programadores sobre o ```goto``` é a sua tendência de tornar os programas ilegíveis.   
 
 Pode ser utilizado em qualquer parte do código.
 
@@ -905,11 +923,11 @@ rótulo:
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```int ComandoGoto(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de loop com **goto** | - |
+| [```int ComandoGoto(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de loop com ```goto``` | - |
 
 ### Break
 
-Pode ser utilizado para terminar um **case** em um comando **switch** ou pode ser usado para forçar uma terminação imediata de um laço, evitando o teste condicional normal do laço.
+Pode ser utilizado para terminar um ```case``` em um comando ```switch``` ou pode ser usado para forçar uma terminação imediata de um laço, evitando o teste condicional normal do laço.
 
 Pode ser utilizado em conjunto com comandos de laço.
 
@@ -917,12 +935,12 @@ Pode ser utilizado em conjunto com comandos de laço.
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```int ComandoBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **loop** com **break** | - |
-| [```int SwitchCaseComBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **switch** com **break** | - |
+| [```int ComandoBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de ```loop``` com ```break``` | - |
+| [```int SwitchCaseComBreak(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de ```switch``` com ```break``` | - |
 
 ### Exit
 
-Da mesma forma que você pode sair de um laço, pode sair de um programa usando a função **exit()**. 
+Da mesma forma que você pode sair de um laço, pode sair de um programa usando a função ```exit()```. 
 
 Força uma terminação imediata do programa inteiro, forçando um retorno ao sistema operacional. 
 
@@ -944,7 +962,7 @@ Código de retorno 0 indica terminação normal do programa.
 
 ### Continue
 
-Funciona de forma um pouco parecida com o comando **break**, mas ao invés de forçar a terminação, ele força que ocorra a próxima iteração do laço, pulando qualquer código intermediário.
+Funciona de forma um pouco parecida com o comando ```break```, mas ao invés de forçar a terminação, ele força que ocorra a próxima iteração do laço, pulando qualquer código intermediário.
 
 Pode ser utilizado em conjunto com comandos de laço.
 
@@ -952,7 +970,7 @@ Pode ser utilizado em conjunto com comandos de laço.
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```int ComandoContinue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de **continue** em um **loop** | - |
+| [```int ComandoContinue(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Exemplo de ```continue``` em um ```loop``` | - |
 
 # [Capítulo 20](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo20)
 
@@ -962,22 +980,22 @@ Uma expressão válida em C seguida por um ponto e vírgula.
 
 ### Utilização
 
-- Chamada a uma função
+* Chamada a uma função
 ```c
 func();
 ```
 
-- Comando de atribuição
+* Comando de atribuição
 ```c
 a = b + c;
 ```
 
-- Comando válido que não faz nada
+* Comando válido que não faz nada
 ```c
 b + f();
 ```
 
-- Comando vazio
+* Comando vazio
 ```c
 ;
 ```
@@ -992,7 +1010,7 @@ b + f();
 
 Grupos de comandos relacionados que são tratados como uma unidade. Os comandos que constituem um bloco estão logicamente conectados. 
 
-Um bloco começa com um **{** e termina com um **}** correspondente. 
+Um bloco começa com uma chave e termina com uma chave correspondente. 
 
 ### Exemplos de comandos de bloco de código
 
@@ -1038,26 +1056,26 @@ C não tem verificação de limites em matrizes. Você poderia ultrapassar o fim
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void Matriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de uma **matriz** com tamanho 10 | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
-| [```void UltrapassaLimiteDaMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de um **for** que ultrapassa o limite de tamanho de uma **matriz** | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
+| [```void Matriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de uma ```matriz``` com tamanho 10 | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
+| [```void UltrapassaLimiteDaMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de um ```for``` que ultrapassa o limite de tamanho de uma ```matriz``` | Esse método não é chamado no menu do ```main```, pois ele não imprime nenhum valor na tela |
 
 ### Ponteiro
 
 Você pode gerar um ponteiro para o primeiro elemento de uma matriz simplesmente especificando o nome da matriz, sem nenhum índice. 
 
-Também é possível especificar o endereço do primeiro elemento de uma matriz utilizando o operador **&**. 
+Também é possível especificar o endereço do primeiro elemento de uma matriz utilizando o operador ```&```. 
 
 ```c
 int matriz[10];
 ```
 
-**matriz** e **&matriz[0]** produzem os mesmos resultados.
+```matriz``` e ```&matriz[0]``` produzem os mesmos resultados.
 
 #### Exemplos de ponteiros
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void PonteiroNaMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de ponteiro em uma matriz | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
+| [```void PonteiroNaMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de ponteiro em uma matriz | Esse método não é chamado no menu do ```main```, pois ele não imprime nenhum valor na tela |
 
 ### Passagem de matrizes unidimensionais para funções
 
@@ -1067,7 +1085,7 @@ Em C, você não pode passar uma matriz inteira como um argumento para uma funç
 
 | Método  | O que faz | Observações |
 | ------------- |:-------------:| -----:|
-| [```void MatrizFuncao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de como passar uma matriz para uma função | Esse método não é chamado no menu do *main*, pois ele não imprime nenhum valor na tela |
+| [```void MatrizFuncao(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo21/MatrizesUnitarias.c) | Exemplo de como passar uma matriz para uma função | Esse método não é chamado no menu do ```main```, pois ele não imprime nenhum valor na tela |
 
 # [Capítulo 22](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo22)
 

@@ -354,6 +354,8 @@ int main(){
                 break;
             case 15:
                 Cast();
+                
+                ConversaoDeLongEUnsgnedInt();
                 break;
             case 16:
                 SomaReduzida();
