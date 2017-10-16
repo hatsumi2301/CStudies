@@ -27,9 +27,10 @@ float ReturnFloat(){
 void ComandoGoto(){
     int x = 1;
     
-loop1: //Rótulo loop1
-    x++;
-    printf("%d ", x);
+    loop1: //Rótulo loop1
+        x++;
+        printf("%d ", x);
+
     if(x < 100) goto loop1; //Se x for menor que 100, então vá para o rótulo loop1
 }
 

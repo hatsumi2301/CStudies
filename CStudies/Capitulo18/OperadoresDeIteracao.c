@@ -30,7 +30,7 @@ void ForDecremento(){
     //Diminui 5 unidades a cada rodada do laço
     for(x = 100; x != 65; x -= 5){
         z = x * x;
-        printf("O quadrado de %d, %f ", x, z); //Imprime o valor de x e z
+        printf("O quadrado de %d é %f ", x, z); //Imprime o valor de x e z
     }
 }
 
@@ -52,14 +52,11 @@ void ForComDoisControles(){
     int x;
     int y;
     
-    x = 10;
-    
     //Começando com o número 0 em x e y
     //Se a soma de x e y for menor ou igual a 10
     //Soma 1 unidade em x a cada rodada do laço
-    for(x = 0, y = 0; x + y <= 10; ++x, y++){
+    for(x = 0, y = 0; x + y <= 10; ++x, y++)
         printf("Valor de y = %d e valor de x = %d\n", y, x);
-    }
 }
 
 void ForCondicao(){
@@ -80,6 +77,8 @@ void ForComFuncoes(){
     int numero;
     
     //For utiliza chamadas de funções para as suas rodadas
+    //Executa o primeiro ImprimirTexto() apenas uma vez, 
+    // nas próximas vezes executa apenas o segundo (i++)
     for(ImprimirTexto(); (numero = LerNumero()); ImprimirTexto()){
         QuadradoDeUmNumero(numero);
     }
@@ -118,6 +117,7 @@ void ForInfinito(){
 }
 
 void ForDigiteA(){
+    //Definindo caractere vazio
     char ch = '\0';
     
     for(;;){
@@ -141,9 +141,7 @@ void ForSemCorpo(){
 }
 
 void ComandoWhile(){
-    char ch;
-    
-    ch = '\0';
+    char ch = '\0';
     
     //Enquanto o caractere digitado for diferente de A, o código será executado
     while(ch != 'A'){
@@ -164,9 +162,7 @@ void ComandoWhileCondicaoVerdadeira(){
 }
 
 void ComandoWhileSemCorpo(){
-    char ch;
-    
-    ch = '\0';
+    char ch = '\0';
     
     printf("Digite A\n");
     
