@@ -24,6 +24,16 @@ float ReturnFloat(){
     return 1.1;
 }
 
+//Código comentado para evitar warnings
+//Função retorna uma variável com valor não inicializado
+//Ao chamar a função, se formos verificar o valor de i
+//Será um valor de lixo na memória
+/*int ReturnVazio(){
+    int i;
+
+    return i;
+}*/
+
 void ComandoGoto(){
     int x = 1;
     

@@ -624,6 +624,11 @@ ENTÃO o segundo é convertido para **unsigned int**
 SE um operando é **long** E o segundo é **unsigned int** E SE valor de **unsigned int** não pode ser representado por um **long**
 ENTÃO os dois operandos são convertidos para **unsigned long**
 
+### Exemplos de conversão de tipos
+| Método  | O que faz | 
+| --- |:---:| 
+| [```void ConversaoDeTipos(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo15/ConversaoDeTipos.h.c) | Exemplo de conversão de tipos |
+
 ## Casts
 
 Forçar expressão a ser de determinado tipo.
@@ -897,12 +902,13 @@ return expressão;
 
 #### Exemplos de return
 
-| Método  | O que faz | 
-| --- |:---:| 
-| [```int ReturnInt(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```int``` | 
-| [```char ReturnChar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```char``` | 
-| [```void SemRetunr(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método sem retorno é um método do tipo ```void``` |
-| [```float ReturnFloat(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```float``` |
+| Método  | O que faz | Observações |
+| --- |:---:| ---: |
+| [```int ReturnInt(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```int``` | - |
+| [```char ReturnChar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```char``` | - |
+| [```void SemRetunr(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método sem retorno é um método do tipo ```void``` | - |
+| [```float ReturnFloat(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```float``` | - |
+| [```int ReturnVazio(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo19/OperadoresDeDesvio.c) | Método retorna um ```int``` que não foi atribuído nenhum valor a ele. Por conta disso, o valor retornado, é um valor de lixo de memória. | Esse método está comentado para evitar warnings. | 
 
 ### Goto
 
@@ -1094,6 +1100,8 @@ Matriz de caracteres terminada por um nulo.
 *Nulo = '\0'*
 
 Por este motivo, é necessário que o tamanho das matrizes de caracteres sejam uma unidade maior do que o requisitado.
+
+Para utilizar as funções de ```string``` é necessário incluir o ```<string.h>``` no *header*.
 
 ### Atenção
 
@@ -1364,3 +1372,46 @@ int matriz[10][2] = {
 
 ## Inicialização de matrizes não-dimensionais
 
+As matrizes não dimensionais é quando você deixa que o compilador C calcule automaticamente o tamanho dessas matrizes. Para fazer isso é necessário não especificar o tamanho da matriz ao inicializa-la. 
+
+Outra vantagem de utilizar matrizes não dimensionadas é poder alterar os valores que estão nessas matrizes sem se preocupar de ultrapassar o tamanho máximo da matriz.
+
+Matriz multidimensionais podem ser não dimensionais também. Para utiliza-las basta não informar a primeira dimensão, todas as outras devem ser informadas para que o compilador possa indexar corretamente elas.
+
+### Utilização
+
+* Matriz dimensionada
+
+```c
+char string1[17] = "Erro de leitura\n";
+char string2[17] = "Erro de escrita\n";
+char string3[29] = "Arquivo não pode ser aberto\n";
+```
+
+* Matriz unidimensional não dimensionada
+
+```c
+char string1[] = "Erro de leitura\n";
+char string2[] = "Erro de escrita\n";
+char string3[] = "Arquivo não pode ser aberto\n";
+```
+
+* Matriz multidimensional não dimensionada
+
+```c
+int strings[][2] = {
+    1, 2,
+    3, 4,
+    5, 6, 
+    7, 8,
+    9, 10,
+    11, 12
+}
+```
+
+### Exemplos de matrizes não dimensionais
+
+| Método  | O que faz |
+| --- |:---:|
+| [```void InicializacaoMatrizNaoDimensionada(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de unidimencional não dimensionada |
+| [```void InicializacaoMatrizMultidimensionalNaoDimensionada(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo27/InicializacaoDeMatrizes.h.h.c) | Exemplo de inicialização de uma matriz de multidimensional não dimensionada |

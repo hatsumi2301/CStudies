@@ -57,3 +57,36 @@ void InicializacaoMatrizMultidimensional(){
         printf("\n");
     }
 }
+
+void InicializacaoMatrizNaoDimensionada(){
+    int k;
+    //Não informar o tamanho da matriz
+    int i[] = {1, 2, 3, 4, 5};
+    
+    for(k = 0; k < 5; k++)
+        printf("%d ", i[k]);
+    
+    //Alterando os valores da matriz
+    for(k = 0; k < 10; k++)
+        i[k] = k;
+    
+    printf("\n");
+    
+    for(k = 0; k < 10; k++)
+        printf("%d ", i[k]);
+}
+
+void InicializacaoMatrizMultidimensionalNaoDimensionada(){
+    int i;
+    int j;
+    int matriz[][2] = {
+        11,12,
+        21,22
+    };
+    
+    for(i = 0; i < 2; i++){
+        for(j = 0; j < 2; j++)
+            printf("%d ", matriz[i][j]);
+        printf("\n");
+    }
+}

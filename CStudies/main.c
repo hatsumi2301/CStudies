@@ -246,7 +246,8 @@ int main(){
             case 15:
                 Cast();
                 
-                ConversaoDeLongEUnsgnedInt();
+                ConversaoDeLongEUnsignedInt();
+                ConversaoDeTipos();
                 break;
             case 16:
                 SomaReduzida();
@@ -439,6 +440,12 @@ int main(){
                 
                 printf("\n\nInicialização matriz multidimensional:\n");
                 InicializacaoMatrizMultidimensional();
+                
+                printf("\n\nInicialização matriz unidimensional não dimensionada:\n");
+                InicializacaoMatrizNaoDimensionada();
+                
+                printf("\n\nInicialização matriz multidimensional não dimensionada:\n");
+                InicializacaoMatrizMultidimensionalNaoDimensionada();
                 break;
             case 100:
                 ComandoExit();

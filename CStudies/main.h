@@ -15,13 +15,14 @@
 #include "Entrada.h"
 #include "Loops.h"
 #include "ConversaoDeTipos.h"
+#include "InicializacaoDeMatrizes.h"
 
 extern int numeros[10][10];
 
 int Opcoes(void);
-//void Saida(void);
-//void EntradaNumero(void);
-//void EntradaTexto(void);
+void Saida(void);
+void EntradaNumero(void);
+void EntradaTexto(void);
 void TiposDeVariaveis(void);
 void NomeDaVariavel(void);
 void NomeDaVariavelRepetido(void);
@@ -121,5 +122,9 @@ void ImprimeLinha(int numero);
 void InicializacaoMatriz(void);
 void InicializacaoMatrizString(void);
 void InicializacaoMatrizMultidimensional(void);
+void InicializacaoMatrizMultidimensionalNaoDimensionada(void);
+void InicializacaoMatrizNaoDimensionada(void);
+void ConversaoDeLongEUnsignedInt(void);
+void ConversaoDeTipos(void);
 
 #endif /* mainn_h */
