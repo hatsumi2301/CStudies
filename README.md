@@ -43,9 +43,9 @@ Constantes de caracteres de barra invertida:
 
 ### Exemplos de printf
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void Saida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Saida.c) | Imprime o texto "Olá mundo!" | - | 
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void Saida(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Saida.c) | Imprime o texto "Olá mundo!" |
 
 ## Scanf
 
@@ -66,10 +66,10 @@ Caso deseje colocar valores em variáveis, é necessário utilizar especificador
 
 ### Exemplos de scanf
 
-| Método  | O que faz | Observações |
-| ------------- |:-------------:| -----:|
-| [```void EntradaNumero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Entrada.c) | Obtém um número digitado pelo teclado | - |
-| [```void EntradaTexto(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Entrada.c) | Obtém um texto digitado pelo teclado | - |
+| Método  | O que faz | 
+| ------------- |:-------------:| 
+| [```void EntradaNumero(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Entrada.c) | Obtém um número digitado pelo teclado | 
+| [```void EntradaTexto(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo01/Entrada.c) | Obtém um texto digitado pelo teclado | 
 
 # [Capítulo 02](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo02)
 
@@ -124,11 +124,11 @@ Loops são repetições de um determinado trecho do código que obedece uma dete
 
 **Tipos de loops:**
 
-| Loop | Pseudocódigo | Explicação | Utilização |
-| --- | --- | --- | --- |
-| ```for``` | Enquanto (valor_inicial até a condição_final passo n) faça<br>Inicio<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções<br>Fim | *valor_inicial* é uma instrução de atribuição do valor inicial do laço para a variável de controle<br>*condição_final* é a condição que controla o laço<br>*passo* é o incremento ou decremento do laço | for(valor_inicial; condição_final; valor_incremento_ou_decremento){ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
-| ```while``` | Iniciar a variável de controle<br>Enquanto (condição) faça<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br> Fim;| *condição* é a condição que controla o laço | while(condição){ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
-| ```do ... while``` | Iniciar a variável de controle<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim; | *condição* é a condição que controla o laço | do{ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> }while(condição) |
+| Loop | Pseudocódigo | Utilização |
+| --- | --- | --- |
+| ```for``` | Enquanto (valor_inicial até a condição_final passo n) faça<br>Inicio<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções<br>Fim<br><br> *valor_inicial* é uma instrução de atribuição do valor inicial do laço para a variável de controle<br>*condição_final* é a condição que controla o laço<br>*passo* é o incremento ou decremento do laço| for(valor_inicial; condição_final; valor_incremento_ou_decremento){ <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
+| ```while``` | Iniciar a variável de controle<br>Enquanto (condição) faça<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br> Fim;<br><br>*condição* é a condição que controla o laço | while(condição){ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> } |
+| ```do ... while``` | Iniciar a variável de controle<br>Início<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Atualizar a variável de controle;<br>Enquanto (condição) faça<br>Fim;<br><br>*condição* é a condição que controla o laço | do{ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instruções; <br> }while(condição) |
 
 ### Exemplos de loops
 
