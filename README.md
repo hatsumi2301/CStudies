@@ -1552,3 +1552,14 @@ Essa operação faz com que ```p1``` aponte para o décimo segundo elemento do t
 | --- |:---:|
 | [```void AritmeticaDePonteiros(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/Ponteiros.c) | Exemplo de operações aritméticas com ponteiros | 
 
+## Comparação de ponteiros
+
+É possível realizar comparações de ponteiros. Normalmente essas comparações são feitas quando os ponteiros apotam para um objeto em comum. 
+
+### Exemplos de aritmética de ponteiros
+
+| Método  | O que faz | Observações |
+| --- |:---:| ---: |
+| [```void Push(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/PonteiroComPilha.c) | Realiza a comparação de dois ponteiros para verificar se o tamanho máximo da pilha foi excedido | Método chamado pelo método ```Pilha()``` |
+| [```int Pop(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/PonteiroComPilha.c) | Realiza a comparação de dois ponteiros para verificar se o último elemento da pilha foi removido | Método chamado pelo método ```Pilha()``` |
+| [```void Pilha(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/PonteiroComPilha.c) | Método que realiza a chamada dos dois métodos anteriores | - |

@@ -473,6 +473,9 @@ int main(){
                 
                 printf("\n\nAritmética de ponteiros double:\n\n");
                 AritmeticaDePonteirosDouble();
+                
+                printf("\n\nPilha\n");
+                Pilha();
                 break;
             case 100:
                 
