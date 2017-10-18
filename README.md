@@ -1540,6 +1540,9 @@ p1--;
 Ficará com o valor 1998.
 
 <br>
+
+Também é possível adicionar ou subtrair valores inteiros dos ponteiros:
+
 ```c
 p1 = p1 + 12;
 ```

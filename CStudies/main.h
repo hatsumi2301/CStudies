@@ -125,5 +125,6 @@ void JogoDaVelhaLivro(void);
 void AtribuicaoDePonteiros(void);
 void AritmeticaDePonteirosInt(void);
 void AritmeticaDePonteirosDouble(void);
+void Pilha(void);
 
 #endif /* mainn_h */
