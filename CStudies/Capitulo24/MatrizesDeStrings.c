@@ -13,13 +13,13 @@ void MatrizDeString(){
     register int i;
     register int j;
     
-    printf("Digite uma linha vazia para sair.\n");
+    printf("Digite 9 para sair.\n");
     
     for(t = 0; t < MAX; t++){
         printf("%d: ", t);
-        scanf(" %s", texto[t]);
+        scanf(" %c", texto[t]);
         //Se o valor de texto na posição t for igual a 0, sai do loop
-        if(!*texto[t]) break;
+        if(*texto[t] == '9') break;
     }
     
     for(i = 0; i < t; i++){

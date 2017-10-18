@@ -1221,9 +1221,9 @@ gets(&string_array[2][0]);
 
 ### Exemplos de matrizes de strings
 
-| Método  | O que faz | Observações |
-| --- |:---:| ---:|
-| [```void MatrizDeString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo24/MatrizesDeStrings.c) | Exemplo de uma matriz de string | ESSE MÉTODO ESTÁ COM ERRO |
+| Método  | O que faz |
+| --- |:---:|
+| [```void MatrizDeString(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo24/MatrizesDeStrings.c) | Exemplo de uma matriz de string | 
 
 # [Capítulo 25](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo25)
 
@@ -1343,7 +1343,8 @@ char string[30] = "Eu gosto de legumes.";
 
 //Bem melhor do que escrever
 char string[30] = {'E', 'u', ' ', 'g', 'o', 's', 't', 'o', ' ', 'd', 'e', ' ', 'l', 'e', 'g', 'u', 'm', 'e', 's', '.', '\0'}
-//Nessa atribuição é necessário incluir o terminador nulo, pois o compilador não fará isso automaticamente como no caso da atribuição abreviada
+//Nessa atribuição é necessário incluir o terminador nulo
+//Pois o compilador não fará isso automaticamente como no caso da atribuição abreviada
 ```
 
 Matriz multidimensionais são inicializadas da seguinte forma:
@@ -1443,3 +1444,26 @@ Foram criadas dois códigos do jogo da velha.
 | [```void ObterJogadaDoComputador(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaLivro.c) | Realiza a jogada do computador |
 | [```void Checar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaLivro.c) | Verifica se algum jogador ganhou |
 | [```void ImprimirMatriz(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo28/JogoDaVelhaLivro.c) | Imprime a matriz |
+
+# [Capítulo 29](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo29)
+
+## Ponteiros
+
+É uma variável que contém um endereço de memória. 
+
+| Endereço na memória | Variável na memória | Observação |
+| --- | --- | --- |
+| 1000 | 1003 | Aponta para o endereço de memória 1003 |
+| 1001 | | |
+| 1002 | | |
+| 1003 | | | 
+| 1004 | | |
+
+### Utilização
+
+```c
+tipo *nome;
+```
+
+*tipo* define o tipo de variáveis que o ponteiro pode apontar.
+

@@ -37,7 +37,7 @@ void TiposDeVariaveis(){
 void NomeDaVariavel(){
     int x = 1;
     
-    printf("Método: NomeDaVariavel. Nome da variável é x e o valor de x é %d.", x);
+    printf("\n\nMétodo: NomeDaVariavel. Nome da variável é x e o valor de x é %d.", x);
 }
 
 void NomeDaVariavelRepetido(){
@@ -46,7 +46,7 @@ void NomeDaVariavelRepetido(){
     
     //int x = 3; //Se essa linha for descomentada (apagando os "//"), será gerado um erro
     
-    printf("Método: NomeDaVariavelRepetido.");
+    printf("\n\nMétodo: NomeDaVariavelRepetido.");
     printf(" Nome da variável é x e o valor de x é %d.", x);
     printf(" Essa variável está em um contexto diferente da variável x do método NomeDaVariavel");
 }
