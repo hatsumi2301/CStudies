@@ -465,7 +465,17 @@ int main(){
                         printf("Opção inexistente.");
                 }
                 break;
+            case 29:
+                AtribuicaoDePonteiros();
+                
+                printf("\n\nAritmética de ponteiros inteiros:\n\n");
+                AritmeticaDePonteirosInt();
+                
+                printf("\n\nAritmética de ponteiros double:\n\n");
+                AritmeticaDePonteirosDouble();
+                break;
             case 100:
+                
                 ComandoExit();
                 break;
             default:

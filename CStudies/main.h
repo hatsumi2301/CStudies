@@ -11,12 +11,6 @@
 
 #include <stdio.h>
 
-#include "Saida.h"
-#include "Entrada.h"
-#include "Loops.h"
-#include "ConversaoDeTipos.h"
-#include "InicializacaoDeMatrizes.h"
-
 extern int numeros[10][10];
 
 int Opcoes(void);
@@ -128,5 +122,8 @@ void ConversaoDeLongEUnsignedInt(void);
 void ConversaoDeTipos(void);
 void JogoDaVelhaVersaoHatsumi(void);
 void JogoDaVelhaLivro(void);
+void AtribuicaoDePonteiros(void);
+void AritmeticaDePonteirosInt(void);
+void AritmeticaDePonteirosDouble(void);
 
 #endif /* mainn_h */

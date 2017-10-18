@@ -1459,6 +1459,10 @@ Foram criadas dois códigos do jogo da velha.
 | 1003 | | | 
 | 1004 | | |
 
+É preciso ter atenção ao utilizar ponteiros, pois as variáveis ponteiro sempre devem apontar para o tipo de dado correspondente. 
+
+Alguns compiladores C não exibirão nenhum erro de compilação caso um ponteiro do tipo ```int```, por exemplo, aponte para um ponteiro do tipo ```float```. No entanto, como esses tipos possuem tamanhos diferentes, ocorrerá um erro posteriormente (```int``` tem 2 bytes e ```float``` tem 8 bytes, só serão salvos os dois primeiros bytes na variável ponteiro).
+
 ### Utilização
 
 ```c
@@ -1466,4 +1470,85 @@ tipo *nome;
 ```
 
 *tipo* define o tipo de variáveis que o ponteiro pode apontar.
+
+### Exemplos com ponteiros
+
+| Método  | O que faz | Observações | 
+| --- |:---:| ---: |
+| [```void VariavelPonteiroTipoDiferente(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/Ponteiros.c) | Exibe um exemplo da atribuição do endereço de uma variável float a um ponteiro do tipo int | O código foi comentado para evitar a exibição de warnings. O código não é chamado no ```main```, pois não produz nenhuma saída na tela. | 
+
+## Atribuição de ponteiros
+
+Para atribuir um valor a um ponteiro, basta realizar o comando:
+
+```c
+int x = 1;
+int *p1;
+
+//Ponteiro p1 recebe o endereço da memória de x
+p1 = &x;
+```
+
+Também é possível...
+
+```c
+int x = 1;
+int *p1;
+int *p2;
+
+//Ponteiro p1 recebe o endereço da memória de x
+p1 = &x;
+//Ponteiro p2 recebe o endereço que está em p1
+//Que é o endereço de x
+p2 = p1;
+```
+
+### Exemplos de atribuições de ponteiros
+
+| Método  | O que faz | 
+| --- |:---:|
+| [```void AtribuicaoDePonteiros(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/Ponteiros.c) | Atribui ao ponteiro ```p1``` o endereço de memória de ```x``` e atribui ao ponteiro ```p2``` o endereço de memória que está em ```p1``` | 
+
+## Aritmética de Ponteiros
+
+É possível utilizar duas operações [aritméticas](https://pt.wikipedia.org/wiki/Aritm%C3%A9tica#Opera.C3.A7.C3.B5es_Aritm.C3.A9ticas) com ponteiros, a adição e a subtração.
+
+Não é possível utilizar nenhuma outra operação com ponteiros. Assim como não é possível adicionar ou subtrair valores do tipo ```float``` e ```double``` de ponteiros.
+
+Ao incrementar ou decrementar uma unidade em um ponteiro, o valor final do ponteiro será a posição de memória do próximo/anterior elemento do seu tipo base. 
+
+Para entender melhor o que acontece, vamos ver um exemplo.
+
+### Exemplo
+
+Ponteiro ```p1``` aponta para um inteiro com o valor 2000. Considere que os inteiros são de 2 bytes. Após a operação:
+
+```c
+p1++;
+```
+
+```p1``` fica com qual valor?
+
+2001? **Errado!**
+
+2002!! O que acontece é que cada vez que incrementamos uma unidade no ponteiro ```p1```, ele aponta para o próximo inteiro, que possui, no mínimo, 2 bytes. O mesmo ocorre com o decremento. 
+
+```c
+p1--;
+```
+
+Ficará com o valor 1998.
+
+<br>
+```c
+p1 = p1 + 12;
+```
+
+Essa operação faz com que ```p1``` aponte para o décimo segundo elemento do tipo de ```p1``` após o elemento que ```p1``` está apontando atualmente.
+
+### Exemplos de aritmética de ponteiros
+
+| Método  | O que faz | 
+| --- |:---:|
+| [```void AritmeticaDePonteiros(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/Ponteiros.c) | Exemplo de operações aritméticas com ponteiros | 
 
