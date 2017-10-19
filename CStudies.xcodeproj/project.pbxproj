@@ -35,6 +35,7 @@
 		7BAB94231F96E03B000B8381 /* Ponteiros.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB94211F96E03B000B8381 /* Ponteiros.c */; };
 		7BAB94261F96F03E000B8381 /* PonteiroComPilha.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB94241F96F03E000B8381 /* PonteiroComPilha.c */; };
 		7BAB942A1F9835C5000B8381 /* PonteirosMatrizes.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB94281F9835C5000B8381 /* PonteirosMatrizes.c */; };
+		7BAB942E1F984323000B8381 /* PonteiroDePonteiro.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB942C1F984323000B8381 /* PonteiroDePonteiro.c */; };
 		7BE933A41F774112008A7CBF /* Saida.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A21F774112008A7CBF /* Saida.c */; };
 		7BE933A71F77479D008A7CBF /* Entrada.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933A51F77479D008A7CBF /* Entrada.c */; };
 		7BE933B31F7758AE008A7CBF /* Variaveis.c in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933B11F7758AE008A7CBF /* Variaveis.c */; };
@@ -118,6 +119,8 @@
 		7BAB94251F96F03E000B8381 /* PonteiroComPilha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PonteiroComPilha.h; sourceTree = "<group>"; };
 		7BAB94281F9835C5000B8381 /* PonteirosMatrizes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PonteirosMatrizes.c; sourceTree = "<group>"; };
 		7BAB94291F9835C5000B8381 /* PonteirosMatrizes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PonteirosMatrizes.h; sourceTree = "<group>"; };
+		7BAB942C1F984323000B8381 /* PonteiroDePonteiro.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PonteiroDePonteiro.c; sourceTree = "<group>"; };
+		7BAB942D1F984323000B8381 /* PonteiroDePonteiro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PonteiroDePonteiro.h; sourceTree = "<group>"; };
 		7BE933A21F774112008A7CBF /* Saida.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Saida.c; sourceTree = "<group>"; };
 		7BE933A31F774112008A7CBF /* Saida.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Saida.h; sourceTree = "<group>"; };
 		7BE933A51F77479D008A7CBF /* Entrada.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Entrada.c; sourceTree = "<group>"; };
@@ -172,6 +175,7 @@
 		7B15DBC41F5F8A6F003F515E /* CStudies */ = {
 			isa = PBXGroup;
 			children = (
+				7BAB942B1F984313000B8381 /* Capitulo31 */,
 				7BAB94271F983587000B8381 /* Capitulo30 */,
 				7BAB94201F96E02F000B8381 /* Capitulo29 */,
 				7B6FC7E81F95056400AC6F78 /* Capitulo28 */,
@@ -414,6 +418,15 @@
 			path = Capitulo30;
 			sourceTree = "<group>";
 		};
+		7BAB942B1F984313000B8381 /* Capitulo31 */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB942C1F984323000B8381 /* PonteiroDePonteiro.c */,
+				7BAB942D1F984323000B8381 /* PonteiroDePonteiro.h */,
+			);
+			path = Capitulo31;
+			sourceTree = "<group>";
+		};
 		7BE933AF1F775588008A7CBF /* Capitulo01 */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +586,7 @@
 				7B6FC7CD1F8B1E4B00AC6F78 /* String.c in Sources */,
 				7BE933C51F7896E6008A7CBF /* Variaveis2.c in Sources */,
 				7BE933D81F79E6CE008A7CBF /* Register.c in Sources */,
+				7BAB942E1F984323000B8381 /* PonteiroDePonteiro.c in Sources */,
 				7BE933D41F79DF65008A7CBF /* VariaveisEstaticas.c in Sources */,
 				7B7947151F7C8D86006B7FE3 /* OperadoresLogicosRelacionais.c in Sources */,
 				7BE933A71F77479D008A7CBF /* Entrada.c in Sources */,

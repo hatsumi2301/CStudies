@@ -129,5 +129,6 @@ void Pilha(void);
 void MatrizComIndexacao(char *s);
 void MatrizComPonteiro(char *s);
 void ExibirArrayChamada(void);
+void PonteiroDePonteiro(void);
 
 #endif /* mainn_h */

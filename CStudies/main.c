@@ -491,6 +491,9 @@ int main(){
                 ExibirArrayChamada();
                 break;
             }
+            case 31:
+                PonteiroDePonteiro();
+                break;
             case 100:
                 ComandoExit();
                 break;

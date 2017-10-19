@@ -1632,10 +1632,31 @@ Para obter o valor da ```variavel```:
 
 # [Capítulo 30](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo30)
 
-## Indireção múltipla ou ponteiro para ponteiros
+## [Indireção](https://pt.stackoverflow.com/questions/181032/o-que-%C3%A9-indire%C3%A7%C3%A3o) múltipla ou ponteiro para ponteiros
 
 É quando um ponteiro aponta para um ponteiro que aponta para o valor. 
 
 Para entender um pouco mais, veja a imagem a seguir:
 
 ![](https://i.stack.imgur.com/RkW0H.jpg)
+
+É possível utilizar ponteiros que apontam para ponteiros que apontam para ponteiros e assim sucessivamente, no entanto, raramente é necessário mais de um ponteiro para um ponteiro.
+
+### Utilização
+
+```c
+float **ponteiro;
+```
+
+```ponteiro``` é um ponteiro para um ponteiro do tipo ```float```.
+
+**ATENÇÃO**
+
+```ponteiro``` NÃO é um ponteiro para um número ```float```.
+
+### Exemplos de ponteiros de ponteiros
+
+| Método  | O que faz | 
+| --- |:---:| 
+| [```void PonteiroDePonteiro(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo31/PonteiroDePonteiro.c) | Exemplo de utilização de ponteiro de ponteiro | 
+
