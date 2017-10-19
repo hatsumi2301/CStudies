@@ -487,6 +487,8 @@ int main(){
                 MatrizComIndexacao(palavra);
                 MatrizComPonteiro(palavra);
                 
+                printf("\n\nMatriz de ponteiros");
+                ExibirArrayChamada();
                 break;
             }
             case 100:

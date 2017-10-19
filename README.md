@@ -1598,3 +1598,34 @@ string[4];
 | --- |:---:| 
 | [```void MatrizComIndexacao(char *s)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de acesso aos elementos da matriz com indexação | 
 | [```void MatrizComPonteiro(char *s)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de acesso aos elementos da matriz com ponteiro | 
+
+## Matrizes de ponteiros
+
+É possível criar uma matriz de ponteiro.
+
+### Utilização
+
+```c
+int *matrizDePonteiro[10];
+```
+
+Para atribuir um valor:
+
+```c
+matrizDePonteiro[0] = &variavel;
+```
+
+Para obter o valor da ```variavel```:
+
+```c
+*matrizDePonteiro[0];
+```
+
+### Exemplos de matrizes de ponteiros
+
+| Método  | O que faz | Observações |
+| --- |:---:| ---: |
+| [```void ExibirArray(int *matrizPonteiros[])```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de função que recebe uma matriz como parâmetro sem informar o tamanho da mesma | Função chamada pela função ```ExibirArrayChamada``` |
+| [```void ExibirArray2(int *matrizPonteiros[10])```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de função que recebe uma matriz como parâmetro informando o tamanho da matriz | Função chamada pela função ```ExibirArrayChamada``` |
+| [```void ExibirArray3(int *matrizPonteiros[])```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de função que recebe o ponteiro que aponta para uma matriz como parâmetro | Função chamada pela função ```ExibirArrayChamada``` |
+| [```void ExibirArrayChamada(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de utilização de matriz de ponteiros e chamada das funções acima | - |
