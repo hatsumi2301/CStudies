@@ -128,5 +128,6 @@ void AritmeticaDePonteirosDouble(void);
 void Pilha(void);
 void MatrizComIndexacao(char *s);
 void MatrizComPonteiro(char *s);
+void ExibirArrayChamada(void);
 
 #endif /* mainn_h */

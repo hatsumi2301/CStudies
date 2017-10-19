@@ -1629,3 +1629,13 @@ Para obter o valor da ```variavel```:
 | [```void ExibirArray2(int *matrizPonteiros[10])```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de função que recebe uma matriz como parâmetro informando o tamanho da matriz | Função chamada pela função ```ExibirArrayChamada``` |
 | [```void ExibirArray3(int *matrizPonteiros[])```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de função que recebe o ponteiro que aponta para uma matriz como parâmetro | Função chamada pela função ```ExibirArrayChamada``` |
 | [```void ExibirArrayChamada(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de utilização de matriz de ponteiros e chamada das funções acima | - |
+
+# [Capítulo 30](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo30)
+
+## Indireção múltipla ou ponteiro para ponteiros
+
+É quando um ponteiro aponta para um ponteiro que aponta para o valor. 
+
+Para entender um pouco mais, veja a imagem a seguir:
+
+![](https://i.stack.imgur.com/RkW0H.jpg)
