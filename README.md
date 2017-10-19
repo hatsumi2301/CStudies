@@ -1630,7 +1630,7 @@ Para obter o valor da ```variavel```:
 | [```void ExibirArray3(int *matrizPonteiros[])```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de função que recebe o ponteiro que aponta para uma matriz como parâmetro | Função chamada pela função ```ExibirArrayChamada``` |
 | [```void ExibirArrayChamada(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de utilização de matriz de ponteiros e chamada das funções acima | - |
 
-# [Capítulo 30](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo30)
+# [Capítulo 31](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo31)
 
 ## [Indireção](https://pt.stackoverflow.com/questions/181032/o-que-%C3%A9-indire%C3%A7%C3%A3o) múltipla ou ponteiro para ponteiros
 
