@@ -126,5 +126,7 @@ void AtribuicaoDePonteiros(void);
 void AritmeticaDePonteirosInt(void);
 void AritmeticaDePonteirosDouble(void);
 void Pilha(void);
+void MatrizComIndexacao(char *s);
+void MatrizComPonteiro(char *s);
 
 #endif /* mainn_h */

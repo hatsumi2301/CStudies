@@ -1566,3 +1566,35 @@ Essa operação faz com que ```p1``` aponte para o décimo segundo elemento do t
 | [```void Push(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/PonteiroComPilha.c) | Realiza a comparação de dois ponteiros para verificar se o tamanho máximo da pilha foi excedido | Método chamado pelo método ```Pilha()``` |
 | [```int Pop(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/PonteiroComPilha.c) | Realiza a comparação de dois ponteiros para verificar se o último elemento da pilha foi removido | Método chamado pelo método ```Pilha()``` |
 | [```void Pilha(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo29/PonteiroComPilha.c) | Método que realiza a chamada dos dois métodos anteriores | - |
+
+# [Capítulo 30](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo30)
+
+## Ponteiros e matrizes
+
+Para acessar elementos de matrizes é possível utilizar a aritmética de ponteiros ou a indexação de matrizes. A aritmética de ponteiros pode ser mais rápida que a indexação de matrizes.
+
+### Utilização
+
+```c
+char string[80];
+char *ponteiro;
+
+//Ponteiro foi incializado com o primeiro elemento da matriz
+ponteiro = string;
+```
+
+Para acessar o quinto elemento da matriz:
+
+```c
+string[4]; 
+
+//Ou também
+*(ponteiro+4)
+```
+
+### Exemplos de ponteiros e matrizes
+
+| Método  | O que faz | 
+| --- |:---:| 
+| [```void MatrizComIndexacao(char *s)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de acesso aos elementos da matriz com indexação | 
+| [```void MatrizComPonteiro(char *s)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo30/PonteirosMatrizes.c) | Exemplo de acesso aos elementos da matriz com ponteiro | 

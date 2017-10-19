@@ -477,8 +477,19 @@ int main(){
                 printf("\n\nPilha\n");
                 Pilha();
                 break;
-            case 100:
+            case 30:
+            {
+                char palavra[100];
                 
+                printf("Informe uma palavra: \n");
+                scanf(" %s", palavra);
+                
+                MatrizComIndexacao(palavra);
+                MatrizComPonteiro(palavra);
+                
+                break;
+            }
+            case 100:
                 ComandoExit();
                 break;
             default:
