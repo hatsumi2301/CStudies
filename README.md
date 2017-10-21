@@ -1660,3 +1660,19 @@ float **ponteiro;
 | --- |:---:| 
 | [```void PonteiroDePonteiro(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo31/PonteiroDePonteiro.c) | Exemplo de utilização de ponteiro de ponteiro | 
 
+# [Capítulo 32](https://github.com/hatsumi2301/CStudies/tree/master/CStudies/Capitulo32)
+
+## Inicialização de ponteiros
+
+Caso um ponteiro seja utilizado sem ser inicializado, pode ocorrer um erro inesperado, pois ao instanciar um ponteiro, ele já possui um valor desconhecido.
+
+Uma convenção entre a maioria dos programadores de C é inicializar o ponteiro com o valor nulo. 
+
+No entanto, um ponteiro com o valor nulo, não garante que não correrão erros ao utilizá-lo. Caso o programador utilize o ponteiro do lado esquerdo de um comando de atribuição, ocorrerá um erro.
+
+### Exemplos de ponteiros de ponteiros
+
+| Método  | O que faz | Observações |
+| --- |:---:| ---: |
+| [```void PonteiroSemInicializar(void)```](https://github.com/hatsumi2301/CStudies/blob/master/CStudies/Capitulo32/InicializacaoDePonteiros.c) | Exemplo de utilização de ponteiro que não foi inicializado | O código está comentado para evitar warnings. O código não é chamado pelo ```main()```, pois está comentado e no meu computador, ele gerou um erro em tempo de execução |
+

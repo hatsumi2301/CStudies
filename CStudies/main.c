@@ -494,6 +494,9 @@ int main(){
             case 31:
                 PonteiroDePonteiro();
                 break;
+            case 32:
+                PonteiroSemInicializar();
+                break;
             case 100:
                 ComandoExit();
                 break;
